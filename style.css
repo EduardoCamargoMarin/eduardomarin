@@ -28,7 +28,7 @@ header {
     border-bottom: 2px solid white
 }
 button {
-    cursor: url(./images/cursor3.cur),pointer;
+    cursor: url(./images/cursor3.cur),pointer !important;
 }
 .prime-logo {
     width: 20em;
@@ -98,10 +98,20 @@ button {
     flex-direction: row;
     gap: 15px;
 }
+@media screen and (max-width:450px){
+    .quemsou {
+        display: flex;
+        align-items: flex-start;
+        justify-content:center ;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
 .cracha-frente {
     margin-top: 4em;
     border-radius: 10px;
     width: 25em;
+    transition: .2s;
 }
 @media screen and (max-width: 450px){
    .cracha-frente {
@@ -110,3 +120,28 @@ button {
     width: 10em;
    }
   }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .btn-card {
+    background-color: var(--hoverColor);
+    border: 3px solid var(--headerMainColor);
+    width: 8em;
+  }
+  .service-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  .service-video {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
