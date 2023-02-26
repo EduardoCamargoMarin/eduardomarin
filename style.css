@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body {
-    cursor: url(/images/cursor1.cur),default;
+    cursor: url(./images/cursor1.cur),default;
     background-color: var(--backgroundMainColor);
     color: var(--fontMainColor);
     font-family: 'Courier New', Courier, monospace;
@@ -28,7 +28,7 @@ header {
     border-bottom: 2px solid white
 }
 button {
-    cursor: url(/images/cursor3.cur),pointer;
+    cursor: url(./images/cursor3.cur),pointer;
 }
 .prime-logo {
     width: 20em;
