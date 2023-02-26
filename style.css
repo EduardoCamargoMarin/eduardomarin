@@ -1,0 +1,112 @@
+:root {
+    --backgroundMainColor: #f7f7f7;
+    --fontMainColor: #000000;
+    --fontSecudaryColor: #f7f7f7;
+    --headerMainColor: #05013d;
+    --hoverColor: #76c8ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    cursor: url(/images/cursor1.cur),default;
+    background-color: var(--backgroundMainColor);
+    color: var(--fontMainColor);
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    background-color: #0e0149;
+    border-bottom: 2px solid white
+}
+button {
+    cursor: url(/images/cursor3.cur),pointer;
+}
+.prime-logo {
+    width: 20em;
+    margin-bottom: 15px;
+}
+/*.return {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius:100px;
+    width: 5em;
+    height: 5em;
+    background-color: var(--btnPressColor) ;
+    opacity: 0.7;
+    position: absolute;
+    
+}
+.return:hover {
+    color: red;
+}*/
+.btn-prime {
+    background-color: var(--headerMainColor);
+    color: var( --fontSecudaryColor);
+    border: 2px solid var(--headerMainColor);
+    font-size: 12pt;
+}
+@media  screen and (max-width: 450px) {
+    .btn-prime {
+        font-size: 11pt;
+    }
+    
+}
+.btn-prime:hover {
+    color: var(--hoverColor);
+}
+.btn-prime::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:var(--hoverColor); /* Parametrizável*/
+    transition: width .15s ease-in;
+  }
+  
+  .btn-prime:hover::after {
+    width: 100%;
+  }
+  main {
+    padding-top: 6em;
+  }
+  @media screen and (max-width: 450px){
+    main {
+        padding-top: 7.6em;
+    }
+  }
+.intro-video {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.quemsou {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: row;
+    gap: 15px;
+}
+.cracha-frente {
+    margin-top: 4em;
+    border-radius: 10px;
+    width: 25em;
+}
+@media screen and (max-width: 450px){
+   .cracha-frente {
+    margin-top: 1em;
+    border-radius: 10px;
+    width: 10em;
+   }
+  }
