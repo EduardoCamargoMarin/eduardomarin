@@ -90,6 +90,7 @@ button {
     align-items: center;
     justify-content: center;
     width: 100%;
+    border-radius: 30px;
 }
 .quemsou {
     display: flex;
@@ -145,19 +146,114 @@ button {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
   }
-  .service-container {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    
-  }
   .service-video {
     display: grid;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
+    margin-top: 100px;
+    border-radius: 30px;
 }
+@media screen and (max-width: 450px) {
+    .service-video {
+        margin-top: 10px;
+    }
+}
+.service-container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.service-image {
+    width: 20em;
+    border-radius: 40px;
+}
+@media screen and (max-width: 450px) {
+    .service-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .service-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15em;
+        margin-left: 5em;
+    }
+}
+.service-image2 {
+    margin-top: 40px;
+    width: 20em;
+    border-radius: 40px;
+}
+@media screen and (max-width: 450px) {
+    .service-image2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15em;
+        margin-left: 5em;
+    }
+}
+.btn-card-service {
+    background-color: var(--hoverColor);
+    border: 3px solid var(--headerMainColor);
+    width: 20em;
+    border-radius: 50px 20px;
+  }
+  @media screen and (max-width:450px) {
+    .btn-card-service {
+        background-color: var(--hoverColor);
+        border: 3px solid var(--headerMainColor);
+        width: 25em;
+        border-radius: 50px 20px;
+      }
+  }
+  .btn-card-service:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+  }
+  .project-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .project-video {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+@media screen and (max-width: 450px) {
+    .project-video {
+        margin-top: 10px;
+    }
+}
+.btn-card-project {
+    background-color: var(--hoverColor);
+    border: 3px solid var(--headerMainColor);
+    width: 40em;
+    border-radius: 50px 20px;
+    margin-top: 10px;
+  }
+  @media screen and (max-width:450px) {
+    .btn-card-project {
+        background-color: var(--hoverColor);
+        border: 3px solid var(--headerMainColor);
+        width: 25em;
+        border-radius: 50px 20px;
+      }
+  }
+  .btn-card-project:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+  }
