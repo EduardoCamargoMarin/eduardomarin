@@ -25,7 +25,8 @@ header {
     position: fixed;
     width: 100%;
     background-color: #0e0149;
-    border-bottom: 2px solid white
+    border-bottom: 2px solid white;
+    opacity: 0.9;
 }
 button {
     cursor: url(./images/cursor3.cur),pointer !important;
@@ -256,4 +257,80 @@ button {
   .btn-card-project:hover {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
+  }
+
+
+  .partner-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .partner-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .partner-video {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+@media screen and (max-width: 450px) {
+    .partner-video {
+        margin-top: 10px;
+    }
+}
+.btn-card-partner {
+    background-color: var(--hoverColor);
+    border: 3px solid var(--headerMainColor);
+    width: 40em;
+    border-radius: 50px 20px;
+    margin-top: 10px;
+  }
+  @media screen and (max-width:450px) {
+    .btn-card-partner {
+        background-color: var(--hoverColor);
+        border: 3px solid var(--headerMainColor);
+        width: 25em;
+        border-radius: 50px 20px;
+      }
+  }
+  .btn-card-partner:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+  }
+  .guimaraes-logo {
+    width: 20em;
+  }
+  @media screen and (max-width: 450px) {
+    .guimaraes-logo {
+        width: 7em;
+    }
+  }
+  .mayara-logo {
+    width: 20em;
+  }
+  @media screen and (max-width: 450px) {
+    .mayara-logo {
+        width: 7em;
+    }
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .image-contact {
+   width: 15em;
+  }
+  @media screen and (max-width: 450px) {
+    .image-contact {
+        width: 5em;
+    }
   }
