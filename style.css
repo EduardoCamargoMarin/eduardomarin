@@ -38,6 +38,11 @@ button {
     width: 20em;
     margin-bottom: 15px;
 }
+@media screen and (max-width: 450px) {
+  .prime-logo {
+    width: 12em;
+  }
+}
 /*.return {
     display: flex;
     align-items:center;
@@ -248,7 +253,6 @@ button {
 @media screen and (max-width: 450px) {
     .service-video {
         margin-top: 10px;
-        margin-bottom: 150px;
     }
 }
 .service-steps {
