@@ -11,9 +11,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     cursor: url(./images/cursor1.cur),default;
-    background-color: var(--backgroundMainColor);
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
 }
@@ -98,12 +100,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
+  border-top: 4px solid var(--borderColor);
+  border-radius: 50px;
 }
 .logo-spin-image {
   width: 20em;
   animation: spin 3s linear infinite;
   opacity: 0.5;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 @keyframes spin {
@@ -130,8 +135,34 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1em;
+  padding: 2em;
  
+}
+.missao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 2px solid var(--backgroundMainColor);
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.visao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 2px solid var(--backgroundMainColor);
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.valores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 2px solid var(--backgroundMainColor);
+  border-radius: 50px;
 }
 .quemsou {
     display: flex;
@@ -154,7 +185,15 @@ button {
         border: 4px solid var(--headerMainColor);
         border-radius: 20px;
         margin-top: 150px;
-        margin-bottom: 150px;
+        margin-bottom: 250px;
+    }
+    .cracha {
+      margin-top: 200px;
+      margin-bottom: 200px;
+    }
+    .quemsou-body {
+      margin-top: 200px;
+      margin-bottom: 200px;
     }
 }
 .cracha-frente {
@@ -182,7 +221,8 @@ button {
     width: 20em;
     height: 3em;
     border-radius: 50px 20px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-weight: 700;
   }
   @media screen and (max-width:450px) {
     .btn-card {
@@ -208,6 +248,7 @@ button {
 @media screen and (max-width: 450px) {
     .service-video {
         margin-top: 10px;
+        margin-bottom: 150px;
     }
 }
 .service-steps {
@@ -223,8 +264,8 @@ button {
 .step-card01 {
   background-color: var(--headerMainColor);
   color: var(--fontSecudaryColor);
-  width: 15em;
-  height: 15em;
+  width: 20em;
+  height: 20em;
   border-radius: 50px;
 }
 .card01-body {
@@ -237,8 +278,8 @@ button {
 .step-card02 {
   background-color: var(--headerMainColor);
   color: var(--fontSecudaryColor);
-  width: 15em;
-  height: 15em;
+  width: 20em;
+  height: 20em;
   border-radius: 50px;
 }
 .card02-body {
@@ -251,8 +292,8 @@ button {
 .step-card03 {
   background-color: var(--headerMainColor);
   color: var(--fontSecudaryColor);
-  width: 15em;
-  height: 15em;
+  width: 20em;
+  height: 20em;
   border-radius: 50px;
 }
 .card03-body {
@@ -261,6 +302,27 @@ button {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+}
+@media screen and (max-width:450px) {
+  .service-steps {
+    border-top: 4px solid var(--borderColor);
+    border-bottom: 4px solid var(--borderColor);
+    border-radius: 50px;
+  }
+  .step-card01 {
+    margin-top: 30px;
+    width: 15em;
+    height: 15em;
+  }
+  .step-card02 {
+    width: 15em;
+    height: 15em;
+  }
+  .step-card03 {
+    margin-bottom: 30px;
+    width: 15em;
+    height: 15em;
+  }
 }
 .service-container {
     margin-top: 60px;
@@ -280,6 +342,9 @@ button {
         align-items: center;
         justify-content: center;
         width: 100%;
+        border-top: 4px solid var(--borderColor);
+        border-bottom: 4px solid var(--borderColor);
+        border-radius: 50px;
     }
     .service-image {
         display: flex;
@@ -287,6 +352,7 @@ button {
         justify-content: center;
         width: 15em;
         margin-left: 5em;
+        margin-top: 20px;
     }
 }
 .service-image2 {
@@ -309,6 +375,7 @@ button {
     width: 20em;
     height: 3em;
     border-radius: 50px 20px;
+    font-weight: 700;
   }
   @media screen and (max-width:450px) {
     .btn-card-service {
@@ -330,16 +397,19 @@ button {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-top: 200px;
   }
   .project-video {
     display: grid;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
     border-radius: 30px;
 }
 @media screen and (max-width: 450px) {
+    .project-card-title {
+      margin-top: 50px;
+    }
     .project-video {
         margin-top: 10px;
     }
@@ -351,6 +421,7 @@ button {
     height: 3em;
     border-radius: 50px 20px;
     margin-top: 10px;
+    font-weight: 700;
   }
   @media screen and (max-width:450px) {
     .btn-card-project {
@@ -400,6 +471,7 @@ button {
     height: 3em;
     border-radius: 50px 20px;
     margin-top: 10px;
+    font-weight: 700;
   }
   @media screen and (max-width:450px) {
     .btn-card-partner {
@@ -441,7 +513,6 @@ button {
     justify-content: center;
     flex-direction: column;
     margin-top: 200px;
-    margin-bottom: 30px;
     border-top: 4px solid var(--headerMainColor);
     border-radius: 100px;
   }
@@ -457,5 +528,6 @@ button {
   @media screen and (max-width: 450px) {
     .image-contact {
         width: 5em;
+        border-radius: 0;
     }
   }
