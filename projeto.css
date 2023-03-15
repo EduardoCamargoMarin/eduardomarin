@@ -299,31 +299,35 @@
   .contact-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-  }
-  .contact-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 200px;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    background-color: var(--headerMainColor);
+    opacity: 0.9;
+    border-radius: 50px 20px;
+    padding: 10px;
     border-top: 4px solid var(--headerMainColor);
-    border-radius: 100px;
-  }
-  @media screen and (max-width:450px) {
-    .contact-title {
-      margin-top: 50px;
-    }
+    border-bottom: 4px solid var(--headerMainColor);
+    border-left: 1px solid var(--borderColor);
+    background-color: var(--cardColor);
+    box-shadow: 10px 10px 5px var(--shadowColor);
+    margin-bottom: 1em;
+    width: 95%;
+    margin-left: 1.5em;
   }
   .image-contact {
-   width: 10em;
-   border-radius: 30px;
+    border: 3px solid black;
+   width: 5em;
+   border-radius: 10px;
+   box-shadow: 5px 5px 0px var(--borderColor);
   }
   @media screen and (max-width: 450px) {
+    .contact-container {
+      margin-left: .5em;
+    }
     .image-contact {
-        width: 5em;
-        border-radius: 0;
+        width: 3em;
+        border-radius: 10px;
     }
   }
-    
+
   
