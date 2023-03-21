@@ -20,6 +20,7 @@
       cursor: url(./images/cursor1.cur),default;
       color: var(--fontMainColor);
       font-family: Arial, Helvetica, sans-serif !important;
+      background-image: url(./headerBackground.gif);
   }
   header {
       display: flex;
@@ -29,7 +30,7 @@
       flex-wrap: wrap;
       position: fixed;
       width: 100%;
-      background-color: #0e0149;
+       background-image: url(./headerBackground.gif);
       border-bottom: 2px solid white;
       opacity: 0.9;
       transition: transform 0.3s ease-in-out;
@@ -61,17 +62,21 @@
       color: red;
   }*/
   .btn-prime {
-      background-color: var(--headerMainColor);
-      color: var( --fontSecudaryColor);
-      border: 2px solid var(--headerMainColor);
-      font-size: 12pt;
-  }
-  @media  screen and (max-width: 450px) {
-      .btn-prime {
-          font-size: 11pt;
-      }
-      
-  }
+    background-color: var(--headerMainColor);
+    color: var( --fontSecudaryColor);
+    border: 2px solid var(--headerMainColor);
+    font-size: 12pt;
+    border-radius: 10px;
+    opacity: .8;
+    width: 7em;
+}
+@media  screen and (max-width: 450px) {
+    .btn-prime {
+        font-size: 11pt;
+        width: 5.4em;
+    }
+    
+}
   .btn-prime:hover {
       color: var(--hoverColor);
   }
@@ -287,6 +292,7 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 50px;
+    color: var(--fontSecudaryColor);
   }
   .clients-image {
     width: 20em;

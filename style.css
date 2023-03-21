@@ -20,6 +20,8 @@ body {
     cursor: url(./images/cursor1.cur),default;
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
+    background-image: url(./headerBackground.gif);
+   
 }
 p {
   font-size: 14pt;
@@ -39,9 +41,9 @@ header {
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    background-color: #0e0149;
+    background-image: url(./headerBackground.gif);
     border-bottom: 2px solid white;
-    opacity: 0.9;
+    opacity: 1;
     transition: transform 0.3s ease-in-out;
 }
 .hidden {
@@ -75,15 +77,20 @@ button {
     color: var( --fontSecudaryColor);
     border: 2px solid var(--headerMainColor);
     font-size: 12pt;
+    border-radius: 10px;
+    opacity: .8;
+    width: 7em;
 }
 @media  screen and (max-width: 450px) {
     .btn-prime {
         font-size: 11pt;
+        width: 5.4em;
     }
     
 }
 .btn-prime:hover {
     color: var(--hoverColor);
+    font-weight: 600;
 }
 .btn-prime::after {
     content: '';
@@ -96,6 +103,7 @@ button {
   
   .btn-prime:hover::after {
     width: 100%;
+    
   }
   main {
     padding-top: 6em;
@@ -171,7 +179,7 @@ button {
   background-color: var(--cardColor);
   border-radius: 20px;
   margin-bottom: 50px;
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
 }
 .visao {
   display: flex;
@@ -183,7 +191,7 @@ button {
   background-color: var(--cardColor);
   border-radius: 20px;
   margin-bottom: 50px;
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
 }
 .valores {
   display: flex;
@@ -194,7 +202,7 @@ button {
   border-left: 1px solid var(--borderColor);
   background-color: var(--cardColor);
   border-radius: 20px;
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
 }
 .quemsou {
     display: flex;
@@ -205,8 +213,8 @@ button {
     border-top: 4px solid var(--headerMainColor);
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
-    background-color: var(--cardColor);
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    background-image: url(./headerBackground.gif);
+    box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 100px;
     width: 90%;
     margin-left: 4em;
@@ -219,7 +227,7 @@ button {
   border-bottom: 4px solid var(--headerMainColor);
   border-left: 1px solid var(--borderColor);
   background-color: var(--cardColor);
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
   border-radius: 50px 20px;
   width: 95%;
   margin-bottom: 60px;
@@ -235,7 +243,7 @@ button {
         gap: 15px;
         background-color: var(--cardColor);
         border-radius: 20px;
-        box-shadow: 10px 10px 5px var(--shadowColor);
+        box-shadow: 5px 5px 5px var(--shadowColor);
         border-top: 4px solid var(--headerMainColor);
         border-bottom: 4px solid var(--headerMainColor);
         border-left: 1px solid var(--borderColor);
@@ -263,7 +271,7 @@ button {
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
     background-color: var(--cardColor);
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 30px;
 
 }
@@ -288,11 +296,13 @@ button {
   .btn-card {
     background-color: var(--hoverColor);
     border: 3px solid var(--headerMainColor);
+    border-bottom: 10px solid var(--borderColor);
     width: 20em;
     height: 3em;
     border-radius: 50px 20px;
     margin-bottom: 30px;
     font-weight: 700;
+    transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card {
@@ -308,6 +318,7 @@ button {
   .btn-card:hover {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
+    border-bottom: 3px solid var(--borderColor);
   }
   .service-video {
     display: grid;
@@ -345,7 +356,7 @@ button {
   width: 20em;
   height: 20em;
   border-radius: 50px;
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
 }
 .card01-body {
   display: flex;
@@ -360,7 +371,7 @@ button {
   width: 20em;
   height: 20em;
   border-radius: 50px;
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
 }
 .card02-body {
   display: flex;
@@ -375,7 +386,7 @@ button {
   width: 20em;
   height: 20em;
   border-radius: 50px;
-  box-shadow: 10px 10px 5px var(--shadowColor);
+  box-shadow: 5px 5px 5px var(--shadowColor);
 }
 .card03-body {
   display: flex;
@@ -407,17 +418,19 @@ button {
     justify-content: center;
     flex-direction: row;
     gap: 30px;
-    background-color: var(--cardColor);
+
     border-radius: 20px;
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    box-shadow: 5px 5px 5px var(--shadowColor);
     width: 90%;
     margin-left: 4em;
     border-top: 4px solid var(--headerMainColor);
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
+    background-image: url(./headerBackground.gif);
 }
 .service-body {
   padding: 10px;
+  color:var(--fontSecudaryColor);
 }
 .service-image {
     width: 20em;
@@ -465,10 +478,12 @@ button {
 .btn-card-service {
     background-color: var(--hoverColor);
     border: 3px solid var(--headerMainColor);
+    border-bottom: 10px solid var(--borderColor);
     width: 20em;
     height: 3em;
     border-radius: 50px 20px;
     font-weight: 700;
+    transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-service {
@@ -483,6 +498,7 @@ button {
   .btn-card-service:hover {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
+    border-bottom: 3px solid var(--borderColor);
   }
   .project-card-title {
     display: flex;
@@ -510,11 +526,13 @@ button {
 .btn-card-project {
     background-color: var(--hoverColor);
     border: 3px solid var(--headerMainColor);
+    border-bottom: 10px solid var(--borderColor);
     width: 40em;
     height: 3em;
     border-radius: 50px 20px;
     margin-top: 10px;
     font-weight: 700;
+    transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-project {
@@ -529,6 +547,7 @@ button {
   .btn-card-project:hover {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
+    border-bottom: 3px solid var(--borderColor);
   }
 
 
@@ -560,11 +579,13 @@ button {
 .btn-card-partner {
     background-color: var(--hoverColor);
     border: 3px solid var(--headerMainColor);
+    border-bottom: 10px solid var(--borderColor);
     width: 40em;
     height: 3em;
     border-radius: 50px 20px;
     margin-top: 10px;
     font-weight: 700;
+    transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-partner {
@@ -578,6 +599,7 @@ button {
   .btn-card-partner:hover {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
+    border-bottom: 3px solid var(--borderColor);
   }
   .guimaraes-logo {
     width: 20em;
@@ -608,7 +630,7 @@ button {
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
     background-color: var(--cardColor);
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    box-shadow: 5px 5px 5px var(--shadowColor);
     margin-bottom: 1em;
     width: 95%;
     margin-left: 1.5em;
@@ -617,7 +639,7 @@ button {
     border: 3px solid black;
    width: 5em;
    border-radius: 10px;
-   box-shadow: 5px 5px 0px var(--borderColor);
+   box-shadow: 5px 5px 5px var(--borderColor);
   }
   @media screen and (max-width: 450px) {
     .contact-container {
