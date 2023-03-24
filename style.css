@@ -204,6 +204,24 @@ button {
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--shadowColor);
 }
+.main-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6em;
+  margin-top: 7em;
+  border-radius: 50px;
+  width: 80em;
+  box-shadow:  5px 5px 5px var(--shadowColor);
+}
+@media screen and (max-width: 450px) {
+  .main-video {
+    width: 25em;
+    margin-left: .2em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+}
 .quemsou {
     display: flex;
     align-items: center;

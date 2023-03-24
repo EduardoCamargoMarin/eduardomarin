@@ -73,7 +73,7 @@
 @media  screen and (max-width: 450px) {
     .btn-prime {
         font-size: 11pt;
-        width: 5.4em;
+        width: 10em;
     }
     
 }
@@ -107,11 +107,12 @@
     .item {
       border-top: 4px solid var(--borderColor);
       border-left: 1px solid var(--borderColor);
-      background-color: var(--cardColor);
+      background-image: url(./headerBackground.gif);
       box-shadow: 10px 10px 5px var(--shadowColor);
       border-radius: 10px;
       padding: 10px;
       margin: 40px;
+      color: var(--fontSecudaryColor);
     }
     .btn-card {
       background-color: var(--hoverColor);
@@ -131,7 +132,7 @@
   .arrow-image {
   visibility: hidden;
   border-radius: 100px;
-  z-index: -10;
+  z-index: 1;
   }
   .image-card {
     flex-wrap: wrap;

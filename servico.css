@@ -73,7 +73,7 @@ button {
 @media  screen and (max-width: 450px) {
   .btn-prime {
       font-size: 11pt;
-      width: 5.4em;
+      width: 10em;
   }
   
 }
@@ -115,6 +115,7 @@ button {
       width: 25em;
       margin-left: .2em;
       margin-top: 3em;
+      margin-bottom: 5em;
     }
   }
   .container {
@@ -150,7 +151,7 @@ display: none;
 .arrow-image {
 visibility: hidden;
 border-radius: 100px;
-z-index: -10;
+z-index: 1;
 }
 .image-card {
   flex-wrap: wrap;
