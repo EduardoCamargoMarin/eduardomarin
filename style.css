@@ -512,7 +512,7 @@ button {
         width: 20em;
         height: auto;
         border-radius: 50px 20px;
-        margin-bottom: 150px;
+        margin-bottom: 15px;
       }
   }
   .btn-card-service:hover {
@@ -611,7 +611,7 @@ button {
     .btn-card-partner {
         background-color: var(--hoverColor);
         border: 3px solid var(--headerMainColor);
-        width: 25em;
+        width: 20em;
         height: auto;
         border-radius: 50px 20px;
       }
