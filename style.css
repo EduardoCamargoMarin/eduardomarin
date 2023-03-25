@@ -291,10 +291,8 @@ button {
     background-color: var(--cardColor);
     box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 30px;
+   
 
-}
-.cracha-frente:hover {
-  transform:rotateY(180deg) ;
 }
 @media screen and (max-width: 450px){
    .cracha-frente {
@@ -302,7 +300,11 @@ button {
     border-radius: 10px;
     margin-left: -1.7em;
     width: 15em;
+    transition: 2s;
    }
+   .cracha-frente:hover {
+    transform:rotateY(180deg) ;
+  }
   }
   .btn-container {
     display: flex;
