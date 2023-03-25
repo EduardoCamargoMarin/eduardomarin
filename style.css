@@ -56,30 +56,41 @@ button {
     width: 20em;
     margin-bottom: 15px;
 }
-/*.return {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius:100px;
-    width: 5em;
-    height: 5em;
-    background-color: var(--btnPressColor) ;
-    opacity: 0.7;
-    position: absolute;
-    
+.eva {
+  margin-left: 1em;
+  position: fixed;
 }
-.return:hover {
-    color: red;
-}*/
+.eva-icon {
+  border-radius: 100em;
+  width: 7em;
+animation: neon 1s ease-in-out infinite;
+}
+@keyframes neon {
+  0% {
+    box-shadow:  2px 2px 30px var(--hoverColor);
+  }
+  50% {
+    box-shadow:  2px 2px 30px var(--fontSecudaryColor);
+  }
+  100% {
+    box-shadow:  2px 2px 30px var(--hoverColor);
+  }
+}
+@media  screen and (max-width: 450px) {
+  .eva-icon {
+    margin-top: 10em;
+    width: 4em;
+  }
+}
+
 .btn-prime {
     background-color: var(--headerMainColor);
     color: var( --fontSecudaryColor);
     border: 2px solid var(--headerMainColor);
     font-size: 12pt;
     border-radius: 10px;
-    opacity: .8;
-    width: 7em;
+    width: 10em;
+    transition: .2s;
 }
 @media  screen and (max-width: 450px) {
     .btn-prime {
@@ -89,15 +100,18 @@ button {
     
 }
 .btn-prime:hover {
-    color: var(--hoverColor);
+    color: var(--fontMainColor);
     font-weight: 600;
+    background-color: var(--hoverColor);
+
+
 }
 .btn-prime::after {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    background:var(--hoverColor); /* Parametrizável*/
+    height: 2.5px;
+    background:var(--borderColor); /* Parametrizável*/
     transition: width .15s ease-in;
   }
   

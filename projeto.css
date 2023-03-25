@@ -32,7 +32,7 @@
       width: 100%;
        background-image: url(./headerBackground.gif);
       border-bottom: 2px solid white;
-      opacity: 0.9;
+      opacity: 1;
       transition: transform 0.3s ease-in-out;
   }
   .hidden {
@@ -68,26 +68,32 @@
     font-size: 12pt;
     border-radius: 10px;
     opacity: .8;
-    width: 7em;
+    width: 10em;
 }
 @media  screen and (max-width: 450px) {
     .btn-prime {
         font-size: 11pt;
         width: 10em;
+        background-color: var(--headerMainColor);
     }
     
 }
-  .btn-prime:hover {
-      color: var(--hoverColor);
-  }
-  .btn-prime::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background:var(--hoverColor); /* Parametrizável*/
-      transition: width .15s ease-in;
-    }
+.btn-prime:hover {
+  color: var(--fontMainColor);
+  font-weight: 600;
+  background-color: var(--hoverColor);
+
+
+}
+.btn-prime::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background:var(--borderColor); /* Parametrizável*/
+  transition: width .15s ease-in;
+}
+
     
     .btn-prime:hover::after {
       width: 100%;
