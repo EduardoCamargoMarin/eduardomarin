@@ -20,6 +20,41 @@
     </nav>
 </header>
 <main>
+  <div class="eva">
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">
+          EVA - Inicializando sistema principal - Ativando modo "Assistente" -  Bem vindos!
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Eu sou uma inteligência artificial chamada EVA. Eu estou em desenvolvimento pelo meu criador.</p>
+          <p>Mas posso providênciar informações limitadas para você. Qual informação você procura?</p>  
+        <details>
+          <summary>Me fale um pouco de você</summary>
+          <p>Me chamo EVA</p>
+        </details>
+        <details>
+          <summary>Quem é o seu criador?</summary>
+          <p>Me chamo EVA</p>
+        </details>
+        <details>
+          <summary>Preciso de um tour pelo site</summary>
+          <p>Me chamo EVA</p>
+        </details>
+      </div>
+    </div>
+        <button class=" btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+          <img id="evaOnline" class="eva-icon" src="./EVA/eva.png" alt="">
+          <audio id="evaMainAudio" src="./EVA/evaContract.mp3"></audio>
+        </button>
+      </div>
+        <button class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+          <img id="evaOnline" class="eva-icon" src="./EVA/EvaVoice.aac" alt="">
+          <audio id="evaMainAudio" src="./EVA/eva.mpeg"></audio>
+        </button>
+      </div>
   <div id="template">
     <img class="intro-video" src="./contractIntroVideo.gif" alt="">
   </div>
@@ -63,6 +98,7 @@
   </div>
 </footer>
 
+<script src="./code/EVA/evaMainFunction.js"></script>
 <script src="./code/header.js"></script>
 <script src="./code/titleTab.js"></script>
 </body>

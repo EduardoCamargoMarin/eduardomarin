@@ -23,44 +23,61 @@ body {
     background-image: url(./headerBackground.gif);
 }
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: fixed;
-    width: 100%;
-     background-image: url(./headerBackground.gif);
-    border-bottom: 2px solid white;
-    opacity: 0.9;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  background-image: url(./headerBackground.gif);
+  border-bottom: 2px solid white;
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
 }
 .hidden {
-  transform: translateY(-100px);
+transform: translateY(-100px);
 }
 button {
-    cursor: url(./images/cursor3.cur),pointer !important;
+  cursor: url(./images/cursor3.cur),pointer !important;
 }
 .prime-logo {
-    width: 20em;
-    margin-bottom: 15px;
+  width: 20em;
+  margin-bottom: 15px;
 }
-/*.return {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    border: 1px solid white;
-    border-radius:100px;
-    width: 5em;
-    height: 5em;
-    background-color: var(--btnPressColor) ;
-    opacity: 0.7;
-    position: absolute;
-    
+.eva {
+margin-left: 1em;
+position: fixed;
 }
-.return:hover {
-    color: red;
-}*/
+.eva-icon {
+border-radius: 100em;
+width: 7em;
+animation: neon 1s ease-in-out infinite;
+cursor: url(./images/cursor3.cur),pointer !important;
+}
+@keyframes neon {
+0% {
+  box-shadow:  2px 2px 30px var(--hoverColor);
+}
+50% {
+  box-shadow:  2px 2px 30px var(--fontSecudaryColor);
+}
+100% {
+  box-shadow:  2px 2px 30px var(--hoverColor);
+}
+}
+@media  screen and (max-width: 450px) {
+.eva-icon {
+  width: 4em;
+}
+}
+.eva-icon:hover {
+border: 4px solid var(--hoverColor);
+}
+.btn-primary {
+border-radius: 100em;
+}
+
 .btn-prime {
   background-color: var(--headerMainColor);
   color: var( --fontSecudaryColor);
@@ -108,7 +125,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 6em;
+    margin-left: 2em;
     margin-top: 2em;
     border-radius: 50px;
     width: 80em;
