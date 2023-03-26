@@ -89,6 +89,24 @@ button {
 .btn-primary {
   border-radius: 100em;
 }
+details {
+  width: 70em;
+}
+.offcanvas-header {
+  background-color: var(--cardColor);
+  color: var(--fontMainColor);
+}
+.offcanvas-body {
+ background-color: var(--headerMainColor);
+ color: var(--fontSecudaryColor);
+}
+.btn-close {
+  background-color: red;
+}
+pre {
+  font-weight: 900;
+  line-height: 3em;
+}
 .btn-prime {
   background-color: var(--headerMainColor);
   color: var( --fontSecudaryColor);
@@ -198,7 +216,7 @@ box-shadow: 5px 5px 5px var(--shadowColor);
 display: flex;
 align-items: center;
 justify-content: center;
-margin-left: 6em;
+margin-left: 2em;
 margin-top: 7em;
 border-radius: 50px;
 width: 80em;

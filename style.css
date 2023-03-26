@@ -88,6 +88,51 @@ button {
 .btn-primary {
   border-radius: 100em;
 }
+details {
+  width: 20em;
+}
+summary {
+  font-weight: 900;
+}
+.offcanvas-header {
+  background-color: var(--cardColor);
+  color: var(--fontMainColor);
+  box-shadow: inset 4px 4px 2px var(--borderColor);
+}
+.offcanvas-body {
+ background-image: url(./headerBackground.gif);
+ color: var(--fontSecudaryColor);
+}
+.btn-close {
+  background-color: red;
+}
+.eva-info {
+  background-image: url(./headerBackground.gif);
+  border-radius: 50px 20px;
+  width: 75em;
+  padding: 1em;
+  color: var(--fontSecudaryColor);
+  box-shadow: 3px 3px 5px var(--shadowColor);
+  border-top: 4px solid var(--borderColor);
+}
+@media screen and (max-width:450px){
+  .offcanvas-header {
+    background-color: var(--cardColor);
+    color: var(--fontMainColor);
+  }
+  .offcanvas-body {
+   background-color: var(--headerMainColor);
+   color: var(--fontSecudaryColor);
+
+  }
+  .btn-close {
+    background-color: red;
+  }
+  .eva-info {
+    width: 24em;
+  }
+  
+}
 
 .btn-prime {
     background-color: var(--headerMainColor);
@@ -230,7 +275,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 6em;
+  margin-left: 2em;
   margin-top: 7em;
   border-radius: 50px;
   width: 80em;

@@ -78,6 +78,24 @@
   .btn-primary {
     border-radius: 100em;
   }
+  details {
+    width: 70em;
+  }
+  .offcanvas-header {
+    background-color: var(--cardColor);
+    color: var(--fontMainColor);
+  }
+  .offcanvas-body {
+   background-color: var(--headerMainColor);
+   color: var(--fontSecudaryColor);
+  }
+  .btn-close {
+    background-color: red;
+  }
+  pre {
+    font-weight: 900;
+    line-height: 3em;
+  }
   .btn-prime {
     background-color: var(--headerMainColor);
     color: var( --fontSecudaryColor);
