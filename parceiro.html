@@ -24,7 +24,7 @@
     <div  style="height: 50em;" class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasTopLabel">
-         Inicializando sistema principal. Ativando modo "Assistente" Bem vindos!
+         Inicializando sistema principal. Ativando modo "Assistente"
         </h5>
         <button type="button" id="shutdown" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
           <audio id="shutdownAudio" src="./EVA/shuttingDown.mp3"></audio>
@@ -35,46 +35,24 @@
           <p>Mas posso providênciar informações limitadas para você. Qual informação você procura?</p>  
         <details>
           <summary id="whoAmI">
-            Quem é você?
-            <audio id="whoAmIAudio" src="./EVA/whoAmI.mp3"></audio>
+            Beneficios da parceria
+            <audio id="whoAmIAudio" src="./EVA/partnerBenefit.mp3"></audio>
           </summary>
-          <pre>
-            Eu sou a EVA, eu fui desenvolvida para auxíliar viajantes em suas jornadas para descobrirem os seus objetivos.
-            Eu fui implantada nesse ambiente para entender as necessidades novos viajantes, para que eu possa aprimorar
-            minhas habilidades como uma IA. Eu espero que possamos nos tornar parceiros durante essa jornada, porquê eu estou
-            muito contente em te conhecer.</pre> 
+          <div class="eva-info">
+            <p>
+              Esses são os beneficios quando se torna um parceiro: Seu logo ficará visível para todos os viajantes - Quando tivermos uma oportunidade, vamos falar com outros viajantes sobre o seu trabalho e recomendar sua experiência profissional para o projeto deles - 
+            Se alguem entrar em contato conosco e dizerem que foi você quem nos recomendou e assinarem nosso contrato, você irá receber uma 
+          comissão de 10% sobre o pagamento final do orçamento.</p>
+          </div>
+     
        
-        </details>
-        <details>
-          <summary id="creator">
-            Quem é o seu criador?
-            <audio id="creatorAudio" src="./EVA/creator.mp3"></audio>
-          </summary>
-          <pre>
-            Meu criador tem a identificação de <strong>Eduardo Marin</strong>. Ele é um desenvolvedor web e um entusiasta
-            em IA. o sistema principal dele consiste em desenvolver novos websites, aprimorar seus conhecimentos em 
-            implatação de IA e desenvolvedor novos protótipos.
-          </pre>
-        </details>
-        <details>
-          <summary id="tour">
-            Preciso de um tour pelo site.
-            <audio id="tourAudio" src="./EVA/tour.mp3"></audio>
-          </summary>
-          <pre>
-            Como quiser viajante.
-            Nesse website, você escolher entre navegar ou comprar templates para websites para os seus objetivos
-            pessoais ou profissionais. Não só isso, como também, você pode escolher adquirir as habilidades do criador como um
-            desenvolvedor para auxíliar você em seus projetos. E finalmente, você pode se conectar com nós, se tornando um parceiro.
-            Toda essa informaçção você consegue encontrar durante a sua visita pelo nosso site. Eu espero que você tenha uma ótimo experiência.
-            Nós estaremos aqui se precisar.
-          </pre>
         </details>
       </div>
     </div>
         <button class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
           <img id="evaOnline" class="eva-icon" src="./EVA/eva.png" alt="">
           <audio id="evaMainAudio" src="./EVA/evaPartner.mp3"></audio>
+          <audio id="evaMeetAudio" src="./EVA/System.mp3"></audio>
         </button>
         
       </div>

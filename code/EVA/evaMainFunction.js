@@ -6,6 +6,7 @@ const meetAudio = document.getElementById('evaMeetAudio')
 evaOnline.addEventListener("load", () => {
     mainAudio.play()
 })
+
 //EVA welcome first meeting
 evaOnline.addEventListener("click", () => {
     meetAudio.play()
@@ -41,6 +42,17 @@ const evaAnswerTour = document.getElementById('tour')
 evaAnswerTour.addEventListener("click", () => {
     tourAudio.play()
 })
+
+const sisterAudio = document.getElementById('sisterAudio')
+const evaAnswerSister = document.getElementById('sister')
+
+evaAnswerSister.addEventListener("click", () => {
+    sisterAudio.play()
+})
+
+
+
+
 
 
 

@@ -59,12 +59,14 @@ button {
 .eva {
   margin-left: 1em;
   position: fixed;
+  margin-top: -4em;
 }
 .eva-icon {
   border-radius: 100em;
   width: 7em;
   animation: neon 1s ease-in-out infinite;
   cursor: url(./images/cursor3.cur),pointer !important;
+ 
 }
 @keyframes neon {
   0% {
@@ -87,6 +89,7 @@ button {
 }
 .btn-primary {
   border-radius: 100em;
+  margin-top: 4em;
 }
 details {
   width: 20em;
@@ -367,11 +370,7 @@ summary {
     border-radius: 10px;
     margin-left: -1.7em;
     width: 15em;
-    transition: 2s;
    }
-   .cracha-frente:hover {
-    transform:rotateY(180deg) ;
-  }
   }
   .btn-container {
     display: flex;
