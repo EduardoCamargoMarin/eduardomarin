@@ -56,6 +56,16 @@ button {
     width: 20em;
     margin-bottom: 15px;
 }
+summary{
+  background-image: linear-gradient(black, blue, black);
+  border-radius: 50px 20px;
+  height: 3em;
+  padding: 10px;
+}
+summary:hover {
+  color: var(--hoverColor);
+  border: 3px solid var(--borderColor);
+}
 .eva {
   margin-left: 1em;
   position: fixed;
@@ -67,6 +77,10 @@ button {
   animation: neon 1s ease-in-out infinite;
   cursor: url(./images/cursor3.cur),pointer !important;
  
+}
+.eva-icon-info {
+  width: 4em;
+  cursor: url(./images/cursor3.cur),pointer !important;
 }
 @keyframes neon {
   0% {
@@ -98,19 +112,16 @@ summary {
   font-weight: 900;
 }
 .offcanvas-header {
-  background-color: var(--cardColor);
-  color: var(--fontMainColor);
+  background-image: linear-gradient(black, blue, black);
+  color: var(--fontSecudaryColor);
   box-shadow: inset 4px 4px 2px var(--borderColor);
 }
 .offcanvas-body {
- background-image: url(./headerBackground.gif);
+ background-image: url(./EVA/EvaBackground.gif);
  color: var(--fontSecudaryColor);
 }
-.btn-close {
-  background-color: red;
-}
 .eva-info {
-  background-image: url(./headerBackground.gif);
+  background-image: linear-gradient(black, blue, black);
   border-radius: 50px 20px;
   width: 75em;
   padding: 1em;

@@ -49,10 +49,3 @@ const evaAnswerSister = document.getElementById('sister')
 evaAnswerSister.addEventListener("click", () => {
     sisterAudio.play()
 })
-
-
-
-
-
-
-
