@@ -73,9 +73,10 @@ summary:hover {
 }
 .eva-icon {
   border-radius: 100em;
-  width: 7em;
+  width: 5em;
   animation: neon 1s ease-in-out infinite;
   cursor: url(./images/cursor3.cur),pointer !important;
+  z-index: 10;
  
 }
 .eva-icon-info {
@@ -111,6 +112,9 @@ details {
 summary {
   font-weight: 900;
 }
+.offcanvas-title {
+  color: var(--fontSecudaryColor);
+}
 .offcanvas-header {
   background-image: linear-gradient(black, blue, black);
   color: var(--fontSecudaryColor);
@@ -129,6 +133,16 @@ summary {
   box-shadow: 3px 3px 5px var(--shadowColor);
   border-top: 4px solid var(--borderColor);
 }
+.sisters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sister {
+  width: 5em;
+  border-radius: 100px;
+
+}
 @media screen and (max-width:450px){
   .offcanvas-header {
     background-color: var(--cardColor);
@@ -145,6 +159,19 @@ summary {
   .eva-info {
     width: 24em;
   }
+  .sisters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.sister {
+  width: 6em;
+  border-radius: 100px;
+  margin: 10px;
+
+}
   
 }
 

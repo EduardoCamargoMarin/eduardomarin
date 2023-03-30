@@ -24,14 +24,14 @@ body {
  
 }
 p {
-font-size: 14pt;
-line-height: 35px;
+  font-size: 14pt;
+  line-height: 35px;
 }
 @media screen and (max-width:450px){
-p {
-  font-size: 12pt;
-  line-height: 30px;
-}
+  p {
+    font-size: 12pt;
+    line-height: 30px;
+  }
 }
 header {
   display: flex;
@@ -56,17 +56,32 @@ button {
   width: 20em;
   margin-bottom: 15px;
 }
+summary{
+  background-image: linear-gradient(black, blue, black);
+  border-radius: 50px 20px;
+  height: 3em;
+  padding: 10px;
+}
+summary:hover {
+  color: var(--hoverColor);
+  border: 3px solid var(--borderColor);
+}
 .eva {
   margin-left: 1em;
   position: fixed;
-  z-index: 10;
+  margin-top: -4em;
 }
 .eva-icon {
   border-radius: 100em;
-  width: 7em;
+  width: 5em;
   animation: neon 1s ease-in-out infinite;
   cursor: url(./images/cursor3.cur),pointer !important;
   z-index: 10;
+ 
+}
+.eva-icon-info {
+  width: 4em;
+  cursor: url(./images/cursor3.cur),pointer !important;
 }
 @keyframes neon {
   0% {
@@ -89,33 +104,44 @@ button {
 }
 .btn-primary {
   border-radius: 100em;
+  margin-top: 4em;
 }
 details {
-  width: 20em;
+  width: 21em;
 }
 summary {
   font-weight: 900;
 }
+.offcanvas-title {
+  color: var(--fontSecudaryColor);
+}
 .offcanvas-header {
-  background-color: var(--cardColor);
-  color: var(--fontMainColor);
+  background-image: linear-gradient(black, blue, black);
+  color: var(--fontSecudaryColor);
   box-shadow: inset 4px 4px 2px var(--borderColor);
 }
 .offcanvas-body {
- background-image: url(./headerBackground.gif);
+ background-image: url(./EVA/EvaBackground.gif);
  color: var(--fontSecudaryColor);
 }
-.btn-close {
-  background-color: red;
-}
 .eva-info {
-  background-image: url(./headerBackground.gif);
+  background-image: linear-gradient(black, blue, black);
   border-radius: 50px 20px;
   width: 75em;
   padding: 1em;
   color: var(--fontSecudaryColor);
   box-shadow: 3px 3px 5px var(--shadowColor);
   border-top: 4px solid var(--borderColor);
+}
+.sisters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sister {
+  width: 5em;
+  border-radius: 100px;
+
 }
 @media screen and (max-width:450px){
   .offcanvas-header {
@@ -133,6 +159,19 @@ summary {
   .eva-info {
     width: 24em;
   }
+  .sisters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.sister {
+  width: 6em;
+  border-radius: 100px;
+  margin: 10px;
+
+}
   
 }
 .btn-prime {
