@@ -219,6 +219,25 @@
           padding-top: 7.6em;
       }
     }
+    .main-video {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6em;
+      margin-top: 2em;
+      border-radius: 50px;
+      width: 70em;
+      box-shadow:  5px 5px 5px var(--shadowColor);
+    }
+    @media screen and (max-width: 450px) {
+      .main-video {
+        width: 25em;
+        margin-left: .2em;
+        margin-top: 10em;
+        margin-bottom: 5em;
+        z-index: -100;
+      }
+    }
     .container {
       display: flex;
       flex-direction: column;

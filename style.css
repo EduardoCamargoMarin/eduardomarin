@@ -119,10 +119,12 @@ summary {
   background-image: linear-gradient(black, blue, black);
   color: var(--fontSecudaryColor);
   box-shadow: inset 4px 4px 2px var(--borderColor);
+  z-index: 10;
 }
 .offcanvas-body {
  background-image: url(./EVA/EvaBackground.gif);
  color: var(--fontSecudaryColor);
+ z-index: 10;
 }
 .eva-info {
   background-image: linear-gradient(black, blue, black);
