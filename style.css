@@ -20,7 +20,7 @@ body {
     cursor: url(./images/cursor1.cur),default;
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
-    background-image: linear-gradient(90deg, #000,#05013d,#000) !important;
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
    
 }
 p {
@@ -148,7 +148,7 @@ summary {
 }
 @media screen and (max-width:450px){
   .offcanvas-header {
-    background-color: var(--cardColor);
+    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     color: var(--fontMainColor);
   }
   .offcanvas-body {
@@ -288,9 +288,9 @@ summary {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 4px solid var(--borderColor);
-  border-left: 1px solid var(--borderColor);
-  background-color: var(--cardColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
@@ -300,9 +300,9 @@ summary {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 4px solid var(--borderColor);
-  border-left: 1px solid var(--borderColor);
-  background-color: var(--cardColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
@@ -312,11 +312,12 @@ summary {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 4px solid var(--borderColor);
-  border-left: 1px solid var(--borderColor);
-  background-color: var(--cardColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--shadowColor);
+  padding: 5px;
 }
 .main-video {
   display: flex;
@@ -342,8 +343,8 @@ summary {
     justify-content:center ;
     flex-direction: column;
     gap: 15px;
-    border-top: 4px solid var(--headerMainColor);
-    border-bottom: 4px solid var(--headerMainColor);
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
     background-image: url(./headerBackground.gif);
     box-shadow: 5px 5px 5px var(--shadowColor);
@@ -355,10 +356,10 @@ summary {
 }
 .quemsou-body {
   padding: 40px;
-  border-top: 4px solid var(--headerMainColor);
-  border-bottom: 4px solid var(--headerMainColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
   border-left: 1px solid var(--borderColor);
-  background-color: var(--cardColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-radius: 50px 20px;
   width: 95%;
@@ -373,11 +374,11 @@ summary {
         justify-content:center ;
         flex-direction: column;
         gap: 15px;
-        background-color: var(--cardColor);
+        background-image: url(./headerBackground.gif);
         border-radius: 20px;
         box-shadow: 5px 5px 5px var(--shadowColor);
-        border-top: 4px solid var(--headerMainColor);
-        border-bottom: 4px solid var(--headerMainColor);
+        border-top: 10px solid var(--borderColor);
+        border-bottom: 10px solid var(--borderColor);
         border-left: 1px solid var(--borderColor);
         border-radius: 20px;
         margin-top: 40px;
@@ -402,7 +403,7 @@ summary {
     border-top: 4px solid var(--headerMainColor);
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
-    background-color: var(--cardColor);
+    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 30px;
    
@@ -473,6 +474,7 @@ summary {
   margin-top: 100px;
   margin-bottom: 100px;
   line-height: 3em;
+  
 }
 @media screen and (max-width: 450px) {
   .service-steps {
@@ -481,12 +483,14 @@ summary {
   }
 }
 .step-card01 {
-  background-color: var(--cardColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
 }
 .card01-body {
   display: flex;
@@ -496,12 +500,14 @@ summary {
   padding: 20px;
 }
 .step-card02 {
-  background-color: var(--cardColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
 }
 .card02-body {
   display: flex;
@@ -511,12 +517,14 @@ summary {
   padding: 20px;
 }
 .step-card03 {
-  background-color: var(--cardColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
 }
 .card03-body {
   display: flex;
@@ -530,15 +538,21 @@ summary {
     margin-top: 30px;
     width: 15em;
     height: 15em;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
   }
   .step-card02 {
     width: 15em;
     height: 15em;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
   }
   .step-card03 {
     margin-bottom: 30px;
     width: 15em;
     height: 15em;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
   }
 }
 .service-container {
@@ -546,21 +560,32 @@ summary {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
-
     border-radius: 20px;
     box-shadow: 5px 5px 5px var(--shadowColor);
     width: 90%;
     margin-left: 4em;
-    border-top: 4px solid var(--headerMainColor);
-    border-bottom: 4px solid var(--headerMainColor);
+    border-top: 10px solid var(--borderColor);
+    border-left: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
     background-image: url(./headerBackground.gif);
+    padding: 30px;
 }
 .service-body {
-  padding: 10px;
-  color:var(--fontSecudaryColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  color:var(--fontMainColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  border-radius: 50px ;
+  margin-right: 10px;
+  box-shadow: 4px 4px 3px var(--shadowColor);
+  border-top: 10px solid var(--borderColor);
+  border-left: 2px solid var(--borderColor);
+  margin-bottom: 20px;
 }
 .service-image {
     width: 20em;
@@ -575,6 +600,7 @@ summary {
         border-radius: 50px;
         margin-left: 1.2em;
         width: 90%;
+        padding: 0;
     }
     .service-image {
         display: flex;
@@ -586,6 +612,7 @@ summary {
     }
     .service-body {
       margin-left: 10px;
+      padding: 15px;
     }
 }
 .service-image2 {
@@ -759,7 +786,7 @@ summary {
     border-top: 4px solid var(--headerMainColor);
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
-    background-color: var(--cardColor);
+    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     box-shadow: 5px 5px 5px var(--shadowColor);
     margin-bottom: 1em;
     width: 95%;

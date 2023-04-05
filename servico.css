@@ -20,7 +20,7 @@ body {
     cursor: url(./images/cursor1.cur),default;
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
-    background-image: linear-gradient(90deg, #000000, #010847, #000000,#000000, #010847, #000000);
+    background-image: linear-gradient(90deg, #000000, #010847, #000000);
 }
 p {
   font-size: 14pt;
@@ -145,7 +145,7 @@ summary {
 }
 @media screen and (max-width:450px){
   .offcanvas-header {
-    background-color: var(--cardColor);
+    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     color: var(--fontMainColor);
   }
   .offcanvas-body {
@@ -362,7 +362,7 @@ z-index: 1;
       scroll-snap-align:start;
       border-top: 4px solid var(--borderColor);
       border-left: 1px solid var(--borderColor);
-      background-color: var(--cardColor);
+      background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
       box-shadow: 10px 10px 5px var(--shadowColor);
       margin:0;
     }
@@ -397,7 +397,7 @@ z-index: 1;
   justify-content: center;
   flex-direction: row;
   gap: 30px;
-  background-color: var(--cardColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   border-radius: 20px;
   box-shadow: 10px 10px 5px var(--shadowColor);
 }
@@ -495,7 +495,7 @@ z-index: 1;
   border-top: 4px solid var(--headerMainColor);
   border-bottom: 4px solid var(--headerMainColor);
   border-left: 1px solid var(--borderColor);
-  background-color: var(--cardColor);
+  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
   box-shadow: 10px 10px 5px var(--shadowColor);
   margin-bottom: 1em;
   width: 95%;
