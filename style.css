@@ -41,7 +41,7 @@ header {
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    background-image: url(./headerBackground.gif);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     border-bottom: 2px solid white;
     opacity: 1;
     transition: transform 0.3s ease-in-out;
@@ -114,7 +114,7 @@ summary {
   font-weight: 900;
 }
 .offcanvas-title {
-  color: var(--fontSecudaryColor);
+  color: var(--fontMainColor);
 }
 .offcanvas-header {
   background-image: linear-gradient(black, blue, black);
@@ -148,8 +148,8 @@ summary {
 }
 @media screen and (max-width:450px){
   .offcanvas-header {
-    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
-    color: var(--fontMainColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+    color: var(--fontSecundaryColor);
   }
   .offcanvas-body {
    background-color: var(--headerMainColor);
@@ -272,6 +272,7 @@ summary {
   margin-top: 50px;
   color: var(--fontMainColor);
   font-weight: 500;
+  padding: 20px;
 }
 .intro-body {
   display: flex;
@@ -279,6 +280,10 @@ summary {
   justify-content: center;
   flex-direction: column;
   padding: 2em;
+  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+  border: 4px solid var(--borderColor);
+  border-radius: 50px;
+
 }
 .text-intro {
  padding-left: 30px;
@@ -290,10 +295,11 @@ summary {
   flex-direction: column;
   border-top: 10px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
+  color: var(--fontSecudaryColor);
 }
 .visao {
   display: flex;
@@ -302,10 +308,11 @@ summary {
   flex-direction: column;
   border-top: 10px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
+  color: var(--fontSecudaryColor);
 }
 .valores {
   display: flex;
@@ -314,27 +321,73 @@ summary {
   flex-direction: column;
   border-top: 10px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  padding: 5px;
+  padding: 10px;
+  color: var(--fontSecudaryColor);
+}
+@media screen and (max-width:450px) {
+  .missao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px var(--shadowColor);
+    color: var(--fontSecudaryColor);
+    padding: 20px;
+  }
+  .visao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px var(--shadowColor);
+    color: var(--fontSecudaryColor);
+    padding: 20px;
+  }
+  .valores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--shadowColor);
+    padding: 10px;
+    color: var(--fontSecudaryColor);
+    padding: 20px;
+  }
+}
+.video-sister {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-video {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2em;
-  margin-top: 7em;
   border-radius: 50px;
-  width: 80em;
+  width: 70em;
   box-shadow:  5px 5px 5px var(--shadowColor);
 }
 @media screen and (max-width: 450px) {
   .main-video {
     width: 25em;
     margin-left: .2em;
-    margin-top: 10em;
-    margin-bottom: 10em;
   }
 }
 .quemsou {
@@ -346,7 +399,7 @@ summary {
     border-top: 10px solid var(--borderColor);
     border-bottom: 10px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
-    background-image: url(./headerBackground.gif);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 100px;
     width: 90%;
@@ -356,14 +409,15 @@ summary {
 }
 .quemsou-body {
   padding: 40px;
-  border-top: 10px solid var(--borderColor);
+  border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
   border-left: 1px solid var(--borderColor);
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-radius: 50px 20px;
   width: 95%;
   margin-bottom: 60px;
+  color: var(--fontSecudaryColor);
   
 }
 
@@ -374,7 +428,7 @@ summary {
         justify-content:center ;
         flex-direction: column;
         gap: 15px;
-        background-image: url(./headerBackground.gif);
+        background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
         border-radius: 20px;
         box-shadow: 5px 5px 5px var(--shadowColor);
         border-top: 10px solid var(--borderColor);
@@ -382,7 +436,7 @@ summary {
         border-left: 1px solid var(--borderColor);
         border-radius: 20px;
         margin-top: 40px;
-        margin-bottom: 250px;
+        margin-bottom: 180px;
         margin-left: 1em;
     }
     .cracha {
@@ -403,7 +457,6 @@ summary {
     border-top: 4px solid var(--headerMainColor);
     border-bottom: 4px solid var(--headerMainColor);
     border-left: 1px solid var(--borderColor);
-    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 30px;
    
@@ -425,8 +478,8 @@ summary {
     margin-left: 3em;
   }
   .btn-card {
-    background-color: var(--hoverColor);
-    border: 3px solid var(--headerMainColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+    border: 3px solid var(--borderColor);
     border-bottom: 10px solid var(--borderColor);
     width: 20em;
     height: 3em;
@@ -437,10 +490,10 @@ summary {
   }
   @media screen and (max-width:450px) {
     .btn-card {
-        background-color: var(--hoverColor);
-        border: 3px solid var(--headerMainColor);
+        background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+        border: 3px solid var(--borderColor);
         width: 20em;
-        height: auto;
+        height: 40px;
         border-radius: 50px 20px;
         margin-left: -7.5em;
         margin-top: 10px;
@@ -448,7 +501,7 @@ summary {
   }
   .btn-card:hover {
     background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
+    color: var(--fontMainColor);
     border-bottom: 3px solid var(--borderColor);
   }
   .service-video {
@@ -474,22 +527,24 @@ summary {
   margin-top: 100px;
   margin-bottom: 100px;
   line-height: 3em;
+  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+  border: 4px solid var(--borderColor);
+  border-radius: 50px;
   
 }
 @media screen and (max-width: 450px) {
   .service-steps {
     line-height: 2em;
-    margin-top: 40px;
   }
 }
 .step-card01 {
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  border-top: 10px solid var(--borderColor);
+  border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
 }
 .card01-body {
@@ -498,15 +553,16 @@ summary {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  color: var(--fontSecudaryColor);
 }
 .step-card02 {
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  border-top: 10px solid var(--borderColor);
+  border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
 }
 .card02-body {
@@ -515,15 +571,16 @@ summary {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  color: var(--fontSecudaryColor);
 }
 .step-card03 {
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  border-top: 10px solid var(--borderColor);
+  border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
 }
 .card03-body {
@@ -532,10 +589,10 @@ summary {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  color: var(--fontSecudaryColor);
 }
 @media screen and (max-width:450px) {
   .step-card01 {
-    margin-top: 30px;
     width: 15em;
     height: 15em;
     border-top: 10px solid var(--borderColor);
@@ -548,7 +605,6 @@ summary {
     border-bottom: 10px solid var(--borderColor);
   }
   .step-card03 {
-    margin-bottom: 30px;
     width: 15em;
     height: 15em;
     border-top: 10px solid var(--borderColor);
@@ -569,7 +625,7 @@ summary {
     border-top: 10px solid var(--borderColor);
     border-left: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
-    background-image: url(./headerBackground.gif);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     padding: 30px;
 }
 .service-body {
@@ -578,14 +634,15 @@ summary {
   flex-direction: column;
   justify-content: center;
   padding: 30px;
-  color:var(--fontMainColor);
-  background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+  color:var(--fontSecudaryColor);
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
   border-radius: 50px ;
   margin-right: 10px;
   box-shadow: 4px 4px 3px var(--shadowColor);
   border-top: 10px solid var(--borderColor);
   border-left: 2px solid var(--borderColor);
   margin-bottom: 20px;
+  padding: 20px;
 }
 .service-image {
     width: 20em;
@@ -608,7 +665,6 @@ summary {
         justify-content: center;
         width: 15em;
         margin-left: 4em;
-        margin-top: 20px;
     }
     .service-body {
       margin-left: 10px;
@@ -616,7 +672,6 @@ summary {
     }
 }
 .service-image2 {
-    margin-top: 20px;
     width: 20em;
     border-radius: 40px;
 }
@@ -629,23 +684,24 @@ summary {
         margin-left: 4em;
     }
     .contract-container {
-      margin-top: 250px;
+      margin-top: 200px;
     }
 }
 .btn-card-service {
-    background-color: var(--hoverColor);
-    border: 3px solid var(--headerMainColor);
-    border-bottom: 10px solid var(--borderColor);
-    width: 20em;
-    height: 3em;
-    border-radius: 50px 20px;
-    font-weight: 700;
-    transition: .5s;
+  background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+  border: 3px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  width: 20em;
+  height: 3em;
+  border-radius: 50px 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-service {
         background-color: var(--hoverColor);
-        border: 3px solid var(--headerMainColor);
+        border: 3px solid var(--borderColor);
         width: 20em;
         height: auto;
         border-radius: 50px 20px;
@@ -656,6 +712,7 @@ summary {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
     border-bottom: 3px solid var(--borderColor);
+    color: var(--fontMainColor);
   }
   .project-card-title {
     display: flex;
@@ -694,7 +751,7 @@ summary {
   @media screen and (max-width:450px) {
     .btn-card-project {
         background-color: var(--hoverColor);
-        border: 3px solid var(--headerMainColor);
+        border: 3px solid var(--borderColor);
         width: 25em;
         height: auto;
         border-radius: 50px 20px;
@@ -730,24 +787,24 @@ summary {
 }
 @media screen and (max-width: 450px) {
     .partner-video {
-        margin-top: 150px;
+        margin-top: 30px;
     }
 }
 .btn-card-partner {
-    background-color: var(--hoverColor);
-    border: 3px solid var(--headerMainColor);
-    border-bottom: 10px solid var(--borderColor);
-    width: 40em;
-    height: 3em;
-    border-radius: 50px 20px;
-    margin-top: 10px;
-    font-weight: 700;
-    transition: .5s;
+  background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+  border: 3px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  width: 20em;
+  height: 3em;
+  border-radius: 50px 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-partner {
         background-color: var(--hoverColor);
-        border: 3px solid var(--headerMainColor);
+        border: 3px solid var(--borderColor);
         width: 20em;
         height: auto;
         border-radius: 50px 20px;
@@ -757,40 +814,24 @@ summary {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
     border-bottom: 3px solid var(--borderColor);
-  }
-  .guimaraes-logo {
-    width: 20em;
-  }
-  @media screen and (max-width: 450px) {
-    .guimaraes-logo {
-        width: 7em;
-    }
-  }
-  .mayara-logo {
-    width: 20em;
-  }
-  @media screen and (max-width: 450px) {
-    .mayara-logo {
-        width: 7em;
-    }
+    color: var(--fontMainColor);
   }
   .contact-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 150px;
-    background-color: var(--headerMainColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     opacity: 0.9;
     border-radius: 50px 20px;
     padding: 10px;
-    border-top: 4px solid var(--headerMainColor);
-    border-bottom: 4px solid var(--headerMainColor);
+    border-top: 4px solid var(--borderColor);
+    border-bottom: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
-    background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
-    box-shadow: 5px 5px 5px var(--shadowColor);
+    box-shadow: 3px 3px 0px var(--shadowColor);
     margin-bottom: 1em;
     width: 95%;
     margin-left: 1.5em;
+    margin-top: 10px;
   }
   .image-contact {
     border: 3px solid black;

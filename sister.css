@@ -218,12 +218,15 @@
           padding-top: 7.6em;
       }
     }
+    .video-sister {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .main-video {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 6em;
-      margin-top: 2em;
       border-radius: 50px;
       width: 70em;
       box-shadow:  5px 5px 5px var(--shadowColor);
@@ -232,8 +235,6 @@
       .main-video {
         width: 25em;
         margin-left: .2em;
-        margin-top: 10em;
-        margin-bottom: 10em;
         z-index: -100;
       }
     }
@@ -257,7 +258,7 @@
     .item {
       border-top: 4px solid var(--borderColor);
       border-left: 1px solid var(--borderColor);
-      background-image: linear-gradient(90deg, #000000, #010847, #000000);
+      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
       box-shadow: 10px 10px 5px var(--shadowColor);
       border-radius: 10px;
       padding: 10px;
@@ -367,7 +368,6 @@
     justify-content: center;
     width: 100%;
     border-radius: 30px;
-    margin-top: 30px;
   }
   .service-container {
     margin-top: 60px;
@@ -457,16 +457,15 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 150px;
-    background-color: var(--headerMainColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     opacity: 0.9;
     border-radius: 50px 20px;
     padding: 10px;
-    border-top: 4px solid var(--headerMainColor);
-    border-bottom: 4px solid var(--headerMainColor);
+    border-top: 4px solid var(--borderColor);
+    border-bottom: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
     background-color: var(--cardColor);
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    box-shadow: 3px 3px 0px var(--shadowColor);
     margin-bottom: 1em;
     width: 95%;
     margin-left: 1.5em;
@@ -496,10 +495,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--cardColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
     border-radius: 50px 20px;
     box-shadow: 3px 3px 3px var(--shadowColor);
-    color: var(--fontMainColor);
+    color: var(--fontSecundaryColor);
     padding: 10px;
     border: 5px solid var(--borderColor);
     border-top: 10px solid var(--borderColor);
@@ -535,7 +534,7 @@
     flex-direction: column;
     border-top: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
-    background-color: var(--cardColor);
+   background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     border-radius: 20px;
     margin-bottom: 50px;
     box-shadow: 5px 5px 5px var(--shadowColor);
@@ -547,7 +546,7 @@
     flex-direction: column;
     border-top: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
-    background-color: var(--cardColor);
+   background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     border-radius: 20px;
     margin-bottom: 50px;
     box-shadow: 5px 5px 5px var(--shadowColor);
@@ -559,7 +558,7 @@
     flex-direction: column;
     border-top: 4px solid var(--borderColor);
     border-left: 1px solid var(--borderColor);
-    background-color: var(--cardColor);
+   background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
     border-radius: 20px;
     box-shadow: 5px 5px 5px var(--shadowColor);
     }

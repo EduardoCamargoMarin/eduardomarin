@@ -247,20 +247,21 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+      background-image: linear-gradient(90deg, #000000,#616161,#000000);
       color: var(--fontMainColor);
       border-radius: 50px 20px;
       box-shadow: 3px 3px 3px var(--shadowColor);
       padding: 10px;
       border: 5px solid var(--borderColor);
       border-top: 10px solid var(--borderColor);
+      color: var(--fontSecudaryColor);
     }
     .item {
-      border-top: 10px solid var(--borderColor);
+      border-top: 4px solid var(--borderColor);
       border-left: 1px solid var(--borderColor);
-      background-image: linear-gradient(90deg, #000000, #010847, #000000);
-      box-shadow: 3px 3px 2px var(--shadowColor);
-      border-radius: 30px;
+      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+      box-shadow: 10px 10px 5px var(--shadowColor);
+      border-radius: 10px;
       padding: 10px;
       margin: 40px;
       color: var(--fontSecudaryColor);
@@ -342,7 +343,7 @@
         scroll-snap-align:start;
         border-top: 4px solid var(--borderColor);
         border-left: 1px solid var(--borderColor);
-        background-image: linear-gradient(90deg, var(--cardColor),var(--backgroundMainColor),var(--cardColor)) ;
+        background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
         box-shadow: 10px 10px 5px var(--shadowColor);
         margin:0;
       }
