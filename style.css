@@ -46,6 +46,7 @@ header {
     opacity: 1;
     transition: transform 0.3s ease-in-out;
 }
+
 .hidden {
   transform: translateY(-100px);
 }
@@ -57,26 +58,32 @@ button {
     margin-bottom: 15px;
 }
 summary{
-  background-image: linear-gradient(black, blue, black);
-  border-radius: 50px 20px;
+  border-radius: 10px 20px 50px;
   height: 3em;
   padding: 10px;
+  border-left: 4px solid #ffffff;
+  color: var(--fontSecudaryColor);
+  transition: .2s;
+  border-left: 4px solid var(--backgroundMainColor);
 }
 summary:hover {
-  color: var(--hoverColor);
-  border: 3px solid var(--borderColor);
+  border-left: 4px solid #00ff2a;
+  margin-left: 1em;
+
 }
 .eva {
-  margin-left: 1em;
+  margin-left: 20em;
   position: fixed;
-  margin-top: -4em;
+  margin-top: -9em;
+  z-index: 10;
 }
+
 .eva-icon {
   border-radius: 100em;
   width: 5em;
   animation: neon 1s ease-in-out infinite;
   cursor: url(./images/cursor3.cur),pointer !important;
-  z-index: 10;
+
  
 }
 .eva-icon-info {
@@ -97,6 +104,7 @@ summary:hover {
 @media  screen and (max-width: 450px) {
   .eva-icon {
     width: 4em;
+    margin-top: em;
   }
 }
 .eva-icon:hover {
@@ -106,7 +114,6 @@ summary:hover {
   border-radius: 100em;
   margin-top: 4em;
 }
-
 details {
   width: 20em;
 }
@@ -114,21 +121,19 @@ summary {
   font-weight: 900;
 }
 .offcanvas-title {
-  color: var(--fontMainColor);
+  color: var(--fontSecudaryColor);
 }
 .offcanvas-header {
-  background-image: linear-gradient(black, blue, black);
-  color: var(--fontSecudaryColor);
+  background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3);
+  color: var(--fontMainColor);
   box-shadow: inset 4px 4px 2px var(--borderColor);
-  z-index: 10;
 }
 .offcanvas-body {
- background-image: url(./EVA/EvaBackground.gif);
+  background-image: linear-gradient(black, #616161, black);
  color: var(--fontSecudaryColor);
- z-index: 10;
 }
 .eva-info {
-  background-image: linear-gradient(black, blue, black);
+  background-image: linear-gradient(black, #616161, black);
   border-radius: 50px 20px;
   width: 75em;
   padding: 1em;
@@ -147,17 +152,22 @@ summary {
 
 }
 @media screen and (max-width:450px){
+  .offcanvas-title {
+    color: var(--fontMainColor);
+    font-weight: 600;
+  }
   .offcanvas-header {
-    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
-    color: var(--fontSecundaryColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3);
+    color: var(--fontMainColor);
   }
   .offcanvas-body {
    background-color: var(--headerMainColor);
-   color: var(--fontSecudaryColor);
-
+   color: var(--fontMainColor);
+   font-weight: 500;
+   background-image: linear-gradient(90deg, #000000,#616161,#000000);
   }
-  .btn-close {
-    background-color: red;
+  .offcanvas-body p {
+    color: var(--fontSecudaryColor);
   }
   .eva-info {
     width: 24em;
@@ -175,32 +185,41 @@ summary {
   margin: 10px;
 
 }
+  
+}
 .btn-primary {
   margin-top: 10em;
 }
   
-}
 
 .btn-prime {
-    background-color: var(--headerMainColor);
-    color: var( --fontSecudaryColor);
-    border: 2px solid var(--headerMainColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    color: var(--fontSecudaryColor);
     font-size: 12pt;
     border-radius: 10px;
     width: 10em;
     transition: .2s;
+    font-weight: 500;
 }
 @media  screen and (max-width: 450px) {
     .btn-prime {
         font-size: 11pt;
         width: 5.4em;
+        
     }
+    .btn-prime:hover {
+      color: var(--fontMainColor);
+      font-weight: 600;
+      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+  
+  
+  }
     
 }
 .btn-prime:hover {
     color: var(--fontMainColor);
     font-weight: 600;
-    background-color: var(--hoverColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
 
 
 }
@@ -209,7 +228,7 @@ summary {
     display: block;
     width: 0;
     height: 2.5px;
-    background:var(--borderColor); /* Parametrizável*/
+    background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3); /* Parametrizável*/
     transition: width .15s ease-in;
   }
   
@@ -477,27 +496,27 @@ summary {
     margin-top: 10px;
     margin-left: 3em;
   }
-  .btn-card {
-    background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-    border: 3px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    width: 20em;
-    height: 3em;
-    border-radius: 50px 20px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    transition: .5s;
-  }
-  @media screen and (max-width:450px) {
+ 
     .btn-card {
         background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-        border: 3px solid var(--borderColor);
+        border-bottom: 10px solid var(--borderColor);
         width: 20em;
         height: 40px;
         border-radius: 50px 20px;
-        margin-left: -7.5em;
         margin-top: 10px;
+        transition: .5s;
+        font-weight: 700;
       }
+  .btn-card:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+    border-bottom: 3px solid var(--borderColor);
+    color: var(--fontMainColor);
+  }
+  @media screen and (max-width:450px) {
+    .btn-card {
+      margin-left: -7.5em;
+    }
   }
   .service-video {
     display: grid;
@@ -692,6 +711,8 @@ summary {
   margin-bottom: 30px;
   font-weight: 700;
   transition: .5s;
+  color: var(--fontMainColor);
+  transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-service {
@@ -700,12 +721,12 @@ summary {
         height: auto;
         border-radius: 50px 20px;
         margin-bottom: 15px;
+        border-bottom: 10px solid var(--borderColor);
       }
   }
   .btn-card-service:hover {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
-    border-bottom: 3px solid var(--borderColor);
     color: var(--fontMainColor);
   }
   .project-card-title {
@@ -794,6 +815,8 @@ summary {
   margin-bottom: 30px;
   font-weight: 700;
   transition: .5s;
+  color: var(--fontMainColor);
+  transition: .5s;
   }
   @media screen and (max-width:450px) {
     .btn-card-partner {
@@ -802,6 +825,7 @@ summary {
         width: 20em;
         height: auto;
         border-radius: 50px 20px;
+        border-bottom: 10px solid var(--borderColor);
       }
   }
   .btn-card-partner:hover {

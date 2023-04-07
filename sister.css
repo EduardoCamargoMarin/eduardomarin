@@ -56,14 +56,18 @@
       margin-bottom: 15px;
   }
   summary{
-    background-image: linear-gradient(90deg, #000000, #010847, #000000);
-    border-radius: 50px 20px;
+    border-radius: 10px 20px 50px;
     height: 3em;
     padding: 10px;
+    border-left: 4px solid #ffffff;
+    color: var(--fontSecudaryColor);
+    transition: .2s;
+    border-left: 4px solid var(--backgroundMainColor);
   }
   summary:hover {
-    color: var(--hoverColor);
-    border: 3px solid var(--borderColor);
+    border-left: 4px solid #00ff2a;
+    margin-left: 1em;
+
   }
   .eva {
     margin-left: 1em;
@@ -113,18 +117,19 @@
     font-weight: 900;
   }
   .offcanvas-title {
-    color: var(--fontMainColor);
+    color: var(--fontSecudaryColor);
   }
   .offcanvas-header {
-     background-color: var(--cardColor);
+    background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3);
+    color: var(--fontMainColor);
     box-shadow: inset 4px 4px 2px var(--borderColor);
   }
   .offcanvas-body {
-   background-image: url(./EVA/EvaBackground.gif);
+    background-image: linear-gradient(black, #616161, black);
    color: var(--fontSecudaryColor);
   }
   .eva-info {
-     background-image: linear-gradient(90deg, #000000, #010847, #000000);
+    background-image: linear-gradient(black, #616161, black);
     border-radius: 50px 20px;
     width: 75em;
     padding: 1em;
@@ -143,17 +148,22 @@
   
   }
   @media screen and (max-width:450px){
+    .offcanvas-title {
+      color: var(--fontMainColor);
+      font-weight: 600;
+    }
     .offcanvas-header {
-      background-color: var(--cardColor);
+      background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3);
       color: var(--fontMainColor);
     }
     .offcanvas-body {
      background-color: var(--headerMainColor);
-     color: var(--fontSecudaryColor);
-  
+     color: var(--fontMainColor);
+     font-weight: 500;
+     background-image: linear-gradient(90deg, #000000,#616161,#000000);
     }
-    .btn-close {
-      background-color: red;
+    .offcanvas-body p {
+      color: var(--fontSecudaryColor);
     }
     .eva-info {
       width: 24em;
@@ -174,42 +184,49 @@
     
   }
   .btn-prime {
-    background-color: var(--headerMainColor);
-    color: var( --fontSecudaryColor);
-    border: 2px solid var(--headerMainColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    color: var(--fontSecudaryColor);
     font-size: 12pt;
     border-radius: 10px;
-    opacity: .8;
     width: 10em;
+    transition: .2s;
+    font-weight: 500;
 }
 @media  screen and (max-width: 450px) {
     .btn-prime {
         font-size: 11pt;
         width: 10em;
-        background-color: var(--headerMainColor);
+        
     }
+    .btn-prime:hover {
+      color: var(--fontMainColor);
+      font-weight: 600;
+      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+  
+  
+  }
     
 }
 .btn-prime:hover {
-  color: var(--fontMainColor);
-  font-weight: 600;
-  background-color: var(--hoverColor);
+    color: var(--fontMainColor);
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
 
 
 }
 .btn-prime::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2.5px;
-  background:var(--borderColor); /* Parametrizável*/
-  transition: width .15s ease-in;
-}
-
+    content: '';
+    display: block;
+    width: 0;
+    height: 2.5px;
+    background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3); /* Parametrizável*/
+    transition: width .15s ease-in;
+  }
+  
+  .btn-prime:hover::after {
+    width: 100%;
     
-    .btn-prime:hover::after {
-      width: 100%;
-    }
+  }
     main {
       padding-top: 6em;
     }
