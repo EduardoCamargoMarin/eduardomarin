@@ -499,11 +499,6 @@ summary {
         margin-top: 10px;
       }
   }
-  .btn-card:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontMainColor);
-    border-bottom: 3px solid var(--borderColor);
-  }
   .service-video {
     display: grid;
     align-items: center;
@@ -700,7 +695,6 @@ summary {
   }
   @media screen and (max-width:450px) {
     .btn-card-service {
-        background-color: var(--hoverColor);
         border: 3px solid var(--borderColor);
         width: 20em;
         height: auto;

@@ -41,7 +41,7 @@ header {
   flex-wrap: wrap;
   position: fixed;
   width: 100%;
-  background-image: url(./headerBackground.gif);
+  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
   border-bottom: 2px solid white;
   opacity: 1;
   transition: transform 0.3s ease-in-out;
@@ -245,39 +245,87 @@ padding: 2em;
 padding-left: 30px;
 }
 .missao {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-border-top: 5px solid var(--borderColor);
-border-bottom: 10px solid var(--borderColor);
-background-color: var(--cardColor);
-border-radius: 20px;
-margin-bottom: 50px;
-box-shadow: 5px 5px 5px var(--shadowColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  color: var(--fontSecudaryColor);
 }
 .visao {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-border-top: 5px solid var(--borderColor);
-border-bottom: 10px solid var(--borderColor);
-background-color: var(--cardColor);
-border-radius: 20px;
-margin-bottom: 50px;
-box-shadow: 5px 5px 5px var(--shadowColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  color: var(--fontSecudaryColor);
 }
 .valores {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-border-top: 5px solid var(--borderColor);
-border-bottom: 10px solid var(--borderColor);
-background-color: var(--cardColor);
-border-radius: 20px;
-box-shadow: 5px 5px 5px var(--shadowColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 10px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  padding: 10px;
+  color: var(--fontSecudaryColor);
+}
+@media screen and (max-width:450px) {
+  .missao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px var(--shadowColor);
+    color: var(--fontSecudaryColor);
+    padding: 20px;
+  }
+  .visao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px var(--shadowColor);
+    color: var(--fontSecudaryColor);
+    padding: 20px;
+  }
+  .valores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
+    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px var(--shadowColor);
+    padding: 10px;
+    color: var(--fontSecudaryColor);
+    padding: 20px;
+  }
 }
 .main-video {
 display: flex;
@@ -293,8 +341,9 @@ box-shadow:  5px 5px 5px var(--shadowColor);
 .main-video {
   width: 25em;
   margin-left: .2em;
-  margin-top: 3em;
-  margin-bottom: 5em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+
 }
 }
 .quemsou {
@@ -306,7 +355,7 @@ box-shadow:  5px 5px 5px var(--shadowColor);
   border-top: 4px solid var(--headerMainColor);
   border-bottom: 4px solid var(--headerMainColor);
   border-left: 1px solid var(--borderColor);
-  background-image: url(./headerBackground.gif);
+  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-radius: 100px;
   width: 90%;
@@ -316,10 +365,10 @@ box-shadow:  5px 5px 5px var(--shadowColor);
 }
 .quemsou-body {
 padding: 40px;
-border-top: 4px solid var(--headerMainColor);
-border-bottom: 4px solid var(--headerMainColor);
+border-top: 4px solid var(--borderColor);
+border-bottom: 4px solid var(--borderColor);
 border-left: 1px solid var(--borderColor);
-background-color: var(--cardColor);
+background-color: var(--borderColor);
 box-shadow: 5px 5px 5px var(--shadowColor);
 border-radius: 50px 20px;
 width: 95%;
@@ -334,16 +383,14 @@ margin-bottom: 60px;
       justify-content:center ;
       flex-direction: column;
       gap: 15px;
-      background-color: var(--cardColor);
       border-radius: 20px;
       box-shadow: 5px 5px 5px var(--shadowColor);
-      border-top: 4px solid var(--headerMainColor);
-      border-bottom: 4px solid var(--headerMainColor);
+      border-top: 4px solid var(--borderColor);
+      border-bottom: 4px solid var(--borderColor);
       border-left: 1px solid var(--borderColor);
       border-radius: 20px;
-      margin-top: 40px;
-      margin-bottom:100px;
       margin-left: 1em;
+      margin-top: 2em;
   }
   .cracha {
     margin-left: 1.2em;
@@ -386,50 +433,49 @@ margin-bottom: 60px;
   margin-left: 3em;
 }
 .btn-card {
-  background-color: var(--hoverColor);
-  border: 3px solid var(--headerMainColor);
+  background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+  border: 3px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
-  width: 50em;
+  width: 20em;
   height: 3em;
   border-radius: 50px 20px;
-  margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 700;
   transition: .5s;
 }
 @media screen and (max-width:450px) {
   .btn-card {
-      background-color: var(--hoverColor);
-      border: 3px solid var(--headerMainColor);
+      background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+      border: 3px solid var(--borderColor);
       width: 20em;
-      height: auto;
+      height: 40px;
       border-radius: 50px 20px;
-      margin-left: -2.5em;
       margin-top: 10px;
+      margin-left: -3em;
     }
 }
 .btn-card:hover {
   background-color: var(--headerMainColor);
-  color: var(--fontSecudaryColor);
+  color: var(--fontMainColor);
   border-bottom: 3px solid var(--borderColor);
 }
 .contact-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 10px;
-  background-color: var(--headerMainColor);
+  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
   opacity: 0.9;
   border-radius: 50px 20px;
   padding: 10px;
-  border-top: 4px solid var(--headerMainColor);
-  border-bottom: 4px solid var(--headerMainColor);
+  border-top: 4px solid var(--borderColor);
+  border-bottom: 4px solid var(--borderColor);
   border-left: 1px solid var(--borderColor);
   background-color: var(--cardColor);
-  box-shadow: 5px 5px 5px var(--shadowColor);
+  box-shadow: 3px 3px 0px var(--shadowColor);
   margin-bottom: 1em;
   width: 95%;
   margin-left: 1.5em;
+  margin-top: 1em;
 }
 .image-contact {
   border: 3px solid black;
