@@ -401,8 +401,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-top: 30px;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
   }
   .service-container {
     margin-top: 60px;
@@ -457,20 +459,6 @@
     height: 3em;
     border-radius: 50px 20px;
     font-weight: 700;
-  }
-  @media screen and (max-width:450px) {
-    .btn-card-service {
-        background-color: var(--hoverColor);
-        border: 3px solid var(--headerMainColor);
-        width: 25em;
-        height: auto;
-        border-radius: 50px 20px;
-        margin-bottom: 150px;
-      }
-  }
-  .btn-card-service:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
   }
   .clients {
     display: flex;

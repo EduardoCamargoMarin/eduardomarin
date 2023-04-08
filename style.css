@@ -75,7 +75,7 @@ summary:hover {
 .eva {
   position: fixed;
   margin-top: -9em;
-  z-index: 10;
+  z-index: 15;
 }
 
 .eva-icon {
@@ -243,13 +243,20 @@ summary {
         padding-top: 7.6em;
     }
   }
+
 .intro-video {
     display: grid;
     align-items: center;
     justify-content: center;
     width: 100%;
     border-radius: 30px;
-}
+    border-bottom: 1px solid var(--borderColor);
+    box-shadow: 4px 4px 5px var(--shadowColor);
+    filter: grayscale(0.5);
+    border-bottom: 10px solid var(--borderColor);
+    border-top: 10px solid var(--borderColor);
+    }
+
 .logo-spin {
   display: flex;
   align-items: center;
@@ -344,6 +351,7 @@ summary {
   box-shadow: 5px 5px 5px var(--shadowColor);
   padding: 10px;
   color: var(--fontSecudaryColor);
+  width: 100%;
 }
 @media screen and (max-width:450px) {
   .missao {
@@ -400,7 +408,7 @@ summary {
   justify-content: center;
   border-radius: 50px;
   width: 70em;
-  box-shadow:  5px 5px 5px var(--shadowColor);
+  box-shadow:  2px 2px 7px var(--shadowColor);
 }
 @media screen and (max-width: 450px) {
   .main-video {
@@ -524,6 +532,9 @@ summary {
     width: 100%;
     margin-top: 100px;
     border-radius: 30px;
+    filter: grayscale(0.5);
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .service-video {
@@ -636,8 +647,7 @@ summary {
     width: 90%;
     margin-left: 4em;
     border-top: 10px solid var(--borderColor);
-    border-left: 4px solid var(--borderColor);
-    border-left: 1px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
     background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     padding: 30px;
 }
@@ -652,8 +662,8 @@ summary {
   border-radius: 50px ;
   margin-right: 10px;
   box-shadow: 4px 4px 3px var(--shadowColor);
-  border-top: 10px solid var(--borderColor);
-  border-left: 2px solid var(--borderColor);
+  border-bottom: 10px solid var(--borderColor);
+  border-top: 5px solid var(--borderColor);
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -727,6 +737,7 @@ summary {
     background-color: var(--headerMainColor);
     color: var(--fontSecudaryColor);
     color: var(--fontMainColor);
+    border-bottom: 3px solid var(--borderColor);
   }
   .project-card-title {
     display: flex;
@@ -742,6 +753,9 @@ summary {
     justify-content: center;
     width: 100%;
     border-radius: 30px;
+    filter: grayscale(0.5);
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .project-card-title {
@@ -799,8 +813,7 @@ summary {
     width: 90%;
     margin-left: 1em;
     border-top: 10px solid var(--borderColor);
-    border-left: 4px solid var(--borderColor);
-    border-left: 1px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
     background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
     padding: 30px;
   }
@@ -811,6 +824,9 @@ summary {
     width: 100%;
     margin-top: 150px;
     border-radius: 30px;
+    filter: grayscale(0.5);
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .partner-video {

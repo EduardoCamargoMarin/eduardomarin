@@ -316,8 +316,8 @@ summary {
     border-radius: 50px 20px;
     box-shadow: 3px 3px 3px var(--shadowColor);
     padding: 20px;
-    border: 5px solid var(--borderColor);
     border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
   }
   h3 {
     color: var(--fontSecudaryColor);
@@ -467,6 +467,8 @@ z-index: 1;
     width: 100%;
     border-radius: 30px;
     z-index: -100;
+    border-top: 10px solid var(--borderColor);
+    border-bottom: 10px solid var(--borderColor);
   }
   .service-image {
       display: flex;
