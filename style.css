@@ -325,7 +325,22 @@ summary {
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   color: var(--fontSecudaryColor);
+  transition: .5s;
+  padding: 1px;
+  animation: neons 2s ease-in-out infinite;
 }
+@keyframes neons {
+  0% {
+    box-shadow: 5px 5px 5px #02ff02;
+  }
+  50% {
+    box-shadow: 5px 5px 5px var(--shadowColor);
+  }
+  100% {
+    box-shadow: 5px 5px 5px #02ff02;
+  }
+}
+
 .visao {
   display: flex;
   align-items: center;
@@ -338,6 +353,8 @@ summary {
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   color: var(--fontSecudaryColor);
+  transition: .5s;
+  animation: neons 2s ease-in-out infinite;
 }
 .valores {
   display: flex;
@@ -352,6 +369,7 @@ summary {
   padding: 10px;
   color: var(--fontSecudaryColor);
   width: 100%;
+  animation: neons 2s ease-in-out infinite;
 }
 @media screen and (max-width:450px) {
   .missao {
@@ -431,7 +449,17 @@ summary {
     width: 90%;
     margin-left: 4em;
     margin-top: 150px;
-    
+}
+@keyframes neonsBlue {
+  0% {
+    box-shadow: 5px 5px 5px #0278ff;
+  }
+  50% {
+    box-shadow: 5px 5px 5px var(--shadowColor);
+  }
+  100% {
+    box-shadow: 5px 5px 5px #0278ff;
+  }
 }
 .quemsou-body {
   padding: 40px;
@@ -444,6 +472,7 @@ summary {
   width: 95%;
   margin-bottom: 60px;
   color: var(--fontSecudaryColor);
+  animation: neonsBlue 2s ease-in-out infinite;
   
 }
 
@@ -570,6 +599,7 @@ summary {
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
+  animation: neons 2s ease-in-out infinite;
 }
 .card01-body {
   display: flex;
@@ -588,6 +618,7 @@ summary {
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
+  animation: neonsBlue 2s ease-in-out infinite;
 }
 .card02-body {
   display: flex;
@@ -606,6 +637,7 @@ summary {
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
+  animation: neons 2s ease-in-out infinite;
 }
 .card03-body {
   display: flex;
@@ -666,6 +698,7 @@ summary {
   border-top: 5px solid var(--borderColor);
   margin-bottom: 20px;
   padding: 20px;
+  animation: neonsBlue 2s ease-in-out infinite;
 }
 .service-image {
     width: 20em;
