@@ -13,12 +13,17 @@
   
 <header>
     <div class="logo">
-        <img class="prime-logo" src="./images/LogoEduardoMarin.png" alt="Logo">
+      <a href="#inicio"><img class="prime-logo" src="./images/LogoEduardoMarin.png" alt="Logo"></a>
     </div>
     <nav>
         <a href="#quemSou"><button class="btn-prime">Quem sou</button></a>
-        <a href="#project"><button class="btn-prime">Projetos</button></a>
-        <a href="#sistersProject"><button class="btn-prime">Assistente V.I</button></a>
+
+          <select class="btn-prime-select" onchange="window.location.href=this.value">
+            <option style="color: black;" value="#" selected>Projetos</option>
+            <option style="color: black;" value="#project">Templates</option>
+            <option style="color: black;" value="#sistersProject">Assistente V.I</option>
+          </select>
+
         <a href="#service"><button class="btn-prime">Serviços</button></a>
         <a href="#partner"><button class="btn-prime">Parceiros</button></a>
         <a href="#contato"><button class="btn-prime">Contato</button></a>
@@ -119,7 +124,7 @@
     </button>
     
   </div>
-<div>
+<div id="inicio">
     <img class="intro-video" src="./intro.gif" alt="">
 </div>
 <div class="logo-spin">
