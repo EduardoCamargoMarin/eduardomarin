@@ -74,8 +74,8 @@ summary:hover {
 }
 .eva {
   position: fixed;
-  margin-top: -9em;
   z-index: 15;
+  
 }
 
 .eva-icon {
@@ -108,10 +108,6 @@ summary:hover {
 }
 .eva-icon:hover {
   border: 4px solid var(--hoverColor);
-}
-.btn-primary {
-  border-radius: 100em;
-  margin-top: 4em;
 }
 details {
   width: 20em;
@@ -184,10 +180,15 @@ summary {
   margin: 10px;
 
 }
+.btn-primary {
+  margin-top: -5em;
+  border-radius: 100px;
+}
   
 }
 .btn-primary {
-  margin-top: 10em;
+  margin-top: 6em;
+  border-radius: 100px;
 }
   
 
@@ -331,13 +332,13 @@ summary {
 }
 @keyframes neons {
   0% {
-    box-shadow: 5px 5px 5px #02ff02;
+    box-shadow: 5px 5px 5px #616161;
   }
   50% {
-    box-shadow: 5px 5px 5px var(--shadowColor);
+    box-shadow: 5px 5px 5px #000000;
   }
   100% {
-    box-shadow: 5px 5px 5px #02ff02;
+    box-shadow: 5px 5px 5px #616161;
   }
 }
 
@@ -450,17 +451,6 @@ summary {
     margin-left: 4em;
     margin-top: 150px;
 }
-@keyframes neonsBlue {
-  0% {
-    box-shadow: 5px 5px 5px #0278ff;
-  }
-  50% {
-    box-shadow: 5px 5px 5px var(--shadowColor);
-  }
-  100% {
-    box-shadow: 5px 5px 5px #0278ff;
-  }
-}
 .quemsou-body {
   padding: 40px;
   border-top: 4px solid var(--borderColor);
@@ -472,7 +462,7 @@ summary {
   width: 95%;
   margin-bottom: 60px;
   color: var(--fontSecudaryColor);
-  animation: neonsBlue 2s ease-in-out infinite;
+  animation: neons 2s ease-in-out infinite;
   
 }
 
@@ -618,7 +608,7 @@ summary {
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-top: 4px solid var(--borderColor);
   border-bottom: 10px solid var(--borderColor);
-  animation: neonsBlue 2s ease-in-out infinite;
+  animation: neons 2s ease-in-out infinite;
 }
 .card02-body {
   display: flex;
@@ -698,7 +688,7 @@ summary {
   border-top: 5px solid var(--borderColor);
   margin-bottom: 20px;
   padding: 20px;
-  animation: neonsBlue 2s ease-in-out infinite;
+  animation: neons 2s ease-in-out infinite;
 }
 .service-image {
     width: 20em;

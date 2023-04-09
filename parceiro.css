@@ -273,6 +273,18 @@ padding-left: 30px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   color: var(--fontSecudaryColor);
+  animation: neons 2s ease-in-out infinite;
+}
+@keyframes neons {
+  0% {
+    box-shadow: 5px 5px 5px #616161;
+  }
+  50% {
+    box-shadow: 5px 5px 5px #000000;
+  }
+  100% {
+    box-shadow: 5px 5px 5px #616161;
+  }
 }
 .visao {
   display: flex;
@@ -286,6 +298,7 @@ padding-left: 30px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   color: var(--fontSecudaryColor);
+  animation: neons 2s ease-in-out infinite;
 }
 .valores {
   display: flex;
@@ -299,6 +312,7 @@ padding-left: 30px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   padding: 10px;
   color: var(--fontSecudaryColor);
+  animation: neons 2s ease-in-out infinite;
 }
 @media screen and (max-width:450px) {
   .missao {
@@ -379,6 +393,7 @@ z-index: 11;
   width: 90%;
   margin-left: 4em;
   margin-top: 100px;
+  animation: neons 2s ease-in-out infinite;
   
 }
 .quemsou-body {

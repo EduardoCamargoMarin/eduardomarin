@@ -350,7 +350,9 @@
         background-color: var(--cardColor);
         box-shadow: 10px 10px 5px var(--shadowColor);
         margin:0;
+        animation: neons 2s ease-in-out infinite;
       }
+      
       .btn-card-ai {
         background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
         border-bottom: 10px solid var(--borderColor);
@@ -495,6 +497,7 @@
     box-shadow: 5px 5px 5px var(--shadowColor);
     color: var(--fontSecudaryColor);
     padding: 10px;
+    animation: neons 2s ease-in-out infinite;
     }
     .visao {
     display: flex;
@@ -509,6 +512,7 @@
     box-shadow: 5px 5px 5px var(--shadowColor);
     color: var(--fontSecudaryColor);
     padding: 10px;
+    animation: neons 2s ease-in-out infinite;
     }
     .valores {
     display: flex;
@@ -522,5 +526,17 @@
     box-shadow: 5px 5px 5px var(--shadowColor);
     color: var(--fontSecudaryColor);
     padding: 10px;
+    animation: neons 2s ease-in-out infinite;
+    }
+    @keyframes neons {
+      0% {
+        box-shadow: 5px 5px 5px #616161;
+      }
+      50% {
+        box-shadow: 5px 5px 5px #000000;
+      }
+      100% {
+        box-shadow: 5px 5px 5px #616161;
+      }
     }
   

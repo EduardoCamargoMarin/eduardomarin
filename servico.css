@@ -304,8 +304,19 @@ summary {
     margin: 40px;
     color: var(--fontMainColor);
     border-radius: 50px 20px;
+    animation: neons 2s ease-in-out infinite;
+}
+@keyframes neons {
+  0% {
+    box-shadow: 5px 5px 5px #616161;
   }
-
+  50% {
+    box-shadow: 5px 5px 5px #000000;
+  }
+  100% {
+    box-shadow: 5px 5px 5px #616161;
+  }
+}
   .item p {
     display: flex;
     align-items: center;

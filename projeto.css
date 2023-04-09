@@ -283,6 +283,18 @@
       padding: 10px;
       margin: 40px;
       color: var(--fontSecudaryColor);
+      animation: neons 2s ease-in-out infinite;
+    }
+    @keyframes neons {
+      0% {
+        box-shadow: 5px 5px 5px #616161;
+      }
+      50% {
+        box-shadow: 5px 5px 5px #000000;
+      }
+      100% {
+        box-shadow: 5px 5px 5px #616161;
+      }
     }
     h3 {
       color: var(--fontSecudaryColor);
@@ -309,7 +321,7 @@
     flex-wrap: wrap;
     width: 60em;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    box-shadow: 4px 4px 2px var(--shadowColor);
     margin-bottom: 10px;
   }
   @media screen and (max-width: 1115px){
