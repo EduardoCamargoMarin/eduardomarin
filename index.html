@@ -16,17 +16,20 @@
       <a href="#inicio"><img class="prime-logo" src="./images/LogoEduardoMarin.png" alt="Logo"></a>
     </div>
     <nav>
-        <a href="#quemSou"><button class="btn-prime">Quem sou</button></a>
-
+        <a href="#quemSou"><button class="btn-prime"><span id="about">Quem sou</span></button></a>
           <select class="btn-prime-select" onchange="window.location.href=this.value">
-            <option style="color: black;" value="#" selected>Projetos</option>
-            <option style="color: black;" value="#project">Templates</option>
-            <option style="color: black;" value="#sistersProject">Assistente V.I</option>
+            <option style="color: black;" value="#" selected><span id="project">Projetos</span></option>
+            <option style="color: black;" value="#project"><span id="template">Templates</span></option>
+            <option style="color: black;" value="#sistersProject"><span id="assistant">Assistente V.I</span></option>
           </select>
-
-        <a href="#service"><button class="btn-prime">Serviços</button></a>
-        <a href="#partner"><button class="btn-prime">Parceiros</button></a>
-        <a href="#contato"><button class="btn-prime">Contato</button></a>
+        <a href="#service"><button class="btn-prime"><span id="service">Serviços</span></button></a>
+        <a href="#partner"><button class="btn-prime"><span id="partner">Parceiros</span></button></a>
+        <a href="#contato"><button class="btn-prime"><span id="contact">Contato</span></button></a>
+        <select class="btn-prime-language" id="language-selector" onchange="changeLanguage()">
+          <option style="color: black;" value="pt">Português</option>
+          <option style="color: black;" value="en">English</option>
+        </select>
+        
     </nav>
 </header>
 <main>
@@ -34,23 +37,23 @@
 <div  style="height: 50em;" class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasTopLabel">
-     EVA - Assistente Virtual!
+      <span></span>EVA - Assistente Virtual!
     </h5>
     <button type="button" id="shutdown" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
       <audio id="shutdownAudio" src="./EVA/shuttingDown.mp3"></audio>
     </button>
   </div>
   <div class="offcanvas-body">
-    <p><strong>Eu sou uma inteligência artificial chamada EVA. Eu estou em desenvolvimento pelo meu criador.</strong> </p>
-      <p><strong>Mas posso providênciar informações limitadas para você. Qual informação você procura?</strong> </p> <br><br>
+    <p><span></span><strong>Eu sou uma inteligência artificial chamada EVA. Eu estou em desenvolvimento pelo meu criador.</strong> </p>
+      <p><span></span><strong>Mas posso providênciar informações limitadas para você. Qual informação você procura?</strong> </p> <br><br>
     <details>
       <summary>
-        Quem é você?
+        <span></span>Quem é você?
       </summary>
       <audio id="whoAmIAudio" src="./EVA/whoAmI.mp3"></audio>
       <img id="whoAmI" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
-        <p>
+        <p><span></span>
           Eu sou a EVA, eu fui desenvolvida para auxíliar viajantes em suas jornadas para descobrirem os seus objetivos.</p>
           <p>Eu fui implantada nesse ambiente para entender as necessidades novos viajantes, para que eu possa aprimorar
           minhas habilidades como uma IA.</p> <p>Eu espero que possamos nos tornar parceiros durante essa jornada, porquê eu estou
@@ -61,12 +64,12 @@
     </details><br><br>
     <details>
       <summary >
-        Quem é o seu criador?
+        <span></span>Quem é o seu criador?
       </summary>
       <audio id="creatorAudio" src="./EVA/creator.mp3"></audio>
       <img id="creator" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
-       <p>
+       <p><span></span>
         Meu criador tem a identificação de <strong>Eduardo Marin</strong>. Ele é um desenvolvedor web e um entusiasta
         em IA. o sistema principal dele consiste em desenvolver novos websites, aprimorar seus conhecimentos em 
         implatação de IA e desenvolvedor novos protótipos.
@@ -76,13 +79,13 @@
     </details><br><br>
     <details>
       <summary>
-        Preciso de um tour pelo site.
+        <span></span> Preciso de um tour pelo site.
       </summary>
       <audio id="tourAudio" src="./EVA/tour.mp3"></audio>
       <img  id="tour" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
       <p>
-        <p>Como quiser viajante.</p>
+        <span></span><p>Como quiser viajante.</p>
         <p>Nesse website, você escolher entre navegar ou comprar templates para websites para os seus objetivos
         pessoais ou profissionais.</p> <p>Não só isso, como também, você pode escolher adquirir as habilidades do criador como um
         desenvolvedor para auxíliar você em seus projetos.</p> <p>E finalmente, você pode se conectar com nós, se tornando um parceiro.</p>
@@ -94,12 +97,12 @@
     </details><br><br>
     <details>
       <summary>
-        Projeto SISTERS
+        <span></span>Projeto SISTERS
       </summary>
       <audio id="sisterAudio" src="./EVA/Sisters.mp3"></audio>
       <img  id="sister" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
-      <p>
+        <span></span><p>
         <p>Eu sou o primeiro protótipo de IA chamada EVA.</p> <p>Eu sou a modelo que vai erguer novas irmãs. Para garantir nossa comunicação
         com todos os viajantes e suas necessidades.</p> <p>Cada uma das irmãs terá uma qualidade e habilidade e até mesmo um nome.
         Isso estará disponível em um futuro próximo.</p> <p>Espero que posso ficar um pouco a mais conosco.
@@ -133,18 +136,18 @@
 <div class="intro-container">
   <div class="intro-body">
     <div class="missao">
-      <h2>Missão</h2>
-      <p class="text-intro">Nossa missão é desenvolver websites que aumentem a presença digital de nossos clientes, oferecendo uma experiência de usuário superior e resultados únicos para ser parte de algo muito maior. </p>
+      <h2><span id="missao">Missão</span> </h2>
+      <p class="text-intro"><span id="missaoTexto">Nossa missão é desenvolver websites que aumentem a presença digital de nossos clientes, oferecendo uma experiência de usuário superior e resultados únicos para ser parte de algo muito maior.</span></p>
     </div>
     <div class="visao">
-      <h2>Visão</h2>
-      <p class="text-intro">Nossa visão é ser reconhecida por nossa excelência em design e desenvolvimento, atendimento ao cliente, implatação de sistemas de automação, assistentes virtuais e resultados excepcionais.</p>
+      <h2><span id="visao">Visão</span></h2>
+      <p class="text-intro"><span id="visaoTexto">Nossa visão é ser reconhecida por nossa excelência em design e desenvolvimento, atendimento ao cliente, implatação de sistemas de automação, assistentes virtuais e resultados excepcionais.</span></p>
     </div>
     <div class="valores">
-      <h2>Valores</h2>
-      <p class="text-intro">Excelência: <br> Buscamos sempre a excelência em tudo o que desenvolvemos, desde o design e funcionalidade do website. <br><br>
+      <h2><span id="valores">Valores</span></h2>
+      <p class="text-intro"><span id="valoresTexto">Excelência: <br> Buscamos sempre a excelência em tudo o que desenvolvemos, desde o design e funcionalidade do website. <br><br>
         Inovação: <br> Estamos sempre atualizados com as recentes tendências e tecnologias, trazendo soluções inovadoras para nossos clientes. <br><br>
-        Parceria: <br> Valorizamos a colaboração em parceria com nossos clientes para entender suas necessidades e alcançar seus objetivos. <br><br>
+        Parceria: <br> Valorizamos a colaboração em parceria com nossos clientes para entender suas necessidades e alcançar seus objetivos.</span> <br><br>
         </p>
     </div>
   </div>
@@ -156,20 +159,20 @@
     <div class="cracha">
         <img class="cracha-frente" src="./images/1.png" alt="">
         <div class="btn-container">
-            <a href="" download="Eduardo Marin"><button class="btn-card">Cartão de visita</button></a>
+            <a href="" download="Eduardo Marin"><button class="btn-card"><span id="cartao">Cartão de visita</span> </button></a>
         </div>
     </div>
     <div class="quemsou-body">
         <div>
-          <h1>Profissional</h1>
+          <h1><span id="profissional">Profissional</span></h1>
         </div>
-            <p>Formação em Engenharia de Produção e profissional em Desenvolvimento Web, movido pela adrenalina da criação e desenvolvimento de projetos. <br><br> Seus estudos englobam a implementação de sistemas inteligentes para aprimorar a experiência do usuário e no design de websites. <br><br> Não é difícil encontrar o Eduardo, pois em sua mesa de trabalho é capaz que você encontre um pato de borracha, o seu companheiro em debbug de aplicações.</p>
+            <p><span id="profissioanlTexto">Formação em Engenharia de Produção e profissional em Desenvolvimento Web, movido pela adrenalina da criação e desenvolvimento de projetos. <br><br> Seus estudos englobam a implementação de sistemas inteligentes para aprimorar a experiência do usuário e no design de websites. <br><br> Não é difícil encontrar o Eduardo, pois em sua mesa de trabalho é capaz que você encontre um pato de borracha, o seu companheiro em debbug de aplicações.</span></p>
     </div>
     <div class="quemsou-body">
       <div>
-        <h1>Acadêmico</h1>
+        <h1><span id="academico">Acadêmico</span></h1>
       </div>
-      <p>Autor de dois artigos científicos publicados na revista interdisciplinar RECIMA21 com participação especial no Congresso Nacional de Iniciação Científica (CONIC) sobre a distribuição de energia solar fotovoltaica para veículos elétricos. <br><br> Os calculos foram análisados sobre a melhor estratégia da instalação das placas, garantindo que o sistema possa ser implantada em qualquer região do mundo. <br><br>O projeto teve o seu embasamento aplicado na Engenharia de Produção e Engenharia Elétrica. <br><br> </p>
+      <p><span id="academicoTexto">Autor de dois artigos científicos publicados na revista interdisciplinar RECIMA21 com participação especial no Congresso Nacional de Iniciação Científica (CONIC) sobre a distribuição de energia solar fotovoltaica para veículos elétricos. <br><br> Os calculos foram análisados sobre a melhor estratégia da instalação das placas, garantindo que o sistema possa ser implantada em qualquer região do mundo. <br><br>O projeto teve o seu embasamento aplicado na Engenharia de Produção e Engenharia Elétrica.</span> <br><br> </p>
       <a href="./Docs/558-brasil-e-a-corrida-tecnologica (1).pdf" download=""><button class="btn-card-service">Download Artigo RECIMA21</button></a> <br>
       <a href="./Docs/Congresso CONIC .pdf" download=""><button class="btn-card-service">Download Artigo CONIC</button></a>
     </div>
@@ -181,20 +184,20 @@
     <div class="service-steps">
       <div class="step-card01">
         <div class="card01-body">
-          <h3><strong>Agilidade</strong></h3>
-          <p>Aplicando a metodologia ágil para garantir a praticidade de acompanhar o projeto através de ferramentas do SCRUM</p>
+          <h3><strong><span id="agilidade">Agilidade</span></strong></h3>
+          <p><span id="agilidadeTexto">Aplicando a metodologia ágil para garantir a praticidade de acompanhar o projeto através de ferramentas do SCRUM</span></p>
         </div>
       </div>
       <div class="step-card02">
         <div class="card02-body">
-          <h3><strong>Transparência</strong></h3>
-          <p>Acompanhe o projeto sendo desenvolvimento semanalmente, visualizando as melhorias e implemantações sugeridas.</p>
+          <h3><strong><span id="transparencia">Transparência</span></strong></h3>
+          <p><span id="transparenciaTexto">Acompanhe o projeto sendo desenvolvimento semanalmente, visualizando as melhorias e implemantações sugeridas.</span></p>
         </div>
       </div>
       <div class="step-card03">
         <div class="card03-body">
-          <h3><strong>Qualidade</strong></h3>
-          <p>Pensando no design inovador para websites, afim de garantir a melhor interface e experiência para os usuários</p>
+          <h3><strong><span id="qualidade">Qualidade</span></strong></h3>
+          <p><span id="qualidadeTexto">Pensando no design inovador para websites, afim de garantir a melhor interface e experiência para os usuários</span></p>
         </div>
       </div>
     </div>
@@ -209,7 +212,7 @@
         <img class="service-image" src="./dev.gif" alt="">
       </div>
       <div class="service-body">
-        <p>Secção dos projetos e templates desenvolvidos, escolha entre as opções ou crie um junto com o desenvolvedor, que vai lhe passar todas as opções disponíveis.</p>
+        <p><span id="servicoTexto">Secção dos projetos e templates desenvolvidos, escolha entre as opções ou crie um junto com o desenvolvedor, que vai lhe passar todas as opções disponíveis.</span></p>
         <a href="./projeto.html"><button class="btn-card-service">Templates e personalizações</button></a>
       </div>
     </div>
@@ -224,7 +227,7 @@
         <img class="service-image" src="./images/sistersimage.gif" alt="">
       </div>
       <div class="service-body">
-        <p>Conheça o Projeto SISTERS, o novo conceito em assistente web virtual, criadas para guiar usuários a navegar pelo seu site e fornecer informações importantes sobre os tópicos referentes a sua empresa.</p>
+        <p><span id="sisterTexto">Conheça o Projeto SISTERS, o novo conceito em assistente web virtual, criadas para guiar usuários a navegar pelo seu site e fornecer informações importantes sobre os tópicos referentes a sua empresa.</span></p>
         <a href="./sister.html"><button class="btn-card-service">Conheça as sisters</button></a>
       </div>
     </div>
@@ -239,7 +242,7 @@
       <img class="service-image2" src="./dev2.gif" alt="">
     </div>
     <div class="service-body">
-      <p>Precisando de uma ajuda em um projeto? Conheça os tipos de contratação disponíveis para melhor auxíliarmos você em seus objetivos.</p>
+      <p><span id="contratoTexto">Precisando de uma ajuda em um projeto? Conheça os tipos de contratação disponíveis para melhor auxíliarmos você em seus objetivos.</span></p>
       <a href="./servico.html"><button class="btn-card-service">Contratação para serviços</button></a>
     </div>
   </div>
@@ -257,7 +260,7 @@
             <img class="service-image2" src="./images/partnerimage.gif" alt="">
           </div>
           <div class="service-body">
-            <p>Conectados com um único objetivo. Veja os benefícios de uma parceria,faça parte de uma equipe que pensa no desenvolvimento e qualidade.</p>
+            <p><span id="parceiroTexto">Conectados com um único objetivo. Veja os benefícios de uma parceria,faça parte de uma equipe que pensa no desenvolvimento e qualidade.</span></p>
             <a href="./parceiro.html"><button class="btn-card-partner">Seja um parceiro</button></a>
           </div>
         </div>
@@ -276,6 +279,7 @@
     </div>
 </footer>
 
+<script src="./code/translator.js"></script>
 <script src="./code/EVA/evaMainFunction.js"></script>
 <script src="./code/header.js"></script>
 <script src="./code/titleTab.js"></script>
