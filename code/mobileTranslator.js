@@ -1,9 +1,10 @@
 
-function changeLanguage() {
 
-    let languageSelector = document.getElementById("language-selector")
+function changeMobile() {
 
-    let selectedLanguage = languageSelector.options[languageSelector.selectedIndex].value
+    let languageSelectorMobile = document.getElementById("language-selector-mobile")
+
+    let languageMobile = languageSelectorMobile.options[languageSelectorMobile.selectedIndex].value
     
     const about = document.getElementById('about')
     const project = document.getElementById('project')
@@ -45,7 +46,7 @@ function changeLanguage() {
     const sisterTexto = document.getElementById('sisterTexto')
     const parceiroTexto = document.getElementById('parceiroTexto')
 
-    if (selectedLanguage === "en") {
+    if (languageMobile === "en") {
         about.innerText = 'About'
         project.innerText = 'Project'
         service.innerText = 'Service'
@@ -90,7 +91,7 @@ function changeLanguage() {
         btnPartner.innerText = 'Become a partner'
     
     } 
-    else if (selectedLanguage === "pt") {
+    else if (languageMobile === "pt") {
         about.innerText = 'Quem sou'
         project.innerText = 'Projeto'
         service.innerText = 'Serviços'
