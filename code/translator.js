@@ -5,17 +5,20 @@ function changeLanguage() {
 
     let selectedLanguage = languageSelector.options[languageSelector.selectedIndex].value
     
+    //Menu
     const about = document.getElementById('about')
     const project = document.getElementById('project')
     const service = document.getElementById('service')
     const partner = document.getElementById('partner')
     const contact = document.getElementById('contact')
 
+    //Botão
     const cartao = document.getElementById('cartao')
     const btnSister = document.getElementById('btnSister')
     const btnService = document.getElementById('btnService')
     const btnPartner = document.getElementById('btnPartner')
 
+    //Textos
     const missao = document.getElementById('missao')
     const missaoTexto = document.getElementById('missaoTexto')
 
@@ -129,6 +132,7 @@ function changeLanguage() {
         
         parceiroTexto.innerText = 'Conectados com um único objetivo. Veja os benefícios de uma parceria,faça parte de uma equipe que pensa no desenvolvimento e qualidade.'
     
+        
         cartao.innerText = 'Cartão de visita'
         btnSister.innerText = 'Projeto SISTERS'
         btnService.innerText = 'Contratação para serviços'

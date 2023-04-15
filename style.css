@@ -236,7 +236,13 @@ nav {
   font-weight: 500;
   height: 30px;
   padding-left: 40px;
+  transition: .5s;
   
+}
+.btn-prime-select:hover {
+  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+  color: #000000;
+  font-weight: 700;
 }
 .btn-prime-language {
   background-image: linear-gradient(90deg, #000000,#616161,#000000);
@@ -247,6 +253,18 @@ nav {
   transition: .2s;
   font-weight: 500;
   height: 30px;
+}
+.btn-prime-language:hover {
+  background-image: linear-gradient(90deg, #000000,#252525,#000000);
+  color: var(--fontSecudaryColor);
+  font-size: 12pt;
+  border-radius: 10px;
+  width: 6em;
+  transition: .2s;
+  font-weight: 500;
+  height: 30px;
+  transition: .5s;
+  
 }
 .btn-btn-primary {
   display: none;
@@ -266,6 +284,8 @@ nav {
 @media screen and (max-width:450px) {
   .btn-btn-primary {
     display: block;
+    height: 4em;
+    border-radius: 10px;
   }
   .navbar-body-mobile {
     display: grid;
