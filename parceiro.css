@@ -381,13 +381,14 @@ border-radius: 50px;
 width: 80em;
 box-shadow:  5px 5px 5px var(--shadowColor);
 z-index: 11;
+margin-bottom: 20px;
 }
 @media screen and (max-width: 450px) {
 .main-video {
   width: 25em;
   margin-left: .2em;
   margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 2em;
 
 }
 }
@@ -454,7 +455,7 @@ z-index: 1;
 }
 .image-card {
 flex-wrap: wrap;
-width: 60em;
+width: 20em;
 border-radius: 20px;
 box-shadow: 4px 4px 2px var(--shadowColor);
 margin-bottom: 10px;
