@@ -316,27 +316,31 @@
       padding: 5px;
     }
     
-  .arrow {
-  display: none;
-  }
-  .arrow-image {
-  visibility: hidden;
-  border-radius: 100px;
-  z-index: 1;
-  }
-  .image-card {
+    .btn-card:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+    }
+    .arrow {
+    display: none;
+    }
+    .arrow-image {
+    visibility: hidden;
+    border-radius: 100px;
+    z-index: 1;
+    }
+    .image-card {
     flex-wrap: wrap;
-    width: 60em;
+    width: 50em;
     border-radius: 20px;
     box-shadow: 4px 4px 2px var(--shadowColor);
     margin-bottom: 10px;
-  }
-  @media screen and (max-width: 1115px){
+    }
+    @media screen and (max-width: 1115px){
     .image-card {
       width: 20em;
     }
-  }
-  
+    }
+    
     @media screen and (max-width: 450px){
       .arrow {
         display: flex;
@@ -358,11 +362,11 @@
         }
         100% {
           transform: translateX(50px);
-  
+    
         }
         
       }
-  
+    
       .container {
         display: flex;
         flex-direction: row;
@@ -404,19 +408,51 @@
             height: 40px;
             border-radius: 50px 20px;
             margin-top: 10px;
-            margin-left: 0em;
           }
       }
-      .btn-card:hover {
-        background-color: var(--headerMainColor);
-        color: var(--fontMainColor);
-        border-bottom: 3px solid var(--borderColor);
-      }
       .image-card {
-        width: 21em;
+        width: 20em;
         border-radius: 20px;
       }
-  }
+    }
+    .btn-card:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+    }
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      margin-left: 3em;
+    }
+    .btn-card {
+      background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+      border: 3px solid var(--borderColor);
+      border-bottom: 10px solid var(--borderColor);
+      width: 20em;
+      height: 3em;
+      border-radius: 50px 20px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      transition: .5s;
+    }
+    @media screen and (max-width:450px) {
+      .btn-card {
+          background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+          border: 3px solid var(--borderColor);
+          width: 20em;
+          height: 40px;
+          border-radius: 50px 20px;
+          margin-top: 10px;
+          margin-left: 0em;
+        }
+    }
+    .btn-card:hover {
+      background-color: var(--headerMainColor);
+      color: var(--fontMainColor);
+      border-bottom: 3px solid var(--borderColor);
+    }
   .intro-video {
     display: grid;
     align-items: center;

@@ -17,6 +17,29 @@
     </div>
     <nav>
         <a href="./index.html"><button class="btn-prime">Inicio</button></a>
+        <button class="btn-btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+
+        <div style="width: 15em; height: 40em; opacity: .9;" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-body-mobile">
+              <a href="./index.html"><button class="btn-prime-mobile">Inicio</button></a><br>
+              <h3>Acesso Restrito</h3><br>
+              <input id="userId" type="text" placeholder="Usuário"><br>
+              <input id="userPassword" type="password" placeholder="Senha"><br>
+              <input onclick="memberAccess()" type="button" value="Acessar Hub"> <br><br>
+        
+            <select class="btn-navbar" id="language-selector-mobile" onchange="changeMobile()">
+              <option style="color: black;" value="pt">Português</option>
+              <option style="color: black;" value="en">English</option>
+            </select>
+            
+          </div>
+          </div>
+        </div>
     </nav>
 </header>
 <main>
@@ -52,7 +75,7 @@
           </summary>
           <div class="eva-info">
             <p>
-              Nível 01: <br>Solicitou as prestações de serviços em desenvolvimento. <br> Benefícios: <br>Recebe novidades em novos protótipos e templates</p>
+              Nível 01: <br>Recebe novidades em novos protótipos e templates, além de possuir acesso exclusivo a conteúdos destinados apenas para membros da organização.</p>
           </div>
         </details><br><br>
         <details>
@@ -61,7 +84,7 @@
           </summary>
           <div class="eva-info">
             <p>
-              Nível 02: <br>Prestou serviços em projetos de desenvolvimento. <br> Benefícios: <br>Consultor oficial em tópicos de melhorias de processos e Quality Assurance de projetos desenvolvidos.</p>
+              Nível 02: Consultor oficial em tópicos de melhorias de processos e Quality Assurance de projetos desenvolvidos. Esses parceiros recebem autonomia para definir estratégias para a melhor UI e UX dos projetos.</p>
           </div>
         </details><br><br>
         <details>
@@ -70,7 +93,7 @@
           </summary>
           <div class="eva-info">
             <p>
-              Nível 03: <br>Desenvolvedor co-participativo em projetos de desenvolvimento e novos protótipos <br> Benefícios: <br>Participação nos projetos e estratégias de desenvolvimento, sendo um membro oficial da organização</p>
+              Nível 03: <br>Desenvolvedor co-participativo em projetos de desenvolvimento e novos protótipos <br>Participação nos projetos e estratégias de desenvolvimento, sendo um membro oficial da organização.</p>
           </div>
         </details><br><br>
       </div>
@@ -104,7 +127,7 @@
 <div>
   <video class="main-video" controls src="./partnershipVideo.mp4"></video>
 </div>
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" style="border-top: 10px solid #000000;border-bottom: 10px solid #000000;" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="./images/rank01.png" class="d-block w-100" alt="...">
@@ -158,7 +181,7 @@
   </div>
   <div class="item">
     <div class="item-title">
-      <h3><strong>XXXXXXXXXXXX</strong></h3>
+      <h3><strong>Membros oficiais</strong></h3>
     </div>
       <div class="item-body">
         <img class="image-card" src="./images/Nível 3.png" alt="">
@@ -177,6 +200,7 @@
     </div>
 </footer>
 
+<script src="./code/memberAccess.js"></script>
 <script src="./code/EVA/evaMainFunction.js"></script>
 <script src="./code/header.js"></script>
 <script src="./code/titleTab.js"></script>

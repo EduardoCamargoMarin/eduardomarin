@@ -275,13 +275,14 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-color: var(--cardColor);
+      background-image: linear-gradient(90deg, #000000,#616161,#000000);
       color: var(--fontMainColor);
       border-radius: 50px 20px;
       box-shadow: 3px 3px 3px var(--shadowColor);
       padding: 10px;
       border: 5px solid var(--borderColor);
       border-top: 10px solid var(--borderColor);
+      color: var(--fontSecudaryColor);
     }
     .item {
       border-top: 4px solid var(--borderColor);
@@ -292,28 +293,53 @@
       padding: 10px;
       margin: 40px;
       color: var(--fontSecudaryColor);
+      animation: neons 2s ease-in-out infinite;
     }
-  .arrow {
-  display: none;
-  }
-  .arrow-image {
-  visibility: hidden;
-  border-radius: 100px;
-  z-index: 1;
-  }
-  .image-card {
+    @keyframes neons {
+      0% {
+        box-shadow: 5px 5px 5px #616161;
+      }
+      50% {
+        box-shadow: 5px 5px 5px #000000;
+      }
+      100% {
+        box-shadow: 5px 5px 5px #616161;
+      }
+    }
+    h3 {
+      color: var(--fontSecudaryColor);
+      background-image: linear-gradient(90deg, #000000,#616161,#000000);
+      border: 4px solid var(--borderColor);
+      border-radius: 10px 20px 50px;
+      box-shadow: 3px 3px 3px var(--shadowColor);
+      padding: 5px;
+    }
+    
+    .btn-card:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+    }
+    .arrow {
+    display: none;
+    }
+    .arrow-image {
+    visibility: hidden;
+    border-radius: 100px;
+    z-index: 1;
+    }
+    .image-card {
     flex-wrap: wrap;
-    width: 60em;
+    width: 50em;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px var(--shadowColor);
+    box-shadow: 4px 4px 2px var(--shadowColor);
     margin-bottom: 10px;
-  }
-  @media screen and (max-width: 1115px){
+    }
+    @media screen and (max-width: 1115px){
     .image-card {
       width: 20em;
     }
-  }
-  
+    }
+    
     @media screen and (max-width: 450px){
       .arrow {
         display: flex;
@@ -335,11 +361,11 @@
         }
         100% {
           transform: translateX(50px);
-  
+    
         }
         
       }
-
+    
       .container {
         display: flex;
         flex-direction: row;
@@ -358,31 +384,74 @@
         scroll-snap-align:start;
         border-top: 4px solid var(--borderColor);
         border-left: 1px solid var(--borderColor);
-        background-color: var(--cardColor);
+        background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
         box-shadow: 10px 10px 5px var(--shadowColor);
         margin:0;
-        animation: neons 2s ease-in-out infinite;
       }
-      
-      .btn-card-ai {
+      .btn-card {
         background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+        border: 3px solid var(--borderColor);
         border-bottom: 10px solid var(--borderColor);
         width: 20em;
-        height: 40px;
+        height: 3em;
         border-radius: 50px 20px;
-        margin-top: 10px;
-        transition: .5s;
+        margin-bottom: 30px;
         font-weight: 700;
+        transition: .5s;
       }
-  .btn-card-ai:hover {
-    border-bottom: 3px solid var(--borderColor);
-    color: var(--fontMainColor);
-  }
+      @media screen and (max-width:450px) {
+        .btn-card {
+            background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+            border: 3px solid var(--borderColor);
+            width: 20em;
+            height: 40px;
+            border-radius: 50px 20px;
+            margin-top: 10px;
+          }
+      }
       .image-card {
-        width: 21em;
+        width: 20em;
         border-radius: 20px;
       }
-  }
+    }
+    .btn-card:hover {
+    background-color: var(--headerMainColor);
+    color: var(--fontSecudaryColor);
+    }
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      margin-left: 3em;
+    }
+    .btn-card {
+      background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+      border: 3px solid var(--borderColor);
+      border-bottom: 10px solid var(--borderColor);
+      width: 20em;
+      height: 3em;
+      border-radius: 50px 20px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      transition: .5s;
+    }
+    @media screen and (max-width:450px) {
+      .btn-card {
+          background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+          border: 3px solid var(--borderColor);
+          width: 20em;
+          height: 40px;
+          border-radius: 50px 20px;
+          margin-top: 10px;
+          margin-left: 0em;
+        }
+    }
+    .btn-card:hover {
+      background-color: var(--headerMainColor);
+      color: var(--fontMainColor);
+      border-bottom: 3px solid var(--borderColor);
+    }
   .intro-video {
     display: grid;
     align-items: center;
@@ -472,6 +541,7 @@
     border-bottom: 10px solid var(--borderColor);
 
   }
+  
   @media screen and (max-width:450px) {
     .ai-image {
       width: 15em;
