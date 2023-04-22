@@ -10,157 +10,152 @@
     <title>Eduardo Marin</title>
 </head>
 <body>
-  
-<header>
+  <header>
     <div class="logo">
-        <img class="prime-logo" src="./images/LogoEduardoMarin.png" alt="Logo">
+      <a href="#inicio"><img class="prime-logo" src="./images/LogoEduardoMarin.png" alt="Logo"></a>
     </div>
     <nav>
-        <a href="./index.html"><button class="btn-prime">Inicio</button></a>
-        <button class="btn-btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Inicio</button></a>
+      </div>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Noticias</button></a>
+      </div>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Novidades</button></a>
+      </div>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Protótipos</button></a>
+      </div>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Conteúdo</button></a>
+      </div>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Solicitação</button></a>
+      </div>
+      <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="./index.html"><button class="btn-menu">Contato</button></a>
+      </div>
+      <div class="line-division"></div>
 
-        <div style="width: 15em; height: 40em; opacity: .9;" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-body-mobile">
-              <a href="./index.html"><button class="btn-prime-mobile">Inicio</button></a><br>
-              <h3>Acesso Restrito</h3><br>
-              <input id="userId" type="text" placeholder="Usuário"><br>
-              <input id="userPassword" type="password" placeholder="Senha"><br>
-              <input onclick="memberAccess()" type="button" value="Acessar Hub"> <br><br>
-        
-            <select class="btn-navbar" id="language-selector-mobile" onchange="changeMobile()">
-              <option style="color: black;" value="pt">Português</option>
-              <option style="color: black;" value="en">English</option>
-            </select>
-            
-          </div>
-          </div>
-        </div>
+
+      <button class="btn-btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+
+<div style="width: 15em; height: 40em; opacity: .9;" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="navbar-body-mobile">
+    <a href="./index.html"><button class="btn-navbar"><span id="about">Inicio</span> </button></a>
+    <a href="#projects"><button class="btn-navbar"><span id="project">Noticias</span></button></a>
+    <a href="#sistersProject"><button class="btn-navbar"><span id="assistant">Novidades</span></button></a>
+    <a href="#services"><button class="btn-navbar"><span id="service">Softwares</span></button></a>
+    <a href="#partners"><button class="btn-navbar"><span id="partner">Conteúdo</span></button></a>
+    <a href="#contato"><button class="btn-navbar"><span id="contact">Contato</span></button></a>
+
+    <select class="btn-navbar" id="language-selector-mobile" onchange="changeMobile()">
+      <option style="color: black;" value="pt">Português</option>
+      <option style="color: black;" value="en">English</option>
+    </select>
+    
+  </div>
+  </div>
+</div>
     </nav>
-</header>
+  </header>
 <main>
-<h3>Noticias</h3>
-    <div class="container">
-        <div class="item">
-            <div class="item-title">
-              <h3><strong>Parceiro Nivel 02</strong></h3>
-            </div>
-              <div class="item-body">
-                <img class="image-card" src="./images/Nível 2.png" alt="">
-                <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-                <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-                <div class="arrow">
-                  <img class="arrow-image" src="./images/arrow.png" alt="">
-                </div>
-              </div>
-          </div>
-        <div class="item">
-            <div class="item-title">
-              <h3><strong>Nova parceria</strong></h3>
-            </div>
-              <div class="item-body">
-                <img class="image-card" src="./images/mayara.jpeg" alt="">
-                <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-                <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-                <div class="arrow">
-                  <img class="arrow-image" src="./images/arrow.png" alt="">
-                </div>
-              </div>
-          </div>
-          <div class="item">
-            <div class="item-title">
-              <h3><strong>Parceiro Nivel 01</strong></h3>
-            </div>
-              <div class="item-body">
-                <img class="image-card" src="./images/Nível 1.png" alt="">
-                <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-                <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-                <div class="arrow">
-                  <img class="arrow-image" src="./images/arrow.png" alt="">
-                </div>
-              </div>
-          </div>
-        <div class="item">
-            <div class="item-title">
-              <h3><strong>Assistente Virtual</strong></h3>
-            </div>
-              <div class="item-body">
-                <img class="image-card" src="./images/Mother.gif" alt="">
-                <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-                <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-                <div class="arrow">
-                  <img class="arrow-image" src="./images/arrow.png" alt="">
-                </div>
-              </div>
-          </div>
-      <div class="item">
-        <div class="item-title">
-          <h3><strong>Cyvber Green</strong></h3>
-        </div>
-          <div class="item-body">
-            <img class="image-card" src="./images/template1.png" alt="">
-            <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-            <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-            <div class="arrow">
-              <img class="arrow-image" src="./images/arrow.png" alt="">
-            </div>
-          </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3><strong>Elegance White</strong></h3>
-        </div>
-          <div class="item-body">
-            <img class="image-card" src="./images/template7.png" alt="">
-            <p>Transformamos ideias em realidade: criações inovadoras e impactantes para dar vida à sua marca e seus projetos.</p>
-            <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de Design"><button class="btn-card"><strong>Solicitar serviços de Design</strong></button></a>
-            <div class="arrow">
-              <img class="arrow-image" src="./images/arrow.png" alt="">
-            </div>
-          </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3><strong>Feature ChatBot</strong></h3>
-        </div>
-          <div class="item-body">
-            <img class="image-card" src="./EVA/eva.png" alt="">
-            <p>O futuro é uma jornada incerta, mas juntos podemos desvendar seus mistérios e alcançar o sucesso. Venha ser nosso parceiro e vamos desbravar novos horizontes juntos.</p>
-            <a href="mailto:solucaoduck@gmail.com?subject=Quero fazer parceria"><button class="btn-card"><strong>Faça uma parceria</strong> </button></a>
-          </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3><strong>Nova parceria</strong></h3>
-        </div>
-          <div class="item-body">
-            <img class="image-card" src="./images/logoguimaraes.png" alt="">
-            <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-            <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-            <div class="arrow">
-              <img class="arrow-image" src="./images/arrow.png" alt="">
-            </div>
-          </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3><strong>Serviço prestado</strong></h3>
-        </div>
-          <div class="item-body">
-            <img class="image-card" src="./images/logoguimaraes.png" alt="">
-            <p>Juntos, podemos transformar desafios em oportunidades: conte com nossa expertise em consultoria para alcançar o sucesso nos negócios.</p>
-            <a href="mailto:solucaoduck@gmail.com?subject=Solicito serviço de consultoria"><button class="btn-card"><strong>Solicitar Consultorias</strong> </button></a>
-            <div class="arrow">
-              <img class="arrow-image" src="./images/arrow.png" alt="">
-            </div>
-          </div>
-      </div>
+  <div class="card">
+    <div class="card-header">
+      Noticias DD/MM/AAAA
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>A well-known quote, contained in a blockquote element.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+  </div>
 
-      
+  <div class="card text-center">
+    <div class="card-header">
+      Novidades DD/MM/AAAA
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Criações novas</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+      2 days ago
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Protótipos_NOME</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Protótipos_NONE</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card text-center">
+    <div class="card-header">
+      Conteudo
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer text-body-secondary">
+      DD/MM/AAAA
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="card-header">
+      Conteúdo
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer text-body-secondary">
+     DD/MM/AAAA
+    </div>
+  </div>
+
+  <form action="https://api.staticforms.xyz/submit" method="post">
+    <input type="text" name="name" placeholder="Your Name"><br><br>
+    <input type="text" name="email" placeholder="Your Email" /><br><br>
+    <textarea name="message"></textarea><br>
+    <input type="text" name="honeypot" style="display:none">
+    <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
+    <input type="hidden" name="subject" value="Contact us from - example.com" />
+    <input type="hidden" name="replyTo" value="@">
+    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+    <input type="submit" value="Submit" />
+</form>
+
+
 </main>
 <footer>
   <div id="contato" class="contact-container">
@@ -171,7 +166,6 @@
       <div><a href="https://github.com/EduardoCamargoMarin"><img class="image-contact" src="./images/github.png" alt=""></a></div>
     </div>
 </footer>
-
 <script src="./code/memberAccess.js"></script>
 <script src="./code/EVA/evaMainFunction.js"></script>
 <script src="./code/header.js"></script>
