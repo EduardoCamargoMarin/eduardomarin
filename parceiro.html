@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.min.js"></script>
     <title>Eduardo Marin</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+
 </head>
 <body>
   
@@ -27,10 +30,8 @@
           <div class="offcanvas-body">
             <div class="navbar-body-mobile">
               <a href="./index.html"><button class="btn-prime-mobile">Inicio</button></a><br>
-              <h3>Acesso Restrito</h3><br>
-              <input id="userId" type="text" placeholder="Usuário"><br>
-              <input id="userPassword" type="password" placeholder="Senha"><br>
-              <input onclick="memberAccess()" type="button" value="Acessar Hub"> <br><br>
+              <h3>Hub de Noticias</h3><br>
+              <a href="./restrictedAccess.html"><button class="btn-prime-mobile" >Acesso ao Hub</button></a>
         
             <select class="btn-navbar" id="language-selector-mobile" onchange="changeMobile()">
               <option style="color: black;" value="pt">Português</option>
@@ -101,9 +102,7 @@
            Acesso aos membros
           </summary>
           <div class="eva-info">
-            <input id="userId" type="text" placeholder="Usuário">
-            <input id="userPassword" type="password" placeholder="Senha">
-            <input onclick="memberAccess()" id="btnAccess" type="button" value="Acessar Hub">
+            <a href="./restrictedAccess.html"><button class="btn-prime-mobile" >Acesso ao Hub</button></a>
           </div>
         </details>
       </div>
