@@ -176,10 +176,6 @@ main  {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-
-
-
 .contact-container {
   display: flex;
   align-items: center;
@@ -216,4 +212,17 @@ main  {
 }
 .container-spacing {
   height: 100px;
+}
+
+.card-header {
+  background-image: linear-gradient(90deg, #000000,#656565,#000000);
+  color: var(--fontSecudaryColor);
+}
+.card-body {
+  background-image: linear-gradient(90deg, #000000,#656565,#000000);
+  color: var(--fontSecudaryColor);
+}
+.card-footer {
+  background-image: linear-gradient(90deg, #000000,#252525,#000000);
+  color: var(--fontSecudaryColor);
 }

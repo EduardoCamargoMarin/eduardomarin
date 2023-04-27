@@ -263,7 +263,7 @@
       .main-video {
         width: 25em;
         margin-left: .2em;
-        z-index: -100;
+        z-index: 10;
       }
     }
     .container {
