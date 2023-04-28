@@ -285,7 +285,7 @@ summary {
     animation: spin 3s linear infinite;
     opacity: 0.5;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 10em;
     box-shadow: 0px 0px 5px var(--shadowColor);
     border-radius: 500px;
     z-index: -1;
@@ -294,6 +294,7 @@ summary {
   @media screen and (max-width:450px){
     .logo-spin-image {
       width: 10em;
+      margin-bottom: 5em;
     }
     
   }

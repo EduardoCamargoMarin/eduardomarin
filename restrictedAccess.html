@@ -21,31 +21,21 @@
       </div>
       <div class="line-division"></div>
       <div class="btn-container">
-        <a href="./index.html"><button class="btn-menu">Noticias</button></a>
+        <a href="#noticia"><button class="btn-menu">Noticias</button></a>
       </div>
       <div class="line-division"></div>
       <div class="btn-container">
-        <a href="./index.html"><button class="btn-menu">Novidades</button></a>
+        <a href="#projeto"><button class="btn-menu">Projetos</button></a>
       </div>
       <div class="line-division"></div>
       <div class="btn-container">
-        <a href="./index.html"><button class="btn-menu">Protótipos</button></a>
+        <a href="#novidade"><button class="btn-menu">Boletim</button></a>
       </div>
       <div class="line-division"></div>
       <div class="btn-container">
-        <a href="./index.html"><button class="btn-menu">Conteúdo</button></a>
+        <a href="#profissional"><button class="btn-menu">Conteúdo Profissional</button></a>
       </div>
       <div class="line-division"></div>
-      <div class="btn-container">
-        <a href="./index.html"><button class="btn-menu">Solicitação</button></a>
-      </div>
-      <div class="line-division"></div>
-      <div class="btn-container">
-        <a href="./index.html"><button class="btn-menu">Contato</button></a>
-      </div>
-      <div class="line-division"></div>
-
-
       <button class="btn-btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
 
 <div style="width: 15em; height: 40em; opacity: .9;" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -56,11 +46,10 @@
   <div class="offcanvas-body">
     <div class="navbar-body-mobile">
     <a href="./index.html"><button class="btn-navbar"><span id="about">Inicio</span> </button></a>
-    <a href="#projects"><button class="btn-navbar"><span id="project">Noticias</span></button></a>
-    <a href="#sistersProject"><button class="btn-navbar"><span id="assistant">Novidades</span></button></a>
-    <a href="#services"><button class="btn-navbar"><span id="service">Softwares</span></button></a>
-    <a href="#partners"><button class="btn-navbar"><span id="partner">Conteúdo</span></button></a>
-    <a href="#contato"><button class="btn-navbar"><span id="contact">Contato</span></button></a>
+    <a href="#noticia"><button class="btn-navbar"><span id="project">Noticias</span></button></a>
+    <a href="#projeto"><button class="btn-navbar"><span id="assistant">Projetos</span></button></a>
+    <a href="#novidade"><button class="btn-navbar"><span id="service">Boletim</span></button></a>
+    <a href="#profissional"><button class="btn-navbar"><span id="service">Conteúdo Profissional</span></button></a>
 
     <select class="btn-navbar" id="language-selector-mobile" onchange="changeMobile()">
       <option style="color: black;" value="pt">Português</option>
@@ -80,14 +69,14 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
         <p>O lugar perfeito para saber de todas as novidades e novos protótipos desenvolvidos pela <strong>Eduardo Marin Soluções Digitais</strong></p>
-        <footer class="blockquote-footer">Marin, Eduardo<cite title="Source Title">2023</cite></footer>
+        <footer class="blockquote-footer">CEO - <cite title="Source Title">Eduardo Marin</cite></footer>
       </blockquote>
     </div>
   </div>
 
   <div class="container-spacing"></div>
 
-  <div class="card text-center">
+  <div id="noticia" class="card text-center">
     <div class="card-header">
       Novo conceito para assistente virtual no Brasil
     </div>
@@ -99,43 +88,56 @@
       2 days ago
     </div>
   </div>
+  <div class="container-spacing"></div>
+  <div class="card text-center">
+    <div class="card-header">
+      Quais projetos podemos desenvolver?
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Com o aumento da tecnologia, pensadores estão "pensando fora da caixa"</h5>
+      <p class="card-text">Desde eletropostos, energia solar e automação de processos estão tendo um grande impacto com a tecnologia, o que deve motivar o mercado a se mover mais rápido para atender a demanda necessária da humanidade. Os profissionais da área de tecnologia deve estar na linha de frente para competir com os desafios presentes na nossa realidade. </p>
+    </div>
+    <div class="card-footer text-body-secondary">
+      2 days ago
+    </div>
+  </div>
 
   <div class="container-spacing"></div>
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div id="projeto" class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./EVA/eva.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Projeto SISTERS</h5>
-          <p class="card-text">Saber o ser perfil profissional pode ser o seu maior desafio, veja alguns testes que você pode realizar para te ajudar: ""  ""  </p>
+          <p class="card-text">Assistentes virtuais desenvolvidas por nossa equipe para atender o usuário e auxiliar a encontrar as informações de forma rápida e interativa, atualmente o projeto conta com uma variedade de opções com personalidades únicas</p>
         </div>
         <div class="card-footer">
-          <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <small class="text-body-secondary">20/04/2023</small>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./images/chatbot.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">ChatBot</h5>
-          <p class="card-text">Linha de frente em empresas de T.I, o profissional dessa área deve possuir qualidades como "Pró-atividade, Organização, espirito de equipe" e conhecimentos em "SO Windowns, redes de computadores, pacote office"</p>
+          <p class="card-text">Uma nova linha de ChatBot foi desenvoldida pela <strong>Eduardo Marin Soluções Digitais</strong> para atender e responder tópicos importantes sobre processos de sua empresa, criando uma interface intuitiva para interação.</p>
         </div>
         <div class="card-footer">
-          <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <small class="text-body-secondary">27/04/2023</small>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./images/Aula.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Em breve</h5>
-          <p class="card-text">O inicio para a criação de um portfólio pode ser um caminho complexo, porém o importante é desenvolver uma pagina que mostre quem você é como desenvolvedor.</p>
+          <h5 class="card-title">Video Aulas</h5>
+          <p class="card-text">Atualmente estamos trabalhando em conteúdos inéditos para trazer aos usuários que desejam se desenvolver no mercado de T.I, fiquem ligados para as proximas atualizações do site.</p>
         </div>
         <div class="card-footer">
-          <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <small class="text-body-secondary">10/04/2023</small>
         </div>
       </div>
     </div>
@@ -143,7 +145,49 @@
 
 <div class="container-spacing"></div>
 
-  <div class="card text-center">
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/gamingimage.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Templates novos</h5>
+        <p class="card-text">Desenvolvidos para atender a sua necessidade de se destacar entre os demais, conquiste seus clientes pelo seu estilo e performance em entregar a melhor experiência.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">20/04/2023</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/profimage.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Templates novos</h5>
+        <p class="card-text">Esteja disposto a arriscar e sair vitorioso, com os novos templates da PHX você tera todos os olhares para os seus serviços.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">27/04/2023</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="./images/DUEimage.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Templates novos</h5>
+        <p class="card-text">Conquiste alem do que os olhos podem enxergar, com templates DUE você pode descobrir que o mundo pode ir muito além do que imagina.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">10/04/2023</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-spacing"></div>
+
+  <div id="novidade" class="card text-center">
     <div class="card-header">
       Mercado de trabalho T.I
     </div>
@@ -187,14 +231,15 @@
   </div>
 
   <div class="container-spacing"></div>
+  
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div id="profissional" class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./images/profissional.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Qual meu perfil profissional?</h5>
-          <p class="card-text">Saber o ser perfil profissional pode ser o seu maior desafio, veja alguns testes que você pode realizar para te ajudar: ""  ""  </p>
+          <p class="card-text">Saber o ser perfil profissional pode ser o seu maior desafio. O Teste que recomendamos a realizar é o DISC, que vai determinar seu perfil comportamental. Com essa ferramenta você vai compreender a si mesmo e como utilizar tal informação como uma vantagem em futuras entrevistas. </p>
         </div>
         <div class="card-footer">
           <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -203,10 +248,10 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./images/t.i.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Entenda sobre o analista de suporte</h5>
-          <p class="card-text">Linha de frente em empresas de T.I, o profissional dessa área deve possuir qualidades como "Pró-atividade, Organização, espirito de equipe" e conhecimentos em "SO Windowns, redes de computadores, pacote office"</p>
+          <p class="card-text">Linha de frente em empresas de T.I, o profissional dessa área deve possuir qualidades como "Pró-atividade, Organização, espirito de equipe" e conhecimentos em "SO Windows, redes de computadores e pacote office."</p>
         </div>
         <div class="card-footer">
           <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -215,10 +260,10 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="./images/site.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Portfólio ou site?</h5>
-          <p class="card-text">O inicio para a criação de um portfólio pode ser um caminho complexo, porém o importante é desenvolver uma pagina que mostre quem você é como desenvolvedor.</p>
+          <p class="card-text">O inicio para a criação de um portfólio pode ser um caminho complexo, porém o importante é desenvolver uma pagina que mostre quem você é como desenvolvedor. Defina um plano de estudos e área que deseja seguir, a partir desse ponto comece a criar projetos únicos, afim de enriquecer mais os conhecimentos sobre os tópicos estudados.</p>
         </div>
         <div class="card-footer">
           <small class="text-body-secondary">Last updated 3 mins ago</small>
