@@ -161,6 +161,7 @@ border: 2px;
 main  {
   padding-left: 16em;
   width: 99%;
+  background-image: url(./images/backimage.png);
 }
 @media screen and (max-width:450px) {
   main {
@@ -168,6 +169,7 @@ main  {
     padding-left: 0;
     margin-top: 100px;
     width: 94%;
+    background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
 }
 }
 .card-container {
@@ -175,6 +177,7 @@ main  {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 }
 .contact-container {
   display: flex;
@@ -219,10 +222,22 @@ main  {
   color: var(--fontSecudaryColor);
 }
 .card-body {
-  background-image: linear-gradient(90deg, #000000,#656565,#000000);
+  background-image: linear-gradient(90deg, #000000,#252525,#000000);
   color: var(--fontSecudaryColor);
 }
 .card-footer {
-  background-image: linear-gradient(90deg, #000000,#252525,#000000);
+  background-image: linear-gradient(90deg, #000000,#101010,#000000);
   color: var(--fontSecudaryColor);
+}
+.noticia-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:450px) {
+  .noticia-container {
+    justify-content: center;
+  }
 }
