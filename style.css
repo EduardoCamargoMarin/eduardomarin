@@ -420,6 +420,7 @@ display: none;
   background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
   border: 4px solid var(--borderColor);
   border-radius: 50px;
+  
 
 }
 .text-intro {
