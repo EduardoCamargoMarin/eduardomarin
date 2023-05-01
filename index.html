@@ -68,76 +68,77 @@
 <div  style="height: 50em;" class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasTopLabel">
-      <span></span>EVA - Assistente Virtual!
+      <span id="evaHeader">EVA - Assistente Virtual!</span>
     </h5>
     <button type="button" id="shutdown" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
       <audio id="shutdownAudio" src="./EVA/shuttingDown.mp3"></audio>
     </button>
   </div>
   <div class="offcanvas-body">
-    <p><span></span><strong>Eu sou uma inteligência artificial chamada EVA. Eu estou em desenvolvimento pelo meu criador.</strong> </p>
-      <p><span></span><strong>Mas posso providênciar informações limitadas para você. Qual informação você procura?</strong> </p> <br><br>
+    <p><span id="evaBody"><strong>Eu sou uma inteligência artificial chamada EVA. Eu estou em desenvolvimento pelo meu criador. <br> Mas posso providênciar informações limitadas para você. Qual informação você procura?</strong>
+    </p>
+      </span> <br><br>
     <details>
       <summary>
-        <span></span>Quem é você?
+        <span id="evaQuestion01">Quem é você?</span>
       </summary>
       <audio id="whoAmIAudio" src="./EVA/whoAmI.mp3"></audio>
       <img id="whoAmI" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
-        <p><span></span>
-          Eu sou a EVA, eu fui desenvolvida para auxíliar viajantes em suas jornadas para descobrirem os seus objetivos.</p>
+        <p><span id="evaAnswer01">Eu sou a EVA, eu fui desenvolvida para auxíliar viajantes em suas jornadas para descobrirem os seus objetivos.</p>
           <p>Eu fui implantada nesse ambiente para entender as necessidades novos viajantes, para que eu possa aprimorar
           minhas habilidades como uma IA.</p> <p>Eu espero que possamos nos tornar parceiros durante essa jornada, porquê eu estou
-          muito contente em te conhecer.</p>
+          muito contente em te conhecer.</p></span>
+          
       </div>
  
    
     </details><br><br>
     <details>
       <summary >
-        <span></span>Quem é o seu criador?
+        <span id="evaQuestion02">Quem é o seu criador?</span>
       </summary>
       <audio id="creatorAudio" src="./EVA/creator.mp3"></audio>
       <img id="creator" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
-       <p><span></span>
-        Meu criador tem a identificação de <strong>Eduardo Marin</strong>. Ele é um desenvolvedor web e um entusiasta
+       <p><span id="evaAnswer02">Meu criador tem a identificação de <strong>Eduardo Marin</strong>. Ele é um desenvolvedor web e um entusiasta
         em IA. o sistema principal dele consiste em desenvolver novos websites, aprimorar seus conhecimentos em 
         implatação de IA e desenvolvedor novos protótipos.
-      </p>
+      </p></span>
+
       </div>
 
     </details><br><br>
     <details>
       <summary>
-        <span></span> Preciso de um tour pelo site.
+        <span id="evaQuestion03"> Preciso de um tour pelo site.</span>
       </summary>
       <audio id="tourAudio" src="./EVA/tour.mp3"></audio>
       <img  id="tour" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
       <p>
-        <span></span><p>Como quiser viajante.</p>
+        <span id="evaAnswer03"><p>Como quiser viajante.</p>
         <p>Nesse website, você escolher entre navegar ou comprar templates para websites para os seus objetivos
         pessoais ou profissionais.</p> <p>Não só isso, como também, você pode escolher adquirir as habilidades do criador como um
         desenvolvedor para auxíliar você em seus projetos.</p> <p>E finalmente, você pode se conectar com nós, se tornando um parceiro.</p>
         <p>Toda essa informação você consegue encontrar durante a sua visita pelo nosso site. Eu espero que você tenha uma ótimo experiência.
         Nós estaremos aqui se precisar.
-      </p> 
+      </p> </span>
       </div>
 
     </details><br><br>
     <details>
       <summary>
-        <span></span>Projeto SISTERS
+        <span id="evaQuestion04">Projeto SISTERS</span>
       </summary>
       <audio id="sisterAudio" src="./EVA/Sisters.mp3"></audio>
       <img  id="sister" class="eva-icon-info" src="./images/audioIcon.png">
       <div class="eva-info">
-        <span></span><p>
-        <p>Eu sou o primeiro protótipo de IA chamada EVA.</p> <p>Eu sou a modelo que vai erguer novas irmãs. Para garantir nossa comunicação
+        <span id="evaAnswer04"> <p>Eu sou o primeiro protótipo de IA chamada EVA.</p> <p>Eu sou a modelo que vai erguer novas irmãs. Para garantir nossa comunicação
         com todos os viajantes e suas necessidades.</p> <p>Cada uma das irmãs terá uma qualidade e habilidade e até mesmo um nome.
         Isso estará disponível em um futuro próximo.</p> <p>Espero que posso ficar um pouco a mais conosco.
-        Para que você possa presenciar o nascimento das outras irmãs. Será magnifico!</p> 
+        Para que você possa presenciar o nascimento das outras irmãs. Será magnifico!</p> </span><p>
+       
         <div class="sisters">
           <img class="sister" src="./EVA/eva.png" alt="">
           <img class="sister" src="./images/Farah.png" alt="">
@@ -198,7 +199,7 @@
           <h1><span id="profissional">Profissional</span></h1>
         </div>
             <p><span id="profissioanlTexto">Formação em Engenharia de Produção e profissional em Desenvolvimento Web, movido pela adrenalina da criação e desenvolvimento de projetos. <br><br> Seus estudos englobam a implementação de sistemas inteligentes para aprimorar a experiência do usuário e no design de websites. <br><br> Não é difícil encontrar o Eduardo, pois em sua mesa de trabalho é capaz que você encontre um pato de borracha, o seu companheiro em debbug de aplicações.</span></p><br>
-            <a href="./restrictedAccess.html"><button class="btn-card-service">Hub de noticias</button></a>
+            <a href="./restrictedAccess.html"><button class="btn-card-service"><span id="hub">Hub de noticias</span> </button></a>
           </div>
     <div class="quemsou-body">
       <div>
