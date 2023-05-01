@@ -7,6 +7,8 @@
   --cardColor: #c7e6ff;
   --borderColor: #000000;
   --shadowColor: #444444;
+  --favi:url("https://sd-images.operacdn.com/api/v1/images/e01f5e995117d1f4cffdbff2b99f829a9d7505d3.png");
+  --favi2: url(https://sd-images.operacdn.com/api/v1/images/a07f3d790e4930d428dd93da3736a027c3c3074d.png);
 }
 * {
   margin: 0;
@@ -134,6 +136,19 @@ border: 2px;
   font-weight: 600;
   background-image: linear-gradient(90deg, #000000,#252525,#000000);
 }
+.btn-navbar {
+  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  color: var(--fontSecudaryColor);
+  font-size: 12pt;
+  border-radius: 10px;
+  width: 13em;
+  transition: .2s;
+  font-weight: 500;
+}
+.btn-navbar:hover {
+  background-image: linear-gradient(90deg, #000000,#101010,#000000);
+  font-weight: 600;
+}
 
 @media screen and (max-width:450px) {
   .btn-btn-primary {
@@ -154,7 +169,7 @@ border: 2px;
     color: var(--fontSecudaryColor);
     font-size: 12pt;
     border-radius: 10px;
-    width: 10em;
+    width: 13em;
     transition: .2s;
     font-weight: 500;
   }
@@ -162,6 +177,28 @@ border: 2px;
 main  {
   padding-left: 16em;
   width: 99%;
+}
+@media screen and (min-width:1800px) {
+  .noticia-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15em;
+  }
+  .prime-logo {
+    width: 21em;
+  }
+  .btn-menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  main {
+    width: 90%;
+    margin-left: 7em;
+  }
+  footer {
+    margin-left: 10em;
+  }
 }
 @media screen and (max-width:450px) {
   main {
@@ -272,4 +309,43 @@ h3 {
     color: var(--fontSecudaryColor);
   }
 }
+
+.source.svelte-wo3w6o.svelte-wo3w6o:before {
+  --size: 16px;
+  background: var(--favi);
+  background-size: var(--size) var(--size);
+  content: "";
+  display: inline-block;
+  height: var(--size);
+  margin: 0 8px 0 0;
+  vertical-align: text-bottom;
+  width: var(--size);
+}
+.source.svelte-wo3w6o2.svelte-wo3w6o2:before {
+  --size: 16px;
+  background: var(--favi2);
+  background-size: var(--size) var(--size);
+  content: "";
+  display: inline-block;
+  height: var(--size);
+  margin: 0 8px 0 0;
+  vertical-align: text-bottom;
+  width: var(--size);
+}
+.source-link {
+  color: var(--fontSecudaryColor);
+  font-weight: 600;
+}
+.source-link:hover {
+  color: #77adff
+}
+@media screen and (max-width: 450px) {
+  .source-img {
+    width: 20em;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px var(--shadowColor);
+    border: 3px solid var(--borderColor);
+  }
+}
+
 

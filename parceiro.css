@@ -386,6 +386,14 @@ padding-left: 30px;
   color: var(--fontSecudaryColor);
   animation: neons 2s ease-in-out infinite;
 }
+@media screen and (min-width:1920px) {
+  .missao {
+    width: 99%
+  }
+  .visao {
+    width: 99%;
+  }
+}
 @keyframes neons {
   0% {
     box-shadow: 5px 5px 5px #616161;

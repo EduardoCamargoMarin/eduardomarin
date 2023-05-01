@@ -37,9 +37,13 @@
       </div>
       <div class="line-division"></div>
       <div class="btn-container">
-        <a href="#recomendacoes"><button class="btn-menu">Recomendações</button></a>
+        <a href="#teste"><button class="btn-menu">Testes</button></a>
       </div>
       <div class="line-division"></div>
+      <div class="btn-container">
+        <a href="#recomendacoes"><button class="btn-menu">Recomendações</button></a>
+      </div>
+
       <button class="btn-btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
 
 <div style="width: 15em; height: 40em; opacity: .9;" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -54,6 +58,7 @@
     <a href="#projeto"><button class="btn-navbar"><span id="assistant">Projetos</span></button></a>
     <a href="#novidade"><button class="btn-navbar"><span id="service">Boletim</span></button></a>
     <a href="#profissional"><button class="btn-navbar"><span id="service">Conteúdo Profissional</span></button></a>
+    <a href="#teste"><button class="btn-navbar"><span id="service">Testes</span></button></a>
     <a href="#recomendacoes"><button class="btn-navbar">Recomendações</button></a>
     
   </div>
@@ -80,27 +85,30 @@
 <h3>Noticias</h3>
   <div id="noticia" class="card text-center">
     <div class="card-header">
-      Novo conceito para assistente virtual no Brasil
+      <div class="source svelte-wo3w6o"><a class="source-link" href="https://www.ign.com/articles/skyrim-mod-uses-chatgpt-and-other-ai-tools-to-give-npcs-a-memory-and-endless-things-to-say">IGN.com: Games</a></div>
     </div>
     <div class="card-body">
-      <h5 class="card-title">Agilidade personalizada</h5>
-      <p class="card-text">Com o desenvolvimento de bots especializados na comunicação do usuário, desenvolvedores estão mais preocupados em proporcionar uma experiência única para atender as necessidades de seus clientes </p>
+      <img class="source-img" src="	https://discover.operacdn.com/assets/tn/l/mq/495e20c2f62116e9743b4e1a2700f0c4ad06d1ac"><br><br>
+      <h5 class="card-title">Mod de Skyrim usa ChatGPT e outras ferramentas de IA para dar aos NPCs uma memória e infinitas coisas a dizer.</h5>
+      <p class="card-text">Um modder de Skyrim chamado Art From The Machine mostrou um mod em que estão trabalhando, que usa o ChatGPT e outras ferramentas de IA para dar aos NPCs uma memória da sua aventura, infinitas coisas para dizer e uma maneira de fazer perguntas a eles com sua voz.</p>
     </div>
     <div class="card-footer text-body-secondary">
-      2 days ago
+      01/05/2023
     </div>
   </div>
+  
   <div class="container-spacing"></div>
   <div class="card text-center">
     <div class="card-header">
-      Quais projetos podemos desenvolver?
+      <div class="source svelte-wo3w6o2"><a class="source-link" href="https://www.theguardian.com/games/2023/apr/26/pushing-buttons-unrecord-game">The Guardian: Games</a></div>
     </div>
     <div class="card-body">
-      <h5 class="card-title">Com o aumento da tecnologia, pensadores estão "pensando fora da caixa"</h5>
-      <p class="card-text">Desde eletropostos, energia solar e automação de processos estão tendo um grande impacto com a tecnologia, o que deve motivar o mercado a se mover mais rápido para atender a demanda necessária da humanidade. Os profissionais da área de tecnologia deve estar na linha de frente para competir com os desafios presentes na nossa realidade. </p>
+      <img class="source-img" src="		https://discover.operacdn.com/assets/tn/l/mq/9ed9785e6e5b5db7f2b828780de0089cfa2f4ccf"><br><br>
+      <h5 class="card-title">Apertando Botões: Será que o novo e brutal jogo de tiro da polícia "bodycam" é indistinguível demais da realidade?</h5>
+      <p class="card-text">Na newsletter desta semana: Unrecord coloca os jogadores no papel de um policial e parece muito realista em relação aos tiroteios - então, quão realista é muito realista?</p>
     </div>
     <div class="card-footer text-body-secondary">
-      2 days ago
+      26/04/2023
     </div>
   </div>
 
@@ -186,9 +194,10 @@
     </div>
   </div>
 </div>
-<div id="novidade" class="container-spacing"></div>
-<h3>Boletim</h3>
+<div  class="container-spacing"></div>
+<h3 id="novidade">Boletim</h3>
 <div class="noticia-container">
+  
   <div class="container-spacing"></div>
   <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
     <img src="./images/mockup01.png" class="card-img-top" alt="...">
@@ -196,10 +205,27 @@
       <p class="card-text"><strong>Crescimento exponencial</strong><br> A companhia conquista a sua primeira sede empresarial na cidade de Itatiba - SP.</p>
     </div>
   </div>
+  <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
+    <img src="./images/evamockup.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"><strong>Assistente mobile</strong><br>Projeto SISTERS é implantado para o acesso em dispositivos móveis.</p>
+    </div>
+  </div>
+</div>
+<div class="container-spacing"></div>
+<div class="noticia-container">
+  
+  <div class="container-spacing"></div>
+  <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
+    <img src="./images/templatemockup.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"><strong>Oferta x Demanda</strong><br>Sistema "On demand" é implementado para competir com o desenvolvimento de layouts em websites.  </p>
+    </div>
+  </div>
 <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
   <img src="./images/mockupSISTER.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text"><strong>Uma nova era digital</strong><br>Eduardo Marin Soluções Digitais lança o seu primeiro projeto de assistente com inteligência virtual no mercado em 2023.</p>
+    <p class="card-text"><strong>Uma nova era digital</strong><br>Eduardo Marin Soluções Digitais lança o seu primeiro projeto de assistente com inteligência virtual no mercado tecnológico em 2023.</p>
   </div>
 </div>
 </div>
@@ -209,7 +235,7 @@
   <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
     <img src="./images/mobilemockup.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="card-text"><strong>Competitividade</strong><br> Eduardo Marin Soluçoes Digitais expande sua influência com a entrega rápida de projetos utilizando ferramentas de metodologia ágil.</p>
+      <p class="card-text"><strong>Competitividade</strong><br>A companhia expande sua influência com a entrega rápida de projetos responsivos.</p>
     </div>
   </div>
 <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
@@ -232,7 +258,7 @@
 <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
   <img src="./images/ideias.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text"><strong>Concretizando ideias</strong><br>Eduardo com o consultor de marketing Fabio Chrispim Marin após a reunião de negócios sobre o novo conceito em desenvolvimento de softwares.</p>
+    <p class="card-text"><strong>Concretizando ideias</strong><br>Eduardo com o consultor de marketing Fabio Chrispim Marin após a reunião de negócios sobre as novas tendências do mercado de tecnologia e informação.</p>
   </div>
 </div>
 </div>
@@ -242,7 +268,7 @@
   <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
     <img src="./images/formatura.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="card-text"><strong>Seguindo sonhos</strong><br>Eduardo Marin conquista a carreira acadêmica como Engenheiro de Produção em 2022.</p>
+      <p class="card-text"><strong>Seguindo sonhos</strong><br>Eduardo conquista a carreira acadêmica como Engenheiro de Produção em 2022.</p>
     </div>
   </div>
 
@@ -260,14 +286,14 @@
   <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
     <img src="./images/palestra.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="card-text"><strong>O atomo piloto</strong><br>Eduardo realiza palestras sobre os desafios dos profissionais de T.I no mercado de trabalho na prefeitura de Itatiba - SP e no Centro de Formação Profissional em 2021.</p>
+      <p class="card-text"><strong>O átomo piloto</strong><br>Eduardo realiza palestras sobre os desafios dos profissionais de T.I no mercado de trabalho na prefeitura de Itatiba - SP e no Centro de Formação Profissional em 2021.</p>
     </div>
   </div>
 
 <div class="card" style="width: 20rem; border-bottom: 5px solid #000000;border-right: 5px solid #000000;">
   <img src="./images/Curso.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text"><strong>Expandindo horizontes</strong><br>Eduardo abre seu primeiro curso de extensão na Universidade São Francisco para os alunos de todas as Engenharia em 2019.</p>
+    <p class="card-text"><strong>Expandindo horizontes</strong><br>Eduardo abre seu primeiro curso de extensão na Universidade São Francisco para os alunos de Engenharia em 2019.</p>
   </div>
 </div>
 </div>
@@ -281,8 +307,8 @@
       Mercado de trabalho T.I
     </div>
     <div class="card-body">
-      <h5 class="card-title">Vagas de emprego Junior estão para Senior</h5>
-      <p class="card-text">Muitas empresas divulgam vagas com inconsistência nos requisitos Junior, portanto não fique desmotivado, pois muitas vezes recrutadores não avaliam as vagas que disponibilizam. Entenda o mercado para ser valorizado.</p>
+      <h5 class="card-title">Juniors são os novos Sêniors do mercado</h5>
+      <p class="card-text">As vagas de emprego estão apresentando inconsistência nos requisitos, com muitas empresas divulgando vagas para o nível Júnior quando na verdade elas se aplicam a profissionais Sênior. Isso pode ser desmotivador, mas é importante lembrar que muitas vezes os recrutadores não avaliam corretamente as vagas que disponibilizam. É necessário entender o mercado para se valorizar e estar preparado para buscar as oportunidades que condizem com seu perfil e experiência.</p>
     </div>
     <div class="card-footer text-body-secondary">
       
@@ -293,11 +319,11 @@
 
   <div class="card text-center">
     <div class="card-header">
-      Desenvolvedor e os dilemas
+      Desenvolvedor e os seus dilemas
     </div>
     <div class="card-body">
-      <h5 class="card-title">Você é o espelho de seu código</h5>
-      <p class="card-text">Para ser um bom desenvoledor, não precisa estudar até o burnout aparecer, lembre-se de priorizar suas necessidades, a experiência supera qualquer ranking.</p>
+      <h5 class="card-title">Você é o espelho do seu código</h5>
+      <p class="card-text">Para se tornar um bom desenvolvedor, é importante lembrar que você é um reflexo do seu código. No entanto, isso não significa que você precise estudar até o esgotamento. É fundamental que você priorize suas necessidades e encontre um equilíbrio saudável entre trabalho e vida pessoal. Afinal, a experiência e o conhecimento adquiridos ao longo do tempo são mais valiosos do que um ranking superficial de habilidades. Concentre-se em desenvolver suas habilidades com paciência e determinação, e lembre-se de cuidar de si mesmo para alcançar sucesso duradouro.</p>
     </div>
     <div class="card-footer text-body-secondary">
      
@@ -305,22 +331,6 @@
   </div>
 
   <div class="container-spacing"></div>
-
-  <div class="card text-center">
-    <div class="card-header">
-      Fácil como centralizar uma "div"
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">O Foco do estudo</h5>
-      <p class="card-text">Profissional de T.I deve sempre se atualizar das novidades, mas lembre-se de respeitar o seu corpo e sanidade mental, ter consistência em seus estudos vão trazer mais resultados que esforços desnecessários.</p>
-    </div>
-    <div class="card-footer text-body-secondary">
-     
-    </div>
-  </div>
-
-  <div class="container-spacing"></div>
-  
 
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
@@ -360,6 +370,52 @@
       </div>
     </div>
   </div>
+  <div class="container-spacing"></div>
+  <h3 id="teste">Testes</h3>
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">DISC</h5>
+          <p class="card-text">O Teste DISC tem o objetivo de auxiliar o profissional a entender o seu perfil comportamental.</p>
+          <a href="#teste"><button class="btn-navbar">Em breve</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Teste de conhecimento técnicos</h5>
+          <p class="card-text">Realize o teste de conhecimentos gerais aplicados a empresas de T.I e descubra os tópicos mais questionados em entrevistas.</p>
+          <a href="#teste"><button class="btn-navbar">Em breve</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-spacing"></div>
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Teste de inglês</h5>
+          <p class="card-text">Exercício para testar o seu nível de inglês para futuras entrevistas com feedback e orientações para estudo.</p>
+          <a href="#teste"><button class="btn-navbar">Em breve</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Teste de desenvolvedor</h5>
+          <p class="card-text">Desafio para testar os seus conhecimentos lógicos antes das famosas provas técnicas em entrevista de emprego.</p>
+          <a href="#teste"><button class="btn-navbar">Em breve</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="container-spacing"></div>
 <h3 id="recomendacoes">Recomendações</h3>
 
