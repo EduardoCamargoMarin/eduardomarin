@@ -179,6 +179,7 @@ main  {
   width: 99%;
 }
 @media screen and (min-width:1800px) {
+
   .noticia-container {
     display: flex;
     flex-direction: row;
@@ -190,11 +191,11 @@ main  {
   .btn-menu {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   main {
-    width: 90%;
-    margin-left: 7em;
+    width: 86%;
+    margin-left: 12em;
   }
   footer {
     margin-left: 10em;
@@ -267,6 +268,9 @@ h3 {
   background-image: linear-gradient(90deg, #000000,#656565,#000000);
   color: var(--fontSecudaryColor);
   
+}
+.card-img-top {
+  width: 10px;
 }
 .card-body {
   background-image: linear-gradient(90deg, #000000,#252525,#000000);
