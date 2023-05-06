@@ -1,8 +1,8 @@
 
-    let prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.scrollY;
 
     window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
+      let currentScrollPos = window.scrollY;
 
       if (prevScrollpos > currentScrollPos) {
         document.querySelector("header").classList.remove("hidden");
