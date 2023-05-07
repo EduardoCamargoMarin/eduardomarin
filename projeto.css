@@ -320,17 +320,15 @@
       }
     }
     h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: var(--fontSecudaryColor);
       background-image: linear-gradient(90deg, #000000,#616161,#000000);
       border: 4px solid var(--borderColor);
       border-radius: 10px 20px 50px;
       box-shadow: 3px 3px 3px var(--shadowColor);
       padding: 5px;
-    }
-    
-    .btn-card:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
     }
     .arrow {
     display: none;
@@ -401,35 +399,46 @@
         box-shadow: 10px 10px 5px var(--shadowColor);
         margin:0;
       }
-      .btn-card {
-        background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-        border: 3px solid var(--borderColor);
-        border-bottom: 10px solid var(--borderColor);
-        width: 20em;
-        height: 3em;
-        border-radius: 50px 20px;
-        margin-bottom: 30px;
-        font-weight: 700;
-        transition: .5s;
-      }
-      @media screen and (max-width:450px) {
-        .btn-card {
-            background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-            border: 3px solid var(--borderColor);
-            width: 20em;
-            height: 40px;
-            border-radius: 50px 20px;
-            margin-top: 10px;
-          }
-      }
       .image-card {
         width: 20em;
         border-radius: 20px;
       }
     }
-    .btn-card:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
+    .image-containers {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      height: 640px;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      background-image: url(./images/backimage.png);
+      border-radius: 20px;
+      border-bottom: 10px solid var(--borderColor);
+      border-top: 10px solid var(--borderColor);
+    }
+    .image-containers::-webkit-scrollbar{
+      width: 12px;
+    
+    }
+    .image-containers::-webkit-scrollbar-track {
+      background-image: linear-gradient(90deg, #000000,#252525,#000000);
+      border-radius: 10px;
+    }
+    .image-containers::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    @media screen and (max-width:450px){
+      .image-containers {
+        display: grid;
+        height: 790px;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        background-image: url(./images/backimage.png);
+      }
     }
     .btn-container {
       display: flex;
@@ -447,23 +456,35 @@
       border-radius: 50px 20px;
       margin-bottom: 30px;
       font-weight: 700;
-      transition: .5s;
-    }
-    @media screen and (max-width:450px) {
-      .btn-card {
-          background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-          border: 3px solid var(--borderColor);
-          width: 20em;
-          height: 40px;
-          border-radius: 50px 20px;
-          margin-top: 10px;
-          margin-left: 0em;
-        }
+      transition: .3s;
     }
     .btn-card:hover {
       background-color: var(--headerMainColor);
       color: var(--fontMainColor);
       border-bottom: 3px solid var(--borderColor);
+      animation: moveset .2s linear forwards;
+    }
+    @keyframes moveset {
+      0%{
+        background-image: linear-gradient(90deg, #ffffff,#000000,#101010,#000000);
+      }
+      25% {
+        background-image: linear-gradient(90deg, #ffffff,#ffffff,#000000,#101010);
+        color: var(--fontMainColor);
+      }
+      50% {
+        background-image: linear-gradient(90deg, #ffffff,#ffffff,#ffffff,#000000);
+        color: var(--fontMainColor);
+      }
+      75% {
+        background-image: linear-gradient(90deg, #ffffff,#ffffff,#ffffff,#ffffff);
+        color: var(--fontMainColor);
+      }
+      100%{
+        background-image: linear-gradient(90deg, #ffffff,#ffffff,#ffffff,#ffffff);
+        box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+        color: var(--fontMainColor);
+      }
     }
   .intro-video {
     display: grid;

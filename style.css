@@ -657,7 +657,7 @@ display: none;
         height: 40px;
         border-radius: 50px 20px;
         margin-top: 10px;
-        transition: .5s;
+        transition: .2s;
         font-weight: 700;
       }
   .btn-card:hover {
@@ -665,6 +665,7 @@ display: none;
     color: var(--fontSecudaryColor);
     border-bottom: 3px solid var(--borderColor);
     color: var(--fontMainColor);
+    animation: moveset .2s linear forwards;
   }
   @media screen and (max-width:450px) {
     .btn-card {
@@ -871,7 +872,8 @@ display: none;
   font-weight: 700;
   transition: .5s;
   color: var(--fontMainColor);
-  transition: .5s;
+  transition: .2s;
+  
   }
   @media screen and (max-width:450px) {
     .btn-card-service {
@@ -888,6 +890,7 @@ display: none;
     color: var(--fontSecudaryColor);
     color: var(--fontMainColor);
     border-bottom: 3px solid var(--borderColor);
+    animation: moveset .2s linear forwards;
   }
   .project-card-title {
     display: flex;
@@ -1083,7 +1086,7 @@ display: none;
   font-weight: 700;
   transition: .5s;
   color: var(--fontMainColor);
-  transition: .5s;
+  transition: .2s;
   }
   @media screen and (max-width:450px) {
     .btn-card-partner {
@@ -1100,6 +1103,7 @@ display: none;
     color: var(--fontSecudaryColor);
     border-bottom: 3px solid var(--borderColor);
     color: var(--fontMainColor);
+    animation: moveset .2s linear forwards;
   }
   .contact-container {
     display: flex;
