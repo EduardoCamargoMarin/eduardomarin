@@ -999,7 +999,7 @@ display: none;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 340px;
+    height: 640px;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     background-image: url(./images/backimage.png);
@@ -1021,11 +1021,10 @@ display: none;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
   
-  
   @media screen and (max-width:450px){
     .image-containers {
       display: grid;
-      height: 500px;
+      height: 450px;
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
       background-image: url(./images/backimage.png);
