@@ -3,9 +3,8 @@
     --fontMainColor: #000000;
     --fontSecudaryColor: #f7f7f7;
     --headerMainColor: #05013d;
-    --hoverColor: #76c8ff;
     --cardColor: #c7e6ff;
-    --borderColor: #000000;
+    --borderColor: #CFB776;
     --shadowColor: #444444;
 }
 * {
@@ -20,18 +19,19 @@ body {
     cursor: url(./images/cursor1.cur),default;
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+    background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
    
 }
 body::-webkit-scrollbar{
-  width: 12px;
+  width: 9px;
 }
 body::-webkit-scrollbar-track {
   background-image: linear-gradient(90deg, #000000,#252525,#000000);
 }
 body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
-  border-radius: 10px;
+  background-image: linear-gradient(90deg, #1E1A18,#CFB776,#1E1A18);
+
+  border-radius: 4px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   
 }
@@ -53,8 +53,10 @@ header {
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
-    border-bottom: 2px solid white;
+    background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
+    border-bottom: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
+    border-left: 1px solid var(--borderColor);
     opacity: 1;
     transition: transform .6s ease-in-out;
     z-index: 12;
@@ -78,8 +80,7 @@ button {
     width: 20em;
     margin-bottom: 5px;
     background-image: linear-gradient(90deg, #000000,#252525,#000000);
-    border-bottom: 5px solid var(--borderColor);
-    border-top: 1px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
     border-radius: 20px 20px 10px;
     animation:  neons 2s ease-in-out infinite;
     padding: 5px;
@@ -89,13 +90,13 @@ summary{
   border-radius: 10px 20px 50px;
   height: 3em;
   padding: 10px;
-  border-left: 4px solid #ffffff;
+  border-left: 4px solid var(--borderColor);
   color: var(--fontSecudaryColor);
   transition: .2s;
   border-left: 4px solid var(--backgroundMainColor);
 }
 summary:hover {
-  border-left: 4px solid #00ff2a;
+  border-left: 4px solid var(--borderColor);
   margin-left: 1em;
 
 }
@@ -119,13 +120,13 @@ summary:hover {
 }
 @keyframes neon {
   0% {
-    box-shadow:  2px 2px 30px var(--hoverColor);
+    box-shadow:  0px 0px 10px var(--borderColor);
   }
   50% {
-    box-shadow:  2px 2px 30px var(--fontSecudaryColor);
+    box-shadow:  0px 0px 10px var(--fontMainColor);
   }
   100% {
-    box-shadow:  2px 2px 30px var(--hoverColor);
+    box-shadow:  0px 0px 10px var(--borderColor);
   }
 }
 @media  screen and (max-width: 450px) {
@@ -146,22 +147,23 @@ summary {
   color: var(--fontSecudaryColor);
 }
 .offcanvas-header {
-  background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3);
+  background-image: linear-gradient(90deg,#000000,#252525,#656565);
   color: var(--fontMainColor);
-  box-shadow: inset 4px 4px 2px var(--borderColor);
+  border: 1px solid var(--borderColor);
 }
 .offcanvas-body {
-  background-image: linear-gradient(black, #616161, black);
+  background-image: linear-gradient(90deg,#000000,#252525,#000000);
  color: var(--fontSecudaryColor);
+ border: 1px solid var(--borderColor);
 }
 .eva-info {
-  background-image: linear-gradient(black, #616161, black);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border-radius: 50px 20px;
   width: 75em;
   padding: 1em;
   color: var(--fontSecudaryColor);
   box-shadow: 3px 3px 5px var(--shadowColor);
-  border-top: 4px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
 }
 .sisters {
   display: flex;
@@ -179,14 +181,14 @@ summary {
     font-weight: 600;
   }
   .offcanvas-header {
-    background-image: linear-gradient(90deg, #000000,#656565,#a3a3a3);
+    background-image: linear-gradient(90deg,#000000,#252525,#656565);
     color: var(--fontMainColor);
   }
   .offcanvas-body {
    background-color: var(--headerMainColor);
    color: var(--fontMainColor);
    font-weight: 500;
-   background-image: linear-gradient(90deg, #000000,#616161,#000000);
+   background-image: linear-gradient(90deg,#000000,#101010,#000000);
   }
   .offcanvas-body p {
     color: var(--fontSecudaryColor);
@@ -233,16 +235,17 @@ nav {
   }
 }
 .btn-prime {
-    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    background-image: linear-gradient(90deg,#000000,#101010,#000000);
     color: var(--fontSecudaryColor);
     font-size: 12pt;
     border-radius: 10px;
     width: 10em;
     transition: .2s;
     font-weight: 500;
+    border: 1px solid var(--borderColor);
 }
 .btn-prime-select {
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   color: var(--fontSecudaryColor);
   font-size: 12pt;
   border-radius: 10px;
@@ -252,15 +255,14 @@ nav {
   height: 30px;
   padding-left: 40px;
   transition: .5s;
+  border: 1px solid var(--borderColor);
   
 }
 .btn-prime-select:hover {
-  background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
-  color: #000000;
-  font-weight: 700;
+animation: moveset .3s ease-in-out forwards;
 }
 .btn-prime-language {
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   color: var(--fontSecudaryColor);
   font-size: 12pt;
   border-radius: 10px;
@@ -268,32 +270,24 @@ nav {
   transition: .2s;
   font-weight: 500;
   height: 30px;
+  border: 1px solid var(--borderColor);
 }
 .btn-prime-language:hover {
-  background-image: linear-gradient(90deg, #000000,#252525,#000000);
-  color: var(--fontSecudaryColor);
-  font-size: 12pt;
-  border-radius: 10px;
-  width: 6em;
-  transition: .2s;
-  font-weight: 500;
-  height: 30px;
-  transition: .5s;
+  animation: moveset .3s ease-in-out forwards;
   
 }
 .btn-btn-primary {
   display: none;
   margin-top: 0; 
-  background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c); 
-  border: 3px solid #000000; 
-  color: #000000; font-weight: 800;
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  border: 1px solid var(--borderColor); 
+  color: var(--fontSecudaryColor); 
+  font-weight: 800;
   border-radius: 50px;
   width: 5em;
 }
 .btn-btn-primary:hover {
-  color: var(--fontSecundaryColor);
-  font-weight: 600;
-  background-image: linear-gradient(90deg, #000000,#252525,#000000);
+  animation: moveset .3s ease-in-out forwards;
 }
 
 @media screen and (max-width:450px) {
@@ -308,13 +302,18 @@ nav {
     gap: 30px;
   }
   .btn-navbar {
-    background-image: linear-gradient(90deg, #000000,#616161,#000000);
+    background-image: linear-gradient(90deg,#000000,#101010,#000000);
     color: var(--fontSecudaryColor);
     font-size: 12pt;
     border-radius: 10px;
     width: 10em;
     transition: .2s;
     font-weight: 500;
+    border: 1px solid var(--borderColor);
+
+  }
+  .btn-navbar:hover {
+    animation: moveset .2s ease-in-out forwards;
   }
 }
 
@@ -327,9 +326,7 @@ nav {
 display: none;
     }
     .btn-prime:hover {
-      color: var(--fontMainColor);
-      font-weight: 600;
-      background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+      animation: moveset .3s ease-in-out forwards;
   }
 .btn-prime-language {
 display: none;
@@ -337,25 +334,10 @@ display: none;
     
 }
 .btn-prime:hover {
-    color: var(--fontMainColor);
-    font-weight: 600;
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+  animation: moveset .3s ease-in-out forwards;
 
 
 }
-.btn-prime::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2.5px;
-    background-image: linear-gradient(90deg, #000000,#ffffff,#a3a3a3); /* Parametrizável*/
-    transition: width .15s ease-in;
-  }
-  
-  .btn-prime:hover::after {
-    width: 100%;
-    
-  }
   main {
     padding-top: 6em;
   }
@@ -364,19 +346,31 @@ display: none;
         padding-top: 7.6em;
     }
   }
-
+  .intro-empresa {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 4px 4px 5px var(--shadowColor);
+    border: 1px solid var(--borderColor);
+    margin-top: 10px;
+    }
+    @media screen and (max-width:450px) {
+      .intro-empresa {
+        margin-top: -20px;
+      }
+    }
 .intro-video {
     display: grid;
     align-items: center;
     justify-content: center;
     width: 100%;
     border-radius: 30px;
-    border-bottom: 1px solid var(--borderColor);
     box-shadow: 4px 4px 5px var(--shadowColor);
     filter: grayscale(0.5);
-    border-bottom: 10px solid var(--borderColor);
-    border-top: 10px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
     margin-top: 10px;
+    filter: grayscale(70%);
     }
     @media screen and (max-width:450px) {
       .intro-video {
@@ -432,9 +426,6 @@ display: none;
   justify-content: center;
   flex-direction: column;
   padding: 2em;
-  background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
-  border: 4px solid var(--borderColor);
-  border-radius: 50px;
   
 
 }
@@ -446,15 +437,45 @@ display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 10px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border-top: 1px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   color: var(--fontSecudaryColor);
   transition: .5s;
   padding: 1px;
+  animation: neons 2s ease-in-out infinite;
+}
+
+
+.visao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  color: var(--fontSecudaryColor);
+  transition: .5s;
+  animation: neons 2s ease-in-out infinite;
+}
+.valores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  padding: 10px;
+  color: var(--fontSecudaryColor);
+  width: 100%;
   animation: neons 2s ease-in-out infinite;
 }
 @keyframes neons {
@@ -468,15 +489,32 @@ display: none;
     box-shadow: 5px 5px 5px #616161;
   }
 }
+@media screen and (max-width:450px) {
+.missao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  color: var(--fontSecudaryColor);
+  transition: .5s;
+  padding: 1px;
+  animation: neons 2s ease-in-out infinite;
+}
+
 
 .visao {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 10px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
@@ -489,9 +527,8 @@ display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: 10px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   padding: 10px;
@@ -499,49 +536,6 @@ display: none;
   width: 100%;
   animation: neons 2s ease-in-out infinite;
 }
-@media screen and (max-width:450px) {
-  .missao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    background-image: linear-gradient(90deg, #000000,#616161,#000000);
-    border-radius: 20px;
-    margin-bottom: 50px;
-    box-shadow: 5px 5px 5px var(--shadowColor);
-    color: var(--fontSecudaryColor);
-    padding: 20px;
-  }
-  .visao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    background-image: linear-gradient(90deg, #000000,#616161,#000000);
-    border-radius: 20px;
-    margin-bottom: 50px;
-    box-shadow: 5px 5px 5px var(--shadowColor);
-    color: var(--fontSecudaryColor);
-    padding: 20px;
-  }
-  .valores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    background-image: linear-gradient(90deg, #000000,#616161,#000000);
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px var(--shadowColor);
-    padding: 10px;
-    color: var(--fontSecudaryColor);
-    padding: 20px;
-  }
 }
 .video-sister {
   display: flex;
@@ -555,6 +549,7 @@ display: none;
   border-radius: 50px;
   width: 70em;
   box-shadow:  2px 2px 7px var(--shadowColor);
+  border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
   .main-video {
@@ -568,10 +563,8 @@ display: none;
     justify-content:center ;
     flex-direction: column;
     gap: 15px;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    border-left: 1px solid var(--borderColor);
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+    border: 1px solid var(--borderColor);
+    background-image: linear-gradient(90deg,#000000,#101010,#000000);
     box-shadow: 5px 5px 5px var(--shadowColor);
     border-radius: 100px;
     width: 90%;
@@ -580,10 +573,8 @@ display: none;
 }
 .quemsou-body {
   padding: 40px;
-  border-top: 4px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
-  border-left: 1px solid var(--borderColor);
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  border: 1px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-radius: 50px 20px;
   width: 95%;
@@ -600,12 +591,10 @@ display: none;
         justify-content:center ;
         flex-direction: column;
         gap: 15px;
-        background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+        background-image: linear-gradient(90deg,#000000,#101010,#000000);
         border-radius: 20px;
         box-shadow: 5px 5px 5px var(--shadowColor);
-        border-top: 10px solid var(--borderColor);
-        border-bottom: 10px solid var(--borderColor);
-        border-left: 1px solid var(--borderColor);
+        border: 1px solid var(--borderColor);
         border-radius: 20px;
         margin-top: 40px;
         margin-bottom: 180px;
@@ -626,10 +615,8 @@ display: none;
     width: 20em;
     transition: .2s;
     margin-left: 3em;
-    border-top: 4px solid var(--headerMainColor);
-    border-bottom: 4px solid var(--headerMainColor);
-    border-left: 1px solid var(--borderColor);
-    box-shadow: 5px 5px 5px var(--shadowColor);
+    border: 1px solid var(--borderColor);
+    box-shadow: 2px 2px 3px var(--shadowColor);
     border-radius: 30px;
    
 
@@ -651,20 +638,17 @@ display: none;
   }
  
     .btn-card {
-        background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-        border-bottom: 10px solid var(--borderColor);
+        background-image: linear-gradient(90deg,#000000,#101010,#000000);
+        border: 1px solid var(--borderColor);
         width: 20em;
         height: 40px;
         border-radius: 50px 20px;
         margin-top: 10px;
         transition: .2s;
         font-weight: 700;
+        color: var(--fontSecudaryColor);
       }
   .btn-card:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
-    border-bottom: 3px solid var(--borderColor);
-    color: var(--fontMainColor);
     animation: moveset .2s linear forwards;
   }
   @media screen and (max-width:450px) {
@@ -680,8 +664,8 @@ display: none;
     margin-top: 100px;
     border-radius: 30px;
     filter: grayscale(0.5);
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
+
 }
 @media screen and (max-width: 450px) {
     .service-video {
@@ -698,8 +682,7 @@ display: none;
   margin-top: 100px;
   margin-bottom: 100px;
   line-height: 3em;
-  background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
-  border: 4px solid var(--borderColor);
+  background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
   border-radius: 50px;
   
 }
@@ -709,14 +692,13 @@ display: none;
   }
 }
 .step-card01 {
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  border-top: 4px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   animation: neons 2s ease-in-out infinite;
 }
 .card01-body {
@@ -728,14 +710,13 @@ display: none;
   color: var(--fontSecudaryColor);
 }
 .step-card02 {
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  border-top: 4px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   animation: neons 2s ease-in-out infinite;
 }
 .card02-body {
@@ -747,14 +728,13 @@ display: none;
   color: var(--fontSecudaryColor);
 }
 .step-card03 {
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   color: var(--fontMainColor);
   width: 20em;
   height: 20em;
   border-radius: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
-  border-top: 4px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   animation: neons 2s ease-in-out infinite;
 }
 .card03-body {
@@ -769,20 +749,20 @@ display: none;
   .step-card01 {
     width: 15em;
     height: 15em;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
+
   }
   .step-card02 {
     width: 15em;
     height: 15em;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
+    border-top: 1px solid var(--borderColor);
+
   }
   .step-card03 {
     width: 15em;
     height: 15em;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
+    border-top: 1px solid var(--borderColor);
+
   }
 }
 .service-container {
@@ -796,9 +776,8 @@ display: none;
     box-shadow: 5px 5px 5px var(--shadowColor);
     width: 90%;
     margin-left: 4em;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+    border: 1px solid var(--borderColor);
+    background-image: linear-gradient(90deg,#000000,#101010,#000000);
     padding: 30px;
 }
 .service-body {
@@ -808,12 +787,11 @@ display: none;
   justify-content: center;
   padding: 30px;
   color:var(--fontSecudaryColor);
-  background-image: linear-gradient(90deg, #000000,#616161,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border-radius: 50px ;
   margin-right: 10px;
   box-shadow: 4px 4px 3px var(--shadowColor);
-  border-bottom: 10px solid var(--borderColor);
-  border-top: 5px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   margin-bottom: 20px;
   padding: 20px;
   animation: neons 2s ease-in-out infinite;
@@ -821,6 +799,8 @@ display: none;
 .service-image {
     width: 20em;
     border-radius: 40px;
+    filter: grayscale(80%);
+    border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .service-container {
@@ -862,16 +842,16 @@ display: none;
     }
 }
 .btn-card-service {
-  background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
-  border: 3px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  border: 1px solid var(--borderColor);
+
   width: 20em;
   height: 3em;
   border-radius: 50px 20px;
   margin-bottom: 30px;
   font-weight: 700;
   transition: .5s;
-  color: var(--fontMainColor);
+  color: var(--fontSecudaryColor);
   transition: .2s;
   
   }
@@ -882,14 +862,10 @@ display: none;
         height: auto;
         border-radius: 50px 20px;
         margin-bottom: 15px;
-        border-bottom: 10px solid var(--borderColor);
+        border: 1px solid var(--borderColor);
       }
   }
   .btn-card-service:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
-    color: var(--fontMainColor);
-    border-bottom: 3px solid var(--borderColor);
     animation: moveset .2s linear forwards;
   }
   .project-card-title {
@@ -907,8 +883,7 @@ display: none;
     width: 100%;
     border-radius: 30px;
     filter: grayscale(0.5);
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .project-card-title {
@@ -918,37 +893,11 @@ display: none;
         margin-top: 10px;
     }
 }
-.btn-card-project {
-    background-color: var(--hoverColor);
-    border: 3px solid var(--headerMainColor);
-    border-bottom: 10px solid var(--borderColor);
-    width: 40em;
-    height: 3em;
-    border-radius: 50px 20px;
-    margin-top: 10px;
-    font-weight: 700;
-    transition: .5s;
-  }
-  @media screen and (max-width:450px) {
-    .btn-card-project {
-        background-color: var(--hoverColor);
-        border: 3px solid var(--borderColor);
-        width: 25em;
-        height: auto;
-        border-radius: 50px 20px;
-        
-      }
-  }
-  .btn-card-project:hover {
-    background-color: var(--headerMainColor);
-    color: var(--fontSecudaryColor);
-    border-bottom: 3px solid var(--borderColor);
-  }
   .card-header {
     display: flex;
     align-items: center;
     justify-content: start;
-    background-image: linear-gradient(90deg, #000000,#656565,#000000);
+    background-image: linear-gradient(90deg, #000000,#252525,#000000);
     color: var(--fontSecudaryColor);
     z-index: 1;
     height: 40px;
@@ -959,6 +908,7 @@ display: none;
     width: 10em;
     border-radius: 10px;
     box-shadow: 2px 2px 3px var(--shadowColor);
+    border: 1px solid var(--borderColor);
   }
   .btn-apk:hover {
     animation: moveset .2s ease-in-out forwards;
@@ -990,7 +940,7 @@ display: none;
     width: 10px;
   }
   .card-body {
-    background-image: linear-gradient(90deg, #000000,#252525,#000000);
+    background-image: linear-gradient(90deg, #000000,#101010,#000000);
     color: var(--fontSecudaryColor);
   }
   .card-footer {
@@ -1007,11 +957,10 @@ display: none;
     scroll-snap-type: y mandatory;
     background-image: url(./images/backimage.png);
     border-radius: 20px;
-    border-bottom: 10px solid var(--borderColor);
-    border-top: 10px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
   }
   .image-containers::-webkit-scrollbar{
-    width: 12px;
+    width: 10px;
   
   }
   .image-containers::-webkit-scrollbar-track {
@@ -1019,9 +968,9 @@ display: none;
     border-radius: 10px;
   }
   .image-containers::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+    background-image: linear-gradient(90deg,#000000,#CFB776,#000000);
     border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px #0000004d;
   }
   
   @media screen and (max-width:450px){
@@ -1044,19 +993,11 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 30px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px var(--shadowColor);
-    width: 90%;
-    margin-left: 1em;
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+    width: 100%;
+    background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
     padding: 30px;
   }
   .partner-video {
@@ -1067,8 +1008,7 @@ display: none;
     margin-top: 150px;
     border-radius: 30px;
     filter: grayscale(0.5);
-    border-top: 10px solid var(--borderColor);
-    border-bottom: 10px solid var(--borderColor);
+    border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .partner-video {
@@ -1076,16 +1016,16 @@ display: none;
     }
 }
 .btn-card-partner {
-  background-image: linear-gradient(90deg, #000000,#ffffff,#ffffff,#000000);
+  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border: 3px solid var(--borderColor);
-  border-bottom: 10px solid var(--borderColor);
+  border: 1px solid var(--borderColor);
   width: 20em;
   height: 3em;
   border-radius: 50px 20px;
   margin-bottom: 30px;
   font-weight: 700;
   transition: .5s;
-  color: var(--fontMainColor);
+  color: var(--fontSecudaryColor);
   transition: .2s;
   }
   @media screen and (max-width:450px) {
@@ -1095,7 +1035,7 @@ display: none;
         width: 20em;
         height: auto;
         border-radius: 50px 20px;
-        border-bottom: 10px solid var(--borderColor);
+        border: 1px solid var(--borderColor);
       }
   }
   .btn-card-partner:hover {
@@ -1109,24 +1049,22 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-image: linear-gradient(90deg, #7c7c7c,#f1f1f1,#7c7c7c);
+    background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
     opacity: 0.9;
     border-radius: 50px 20px;
     padding: 10px;
-    border-top: 4px solid var(--borderColor);
-    border-bottom: 4px solid var(--borderColor);
-    border-left: 1px solid var(--borderColor);
-    box-shadow: 3px 3px 0px var(--shadowColor);
+    border: 1px solid var(--borderColor);
+    box-shadow: 3px 3px 2px #000000;
     margin-bottom: 1em;
     width: 95%;
     margin-left: 1.5em;
     margin-top: 10px;
   }
   .image-contact {
-    border: 3px solid black;
+  border: 1px solid var(--borderColor);
    width: 5em;
    border-radius: 10px;
-   box-shadow: 5px 5px 5px var(--borderColor);
+   filter: grayscale(.5);
   }
   @media screen and (max-width: 450px) {
     .contact-container {
