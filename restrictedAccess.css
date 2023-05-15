@@ -32,7 +32,7 @@ body::-webkit-scrollbar-track {
   background-image: linear-gradient(90deg, #000000,#252525,#000000);
 }
 body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+  background-image: linear-gradient(90deg, #000000,#CFB776,#000000);
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   
@@ -54,8 +54,8 @@ header {
   position: fixed;
   width: 18%;
   height: 100%;
-  background-image: linear-gradient(90deg, #000000,#656565,#000000);
-  border-bottom: 2px solid white;
+  background-image: linear-gradient(90deg, #000000,#101010,#000000);
+  border-bottom: 2px solid #CFB776;
   opacity: 1;
   transition: transform .6s ease-in-out;
   z-index: 100;
@@ -71,8 +71,8 @@ header {
       position: fixed;
       width: 100%;
       height: 5em;
-      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
-      border-bottom: 2px solid white;
+      background-image: linear-gradient(90deg, #000000,#101010,#000000);
+      border: 1px solid #CFB776;
       opacity: 1;
       transition: transform .6s ease-in-out;
       z-index: 20;
@@ -91,8 +91,7 @@ button {
   width: 15em;
   margin-bottom: 5px;
   background-image: linear-gradient(90deg, #000000,#252525,#000000);
-  border-bottom: 5px solid var(--borderColor);
-  border-top: 1px solid var(--borderColor);
+  border: 1px solid #CFB776;
   border-radius: 20px 20px 10px;
   animation:  neons 2s ease-in-out infinite;
   padding: 5px;
@@ -126,7 +125,7 @@ border: 2px;
   margin-left: -7px;
 }
 .line-division {
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border: 1px solid #CFB776;
   cursor: url(./images/cursor3.cur),pointer !important;
 }
 @media screen and (max-width:450px) {
@@ -273,6 +272,20 @@ h3 {
       border-radius: 10px;
   }
 }
+.intro-video {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 4px 4px 5px var(--shadowColor);
+  border: 1px solid var(--borderColor);
+  }
+  @media screen and (max-width:450px) {
+    .intro-video {
+      margin-top: -20px;
+    }
+  }
 .container-spacing {
   height: 100px;
 }

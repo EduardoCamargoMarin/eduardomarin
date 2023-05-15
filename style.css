@@ -367,10 +367,8 @@ display: none;
     width: 100%;
     border-radius: 30px;
     box-shadow: 4px 4px 5px var(--shadowColor);
-    filter: grayscale(0.5);
     border: 1px solid var(--borderColor);
     margin-top: 10px;
-    filter: grayscale(70%);
     }
     @media screen and (max-width:450px) {
       .intro-video {
@@ -663,7 +661,6 @@ display: none;
     width: 100%;
     margin-top: 100px;
     border-radius: 30px;
-    filter: grayscale(0.5);
     border: 1px solid var(--borderColor);
 
 }
@@ -799,7 +796,6 @@ display: none;
 .service-image {
     width: 20em;
     border-radius: 40px;
-    filter: grayscale(80%);
     border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
@@ -882,7 +878,6 @@ display: none;
     justify-content: center;
     width: 100%;
     border-radius: 30px;
-    filter: grayscale(0.5);
     border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
@@ -1007,7 +1002,6 @@ display: none;
     width: 100%;
     margin-top: 150px;
     border-radius: 30px;
-    filter: grayscale(0.5);
     border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
@@ -1064,7 +1058,6 @@ display: none;
   border: 1px solid var(--borderColor);
    width: 5em;
    border-radius: 10px;
-   filter: grayscale(.5);
   }
   @media screen and (max-width: 450px) {
     .contact-container {
@@ -1075,4 +1068,5 @@ display: none;
         border-radius: 10px;
     }
   }
+
   
