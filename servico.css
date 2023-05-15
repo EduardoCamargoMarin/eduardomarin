@@ -536,6 +536,7 @@ z-index: 1;
   justify-content: center;
   width: 100%;
   border-radius: 30px;
+  border: 1px solid var(--borderColor);
 }
 .service-container {
   margin-top: 60px;
