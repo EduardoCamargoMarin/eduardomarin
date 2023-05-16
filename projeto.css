@@ -299,7 +299,7 @@ animation: moveset .3s ease-in-out forwards;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-image: linear-gradient(90deg, #000000,#616161,#000000);
+      background-image: linear-gradient(90deg, #000000,#101010,#000000);
       color: var(--fontMainColor);
       border-radius: 50px 20px;
       box-shadow: 3px 3px 3px var(--shadowColor);
@@ -309,7 +309,7 @@ animation: moveset .3s ease-in-out forwards;
     }
     .item {
       border: 1px solid var(--borderColor);
-      background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+      background-image: linear-gradient(90deg, #000000,#101010,#000000);
       box-shadow: 10px 10px 5px var(--shadowColor);
       border-radius: 10px;
       padding: 10px;
@@ -403,7 +403,7 @@ animation: moveset .3s ease-in-out forwards;
         border-radius: 8px;
         scroll-snap-align:start;
         border: 1px solid var(--borderColor);
-        background-image: linear-gradient(90deg, #000000,#ffffff,#000000);
+        background-image: linear-gradient(90deg, #000000,#101010,#000000);
         box-shadow: 10px 10px 5px var(--shadowColor);
         margin:0;
       }
