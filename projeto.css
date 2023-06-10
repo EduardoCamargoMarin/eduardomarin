@@ -417,7 +417,7 @@ animation: moveset .3s ease-in-out forwards;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
-      height: 640px;
+      height: 840px;
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
       background-image: url(./images/backimage.png);
