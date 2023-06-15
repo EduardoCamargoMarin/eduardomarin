@@ -659,7 +659,6 @@ display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
     border-radius: 30px;
     border: 1px solid var(--borderColor);
 
@@ -763,16 +762,14 @@ display: none;
   }
 }
 .service-container {
-    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     border-radius: 20px;
+    height: 40em;
     box-shadow: 5px 5px 5px var(--shadowColor);
-    width: 90%;
-    margin-left: 4em;
     border: 1px solid var(--borderColor);
     background-image: linear-gradient(90deg,#000000,#101010,#000000);
     padding: 30px;
@@ -784,19 +781,15 @@ display: none;
   justify-content: center;
   padding: 30px;
   color:var(--fontSecudaryColor);
-  background-image: linear-gradient(90deg,#000000,#101010,#000000);
   border-radius: 50px ;
   margin-right: 10px;
-  box-shadow: 4px 4px 3px var(--shadowColor);
-  border: 1px solid var(--borderColor);
+  box-shadow: 4px 4px 0px var(--borderColor);
   margin-bottom: 20px;
   padding: 20px;
-  animation: neons 2s ease-in-out infinite;
 }
 .service-image {
-    width: 20em;
+    width: 30em;
     border-radius: 40px;
-    border: 1px solid var(--borderColor);
 }
 @media screen and (max-width: 450px) {
     .service-container {
@@ -805,16 +798,14 @@ display: none;
         justify-content: center;
         width: 100%;
         border-radius: 50px;
-        margin-left: 1.2em;
-        width: 90%;
         padding: 0;
     }
     .service-image {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 15em;
-        margin-left: 4em;
+        width: 20em;
+        margin-left: 2.5em;
     }
     .service-body {
       margin-left: 10px;
@@ -822,7 +813,7 @@ display: none;
     }
 }
 .service-image2 {
-    width: 20em;
+    width: 30em;
     border-radius: 40px;
 }
 @media screen and (max-width: 450px) {
@@ -830,8 +821,8 @@ display: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 15em;
-        margin-left: 4em;
+        width: 20em;
+        margin-left: 3em;
     }
     .contract-container {
       margin-top: 200px;
@@ -1194,7 +1185,8 @@ display: none;
     color: #f1f1f1;
     position: fixed;
     margin-left: 94%;
-    margin-top: 35%;
+    margin-top: 33%;
+    z-index: 20;
   }
   @media screen and (max-width: 450px) {
     .btn-btn-chatbot {
