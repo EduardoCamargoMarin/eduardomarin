@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./testeIngles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Eduardo Marin</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img class="prime-logo" src="./images/LogoEduardoMarin.png" alt="Logo">
+    </div>
+    <nav>
+        <a href="./index.html"><button class="btn-prime">Inicio</button></a>
+    </nav>
+</header>
+<main>
+  <img class="image-test" src="./images/englishimage.png" alt="">
+  <div class="intro">
+    <h1>English test</h1>
+    <h5>Prencha o formulário abaixo e responda a questão do teste de nivelamento de inglês. Após análisado, vamos enviar no email cadastro uma certificação do modelo abaixo comprovando seu teste junto a sua nota final.</h5>
+  </div>
+  <img class="image-test" src="./images/CertificadoIngles.png" alt="">
+     <div class="english-test">
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <label for="nome">Name:</label><br>
+        <input type="text" name="name" placeholder="Your Name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" placeholder="Your Email" /><br><br>
+        <label for="mensagem">Write down in english the following question: Tell me about yourself and the most important project the you have been into.</label><br>
+        <textarea cols="170" rows="10" name="message"></textarea><br><br>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="298c6559-4a3f-4ac8-a7c8-08402eb2239a">
+        <input type="hidden" name="subject" value="English Test" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="./emailSent.html">
+        <input class="btn-submit" type="submit" value="Submit" />
+    </form>
+     </div>
+
+     
+  
+</main>
+
+
+<script src="./code/EVA/evaMainFunction.js"></script>
+<script src="./code/header.js"></script>
+<script src="./code/titleTab.js"></script>
+</body>
+</html>
