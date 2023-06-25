@@ -10,6 +10,7 @@ function selectMessage() {
         'Qual o foco da organização?',
         'Novos projetos?',
         'Contrato e serviços',
+        'Testes profissionais'
     ]
 
     let select = document.getElementById('options')
@@ -82,7 +83,7 @@ function selectMessage() {
         setTimeout(() => {
             containerReceived.style.backgroundColor = '#0e0e0e'
             containerReceived.style.border = '1px solid #CFB776'
-             answer.innerText = 'Atualmente estamos desenvolvendo novas aplicações destinadas para web, eu sou um bom exemplo, pois estou em desenvolvimento para gerar novos modelos de chatbot.'
+             answer.innerText = 'Atualmente estamos desenvolvendo novas aplicações destinadas para web e templates para websites.\n\n Alem disso estamos trabalhando em um novo departamento de capacitação e treinamento para todos os profissionais no mercado de T.I'
              answer.style.animation = 'none'
         }, 1000);
     }
@@ -100,6 +101,23 @@ function selectMessage() {
             containerReceived.style.backgroundColor = '#0e0e0e'
             containerReceived.style.border = '1px solid #CFB776'
              answer.innerText = 'Caso deseje contratar Eduardo para fazer parte de sua equipe, sugerimos encaminhar um e-mail ou entrar em contato pelo Likedin para agendar uma reunião.\n\nEduardo oferece prestações de serviços e também a opção de contratação profissional.\n\nApresente sua proposta e desejamos boa sorte na entrevista.'
+             answer.style.animation = 'none'
+        }, 1000);
+    }
+    if(selectedOption === 'op6') {
+        containerSent.style.backgroundColor = '#151515'
+        containerSent.style.border = '1px solid #CFB776'
+        containerReceived.style.backgroundColor = '#0e0e0e'
+        containerReceived.style.border = '1px solid #CFB776'
+        answer.innerText = '...'
+        outputQuestion.innerText = `${botMessage[5]}`
+        answer.style.animation = 'send .2s linear infinite'
+       
+
+        setTimeout(() => {
+            containerReceived.style.backgroundColor = '#0e0e0e'
+            containerReceived.style.border = '1px solid #CFB776'
+             answer.innerText = 'Atualmente você pode realizar o teste de nivelamento de inglês que está disponível na secção do Hub de noticias em TESTES.\n\nResponda o formulário para receber um certificado com a sua nota de aperfeiçoamento.'
              answer.style.animation = 'none'
         }, 1000);
     }
