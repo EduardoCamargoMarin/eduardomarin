@@ -20,12 +20,11 @@
 </header>
 <main>
   <img class="image-test" src="./images/englishimage.png" alt="">
-  <div class="intro">
-    <h1>English test</h1>
-    <h5>Prencha o formulário abaixo e responda a questão do teste de nivelamento de inglês. Após análisado, vamos enviar no email cadastro uma certificação do modelo abaixo comprovando seu teste junto a sua nota final.</h5>
-  </div>
-  <img class="image-test" src="./images/CertificadoIngles.png" alt="">
+
      <div class="english-test">
+        <div class="intro">
+            <h5>Prencha o formulário abaixo e responda a questão do teste de nivelamento de inglês. Após análisado vamos enviar no email indicado a sua certificação com os dados inseridos no formulário. Certifique-se que seu nome e e-mail estejam corretos antes do envio.</h5>
+          </div>
       <form action="https://api.staticforms.xyz/submit" method="post">
         <label for="nome">Name:</label><br>
         <input type="text" name="name" placeholder="Your Name"><br><br>
@@ -37,7 +36,7 @@
         <input type="hidden" name="accessKey" value="298c6559-4a3f-4ac8-a7c8-08402eb2239a">
         <input type="hidden" name="subject" value="English Test" />
         <input type="hidden" name="replyTo" value="@">
-        <input type="hidden" name="redirectTo" value="./emailSent.html">
+        <input type="hidden" name="redirectTo" value="https://eduardocamargomarin.github.io/eduardomarin/index.html">
         <input class="btn-submit" type="submit" value="Submit" />
     </form>
      </div>

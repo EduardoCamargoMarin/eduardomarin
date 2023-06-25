@@ -132,6 +132,8 @@ input {
   border: 2px solid var(--borderColor);
   border-radius: 50px;
   width: 30em;
+  background-color: #1E1A18;
+  color: #f1f1f1;
 
 }
 textarea {
@@ -140,13 +142,19 @@ textarea {
   box-shadow: inset 0px 0px 4px var(--fontMainColor) ;
   border: 2px solid var(--borderColor);
   border-radius: 50px;
+  background-color: #1E1A18;
+  color: #f1f1f1;
 }
 @media screen and (max-width: 450px) {
   textarea {
     width: 23em;
+    background-color: #1E1A18;
+    color: #f1f1f1;
   }
   input {
     width: 20em;
+    background-color: #1E1A18;
+    color: #f1f1f1;
   }
   .english-test {
     height: 50em;
@@ -168,6 +176,7 @@ label {
 .intro {
   color:#f1f1f1;
   margin: 10px;
+  margin-top: 20px;
   background-color: #101010;
   border-left: 2px solid var(--borderColor) ;
   border-right: 2px solid var(--borderColor);
