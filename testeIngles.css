@@ -145,6 +145,13 @@ textarea {
   background-color: #1E1A18;
   color: #f1f1f1;
 }
+@media screen and (max-width: 1300px) {
+  textarea {
+    width: 23em;
+    background-color: #1E1A18;
+    color: #f1f1f1;
+  }
+}
 @media screen and (max-width: 450px) {
   textarea {
     width: 23em;
