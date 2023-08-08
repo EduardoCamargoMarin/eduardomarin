@@ -104,6 +104,55 @@
         </button>
         
       </div>
+
+
+
+      <div>
+        <button  class="btn-btn-chatbot" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Claire</button>
+      
+      </div>
+      
+    
+      <div  style="background-image: linear-gradient(90deg, #000000,#252525,#000000);border: 1px solid #CFB776;" class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <button class="btn-btn-chatbot-exit" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">&times;</button>
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">ChatBot</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="chatbot-container">
+            <div class="chat-header">
+              <img src="./images/claireImage.jpg" alt="Chatbot Avatar">
+              <h2 style="color: #CFB776;">Claire</h2>
+            </div>
+            <div class="chat-body">
+              <div class="chat-message received">Olá! Eu sou Claire, como posso ajudar?</div>
+              <div id="containerSent" class="chat-message sent" ><span id="outputValue"></span></div>
+              <div id="containerReceived" class="chat-message received01"><span  id="outputAnswer"></span></div>
+      
+            </div>
+            <div class="chat-input">
+              <select class="chat-input" name="question" onchange="selectMessage()" id="options">
+                  <option class="option-input">Selecione a pergunta</option>
+                  <option class="option-input" value="op1">Quais os setores das parcerias?</option>
+              </select> 
+            </div>
+            
+          </div>
+        </div>
+    
+      </div>
+
+
+
+
+
+
+
+
+
+
+
       <div>
         <img class="intro-video" src="./images/parceriamockup.png" alt="">
     </div>
@@ -153,23 +202,136 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<h3 style="text-shadow: 0px 0px 20px #CFB776; color: #CFB776;">Parceiros</h3>
-<div id="parcerias" class="image-containers">
-  <div><a href=""><img class="image-card" src="./images/guimaraesParceiro.png" alt="real"></a></div>
-  <div><a href=""><img class="image-card" src="./images/MuriloParceiro.png" alt="real"></a></div>
-  <div><a href=""><img class="image-card" src="./images/matheusParceiro.jpeg" alt="real"></a></div>
-  <div><a href=""><img class="image-card" src="./images/rodrigoParceiro.png" alt="real"></a></div>
-  <div><a href=""><img class="image-card" src="./images/LeadCodeParceiro.png" alt="real"></a></div>
-</div>
-<h3 style="text-shadow: 0px 0px 20px #CFB776; color: #CFB776;">Consultores e Quality Assurance</h3>
-<div class="image-containers">  
-  <div><a href=""><img class="image-card" src="./images/mayaraParceira.png" alt="real"></a></div>
-</div>
-<h3 style="text-shadow: 0px 0px 20px #CFB776; color: #CFB776;">Desenvolvedores e Designers UI/UX</h3>
-<div class="image-containers">
-  
-  <div><img class="image-card" src="./images/xParceiro.png" alt="real"></div>
-</div>
+  <div class="container">
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Guimarães Engenharia</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/guimaraesParceiro.png" alt="">
+          <p>Empresa do ramo engenharia químico, ambiental e segurança no trabalho.
+            Com diversas aplicações, documentações ambientais, ( Licença ambiental, ANVISA, IBAMA, CETESB, FEAM, Outorga, consultoria) e acompanhamos MTR's, SINIR e SIGOR do inicio ao fim.
+            Treinamentos e projetos químicos, alimentício, fármacos, ETE, ETA, cálculos, dimensionamentos e gerenciamento de resíduos, líquidos e sólidos. </p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Consultoria</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Treinamento</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Qualidade</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Guimarães Engenharia - Solicitação de serviço!"><button class="btn-card">Solicitar serviços</button></a>
+          <div class="arrow">
+            <img class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Murilo Barbosa</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/MuriloParceiro.png" alt="">
+          <p>Apaixonado por tudo que envolvesse técnologia. E após realizar o curso de manutenção e suporte em informatica da ETEC rapidamente descobri que programar seria a carreira que iria seguir.</p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Javascript</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">React.JS</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">HTML | CSS</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Murilo Barbosa - Solicitação de serviços!"><button class="btn-card">Solicitar serviços</button></a>
+          <div class="arrow">
+            <img class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Matheus Passareli</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/matheusParceiro.jpeg" alt="">
+          <p>Formado em análise de desenvolvimento de sistemas, possuo experiência em desenvolvimento Back-end, assim como competencias de suporte técnico e teste de softwares.</p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Java</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Spring Boot</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">MySQL</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Matheus Passareli - Solicitação de serviço!"><button class="btn-card">Solicitar serviço</button></a>
+          <div class="arrow">
+            <img class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Rodrigo Pupo</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/rodrigoParceiro.png" alt="">
+          <p>Analista de suporte Nv.02 com competências que envolvem análises técnicas de hardware e software, conhecimentos aplicados em Linux e perfil de lideração de equipes.</p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Linux</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Rede de computadores</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Manutenção de Harware</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Rodrigo Pupo - Solicitação de serviços!"><button class="btn-card">Solicitar serviços</button></a>
+          <div class="arrow">
+            <img class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Lead Code</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/LeadCodeParceiro.png" alt="">
+          <p>A Leadcode foi fundada em 14 de abril de 2022 pelos desenvolvedores Henrique Pereira, John Monteiro e Leonardo Costa. Temos a missão de oferecer serviços de soluções em tecnologia com qualidade com o objetivo principal de alavancar os negócios de seus clientes.</p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">React.JS | Next.JS</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Node.JS | Nest.JS</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">DevOps</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Lead Code - Solicitação de serviço!"><button class="btn-card">Solicitar serviços</button></a>
+          <div class="arrow">
+            <img class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Gabriel Costa</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/gabrielParceria.png" alt="">
+          <p>Sou um desenvolvedor de sistemas Web com experiência em PHP nativo e modelagem de bancos de dados relacionais em MySQL. Atualmente focado em Back-End, porém possuo experiência em Front-End com HTML e CSS nativos e jQuery.</p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">PHP</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">MySQL</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">JQuery</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Gabriel Costa - Solicitação de serviços!"><button class="btn-card">Solicitar serviços</button></a>
+          <div  class="arrow">
+            <img style=" visibility: hidden;" class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="item">
+      <div class="item-title">
+        <h3><strong>Mayara Marin</strong></h3>
+      </div>
+        <div class="item-body">
+          <img class="image-card" src="./images/mayaraParceira.png" alt="">
+          <p>Encantada pelo Design, em meus tempos livres amo desenhar em uma prancheta diversos desenhos ou usar o clássico Corel Draw para artes digitais.</p>
+          <ul style="width: 100%;" class="list-group list-group-flush">
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Corel Draw</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Adobe Illustrator</li>
+            <li style="color: #f7f7f7; border-bottom: 1px solid  #CFB776;" class="list-group-item">Adobe Photoshop</li>
+          </ul><br>
+          <a href="mailto:solucaoduck@gmail.com?subject=Mayara Marin - Solicitação de serviços!"><button class="btn-card">Solicitar serviços</button></a>
+          <div  class="arrow">
+            <img style=" visibility: hidden;" class="arrow-image" src="./images/arrow.png" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
   <h3 style="text-shadow: 0px 0px 20px #CFB776; color: #CFB776;">Contribuições Profissionais</h3>
   <div class="card-containers">
     <div class="card text-center">
@@ -201,7 +363,7 @@
     </div>
 </footer>
 
-
+<script src="./code/claire.js"></script>
 <script src="./code/memberAccess.js"></script>
 <script src="./code/EVA/evaMainFunction.js"></script>
 <script src="./code/header.js"></script>

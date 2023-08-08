@@ -5,7 +5,7 @@ function selectMessage() {
     let containerReceived = document.getElementById('containerReceived')
 
     const botMessage = [
-        'Ajuda na busca de emprego',
+        'Quais os setores das parcerias?',
         'Como ser um parceiro?',
         'Qual o foco da organização?',
         'Novos projetos?',
@@ -30,7 +30,7 @@ function selectMessage() {
         setTimeout(() => {
             containerReceived.style.backgroundColor = '#0e0e0e'
             containerReceived.style.border = '1px solid #CFB776'
-             answer.innerText = 'Em nosso banco de dados possuímos algumas sugestões para te auxiliar na busca de emprego.\n\n1.Currículo coerente com informações claras e objetivas.\n\n2.Plataformas como Linkedin,Vagas.com são excelentes para a busca de emprego e networking.\n\n3.Vagas importantes raramente são divulgadas,então lembre de montar um e-mail estruturado para ter mais chances de entrevista.'
+             answer.innerText = 'Possuimos os setores de:\n\n1. Desenvolvimento Front-End\nRecomendamos os profissionais:\n\nMurilo Barbosa\nLead Code\n\n2. Desenvolvimento Back-End\nRecomendamos os profissionais:\n\nGabriel Costa\nMatheus Passareli\n\n3.Engenharia\nRecomendamos a empresa:\n\nGuimarães Engenharia\n\n4.Design\nRecomendamos a profissional:\n\nMayara Marin\n\n5.Infraestrutura\nRecomendamos o profissional:\n\nRodrigo Pupo\n\n6.Desenvolvimento Mobile\n\nEstamos com propostas em aberto para o setor de desenvolvimento Mobile, caso tenha intereresse, por favor entre em contato pelo e-mail: \n\nsolucaoduck@gmail.com'
              
              answer.style.animation = 'none'
 
