@@ -934,9 +934,6 @@ transition: .5s;
   text-align: right;
   border-radius: 50px 20px 10px;
 }
-.options {
-  background-color: red;
-}
 
 
 .chat-input {
