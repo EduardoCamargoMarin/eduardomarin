@@ -19,6 +19,9 @@ function changeLanguage() {
     const btnPartner = document.getElementById('btnPartner')
 
     //Textos
+    const sobreNos = document.getElementById('aboutUS')
+    const sobreNosTexto = document.getElementById('aboutUSTexto')
+
     const missao = document.getElementById('missao')
     const missaoTexto = document.getElementById('missaoTexto')
 
@@ -52,7 +55,7 @@ function changeLanguage() {
     //offcanvas EVA
     const evaHeader = document.getElementById('evaHeader')
     const evaBody = document.getElementById('evaBody')
-    const evaQuestion01 = document.getElementById('evaQuestion01')
+    const evaQuestion01 = document.getElementById('evaQuestion01');
     const evaQuestion02 = document.getElementById('evaQuestion02')
     const evaQuestion03 = document.getElementById('evaQuestion03')
     const evaQuestion04 = document.getElementById('evaQuestion04')
@@ -71,6 +74,9 @@ function changeLanguage() {
         service.innerText = 'Service'
         partner.innerText = 'Partners'
         contact.innerText = 'Contact'
+
+        sobreNos.innerText = 'About us'
+        sobreNosTexto.innerText = 'Welcome to Eduardo Marin Soluções Digitais, a constantly evolving innovation that takes pride in its journey since its inception in 2019. We embarked on our journey rooted in the realm of technical support, aiming to provide exceptional solutions for the day-to-day technological challenges faced by retail businesses in Itatiba region. As time passed, we expanded our scope to encompass web development, enabling us to offer a comprehensive suite of services to our clients.Learn more about our story by visiting our News Hub.'
 
         missao.innerText = 'Mission'
         missaoTexto.innerText = 'Our mission is to develop websites that increase our clients digital presence, offering a superior user experience and unique results to be part of something much greater.'
@@ -112,7 +118,7 @@ function changeLanguage() {
 
         evaHeader.innerText = 'Virtual Assistant - EVA'
         evaBody.innerText = '"I am an artificial intelligence called EVA. I am being developed by my creator.\n However, I can provide limited information for you. What information are you looking for?"'
-        evaQuestion01 = 'Who are you?'
+        evaQuestion01 = 'Who are you?';
         evaQuestion02.innerText = 'Who is your creator?'
         evaQuestion03.innerText = 'I need a website tour'
         evaQuestion04.innerHTML = 'Project SISTERS'
@@ -127,6 +133,9 @@ function changeLanguage() {
         service.innerText = 'Serviços'
         partner.innerText = 'Parceiros'
         contact.innerText = 'Contato'
+
+        sobreNos.innerText = 'Sobre nós'
+        sobreNosTexto.innerText = 'Bem-vindo à Eduardo Marin Soluções Digitais, inovação em constante evolução, que tem orgulho de sua jornada desde o seu início em 2019. Iniciamos nossa jornada nas raízes do mundo do suporte técnico, onde buscamos fornecer soluções excepcionais para desafios tecnológicos do dia a dia para comercios varejistas da região de Itatiba - SP. Com o tempo, expandimos nosso escopo para incluir o desenvolvimento web, permitindo-nos oferecer um conjunto completo de serviços aos nossos clientes.Saiba mais sobre nossa história acessando nosso Hub de noticias'
 
         missao.innerText = 'Missão'
         missaoTexto.innerText = 'Nossa missão é desenvolver websites que aumentem a presença digital de nossos clientes, oferecendo uma experiência de usuário superior e resultados únicos para ser parte de algo muito maior.'
