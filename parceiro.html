@@ -110,7 +110,7 @@
         
       </div>
     </div>
-        <button class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <button id="toolsEva" class="btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
           <img id="evaOnline" class="eva-icon" src="./EVA/eva.png" alt="">
           <audio id="evaMainAudio" src="./EVA/evaPartner.mp3"></audio>
           <audio id="evaMeetAudio" src="./EVA/System.mp3"></audio>
@@ -120,41 +120,7 @@
 
 
 
-      <div>
-        <button  class="btn-btn-chatbot" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Claire</button>
       
-      </div>
-      
-    
-      <div  style="background-image: linear-gradient(90deg, #000000,#252525,#000000);border: 1px solid #CFB776;" class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-          <button class="btn-btn-chatbot-exit" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">&times;</button>
-          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">ChatBot</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="chatbot-container">
-            <div class="chat-header">
-              <img src="./images/claireImage.jpg" alt="Chatbot Avatar">
-              <h2 style="color: #CFB776;">Claire</h2>
-            </div>
-            <div class="chat-body">
-              <div class="chat-message received">Olá! Eu sou Claire, como posso ajudar?</div>
-              <div id="containerSent" class="chat-message sent" ><span id="outputValue"></span></div>
-              <div id="containerReceived" class="chat-message received01"><span  id="outputAnswer"></span></div>
-      
-            </div>
-            <div class="chat-input">
-              <select class="chat-input" name="question" onchange="selectMessage()" id="options">
-                  <option class="option-input">Selecione a pergunta</option>
-                  <option class="option-input" value="op1">Quais os setores das parcerias?</option>
-              </select> 
-            </div>
-            
-          </div>
-        </div>
-    
-      </div>
       <div>
         <img class="intro-video" src="./images/parceriamockup.png" alt="">
     </div>

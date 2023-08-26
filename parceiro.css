@@ -63,12 +63,21 @@ header {
 }
 
 .hidden {
-transform: translateY(-150px);
+  transform: translateY(-150px);
+}
+
+.hidden-eva {
+  transform: translateX(-150px);
+  transition: transform .6s ease-in-out;
 }
 @media screen and (max-width:450px) {
-.hidden {
-  transform: translateX(-450px);
-}
+  .hidden {
+    transform: translateX(-450px);
+  }
+  .hidden-eva {
+    transform: translateX(-450px);
+    transition: transform .6s ease-in-out;
+  }
 }
 button {
   cursor: url(./images/cursor3.cur),pointer !important;
@@ -108,7 +117,7 @@ z-index: 15;
 
 .eva-icon {
 border-radius: 100em;
-width: 5em;
+width: 4em;
 animation: neon 1s ease-in-out infinite;
 cursor: url(./images/cursor3.cur),pointer !important;
 
@@ -131,7 +140,7 @@ cursor: url(./images/cursor3.cur),pointer !important;
 }
 @media  screen and (max-width: 450px) {
 .eva-icon {
-  width: 4em;
+  width: 3em;
 }
 }
 .eva-icon:hover {
@@ -214,11 +223,13 @@ margin: 10px;
 .btn-primary {
 margin-top: 5em;
 border-radius: 100px;
+transition: transform .6s ease-in-out;
 }
 @media screen and (max-width:450px) {
 .btn-primary {
   margin-top: 32em;
   border-radius: 100px;
+  transition: transform .6s ease-in-out;
 }
 .eva {
   height: 10px;

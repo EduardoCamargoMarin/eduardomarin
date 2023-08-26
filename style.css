@@ -20,6 +20,7 @@ body {
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
     background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
+    box-shadow: inset 0px 0px 10px #000000; /* novo */
    
 }
 body::-webkit-scrollbar{
@@ -54,20 +55,26 @@ header {
     position: fixed;
     width: 100%;
     background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
-    border-bottom: 1px solid var(--borderColor);
-    border-right: 1px solid var(--borderColor);
-    border-left: 1px solid var(--borderColor);
-    opacity: 1;
+
     transition: transform .6s ease-in-out;
     z-index: 12;
+    box-shadow: inset 0px 0px 100px #000000; /* novo */
 }
 
 .hidden {
   transform: translateY(-150px);
 }
+.hidden-eva {
+  transform: translateX(-150px);
+  transition: transform .6s ease-in-out;
+}
 @media screen and (max-width:450px) {
   .hidden {
     transform: translateX(-450px);
+  }
+  .hidden-eva {
+    transform: translateX(-450px);
+    transition: transform .6s ease-in-out;
   }
 }
 button {
@@ -77,7 +84,7 @@ button {
   height: 100px;
 }
 .prime-logo {
-    width: 20em;
+    width: 18em;
     margin-bottom: 5px;
     background-image: linear-gradient(90deg, #000000,#252525,#000000);
     border: 1px solid var(--borderColor);
@@ -102,21 +109,23 @@ summary:hover {
 }
 .eva {
   position: fixed;
-  z-index: 15;
+  z-index: 100;
   
 }
 
 .eva-icon {
   border-radius: 100em;
-  width: 5em;
+  width: 3em;
   animation: neon 1s ease-in-out infinite;
   cursor: url(./images/cursor3.cur),pointer !important;
+  transition: transform .6s ease-in-out;
 
  
 }
 .eva-icon-info {
   width: 4em;
   cursor: url(./images/cursor3.cur),pointer !important;
+  
 }
 @keyframes neon {
   0% {
@@ -131,7 +140,7 @@ summary:hover {
 }
 @media  screen and (max-width: 450px) {
   .eva-icon {
-    width: 4em;
+    width: 3em;
   }
 }
 .eva-icon:hover {
@@ -214,6 +223,7 @@ summary {
 .btn-primary {
   margin-top: 5em;
   border-radius: 100px;
+  transition: transform .6s ease-in-out;
 }
 @media screen and (max-width:450px) {
   .btn-primary {
@@ -239,7 +249,8 @@ nav {
     color: var(--fontSecudaryColor);
     font-size: 12pt;
     border-radius: 10px;
-    width: 10em;
+    width: 6em;
+    height: 30px;
     transition: .2s;
     font-weight: 500;
     border: 1px solid var(--borderColor);
@@ -249,12 +260,12 @@ nav {
   color: var(--fontSecudaryColor);
   font-size: 12pt;
   border-radius: 10px;
-  width: 10em;
+  width: 8em;
   transition: .2s;
   font-weight: 500;
   height: 30px;
-  padding-left: 40px;
   transition: .5s;
+  padding-left: .6em;
   border: 1px solid var(--borderColor);
   
 }
@@ -351,10 +362,40 @@ display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
-    box-shadow: 4px 4px 5px var(--shadowColor);
-    border: 1px solid var(--borderColor);
-    margin-top: 10px;
+    background-image: url(./images/conectar.png);
+    background-attachment: fixed;
+    height: 33em;
+    background-position: center ;
+    background-blend-mode: darken;
     }
+    .intro-empresa1 {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      box-shadow: 0px 0px 10px #000000;
+      margin-top: 20px;
+      background-image: url(./images/slogan.png);
+      background-attachment: fixed;
+      height: 37em;
+      background-position: center bottom ;
+      background-size: cover;
+      background-blend-mode: darken;
+      }
+      .intro-empresa2 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0px 0px 10px #000000;
+        margin-top: 20px;
+        background-image: url(./images/empresaFrente.png);
+        background-attachment: fixed;
+        height: 80em;
+        background-position: center bottom ;
+        background-size: cover;
+        background-blend-mode: darken;
+        }
     @media screen and (max-width:450px) {
       .intro-empresa {
         margin-top: -20px;
@@ -413,10 +454,10 @@ display: none;
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
   color: var(--fontMainColor);
   font-weight: 500;
-  padding: 20px;
+
+
 }
 .intro-body {
   display: flex;
@@ -437,7 +478,7 @@ display: none;
   flex-direction: column;
   border-top: 1px solid var(--borderColor);
   border: 1px solid var(--borderColor);
-  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  background-image: linear-gradient(90deg,#00000086,#1010108a,#00000086);
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
@@ -445,6 +486,7 @@ display: none;
   transition: .5s;
   padding: 1px;
   animation: neons 2s ease-in-out infinite;
+  text-shadow: 1px 1px #000000;
 }
 
 
@@ -454,13 +496,14 @@ display: none;
   justify-content: center;
   flex-direction: column;
   border: 1px solid var(--borderColor);
-  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  background-image: linear-gradient(90deg,#00000086,#1010108a,#00000086);
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   color: var(--fontSecudaryColor);
   transition: .5s;
   animation: neons 2s ease-in-out infinite;
+  text-shadow: 1px 1px #000000;
 }
 .valores {
   display: flex;
@@ -468,13 +511,14 @@ display: none;
   justify-content: center;
   flex-direction: column;
   border: 1px solid var(--borderColor);
-  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  background-image: linear-gradient(90deg,#00000086,#1010108a,#00000086);
   border-radius: 20px;
   box-shadow: 5px 5px 5px var(--shadowColor);
   padding: 10px;
   color: var(--fontSecudaryColor);
   width: 100%;
   animation: neons 2s ease-in-out infinite;
+  text-shadow: 1px 1px #000000;
 }
 @keyframes neons {
   0% {
@@ -545,9 +589,10 @@ display: none;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  width: 70em;
+  width: 100%;
   box-shadow:  2px 2px 7px var(--shadowColor);
   border: 1px solid var(--borderColor);
+  margin-top: 30px;
 }
 @media screen and (max-width: 450px) {
   .main-video {
@@ -561,24 +606,27 @@ display: none;
     justify-content:center ;
     flex-direction: column;
     gap: 15px;
-    border: 1px solid var(--borderColor);
-    background-image: linear-gradient(90deg,#000000,#101010,#000000);
-    box-shadow: 5px 5px 5px var(--shadowColor);
-    border-radius: 100px;
-    width: 90%;
-    margin-left: 4em;
-    margin-top: 150px;
+    background-image: url(./images/lacorebackground2.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    box-shadow: 0px 0px 10px #000000;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .quemsou-body {
   padding: 40px;
   border: 1px solid var(--borderColor);
-  background-image: linear-gradient(90deg,#000000,#101010,#000000);
+  background-image: linear-gradient(90deg,#00000086,#1010108a,#00000086); /* nvo */
   box-shadow: 5px 5px 5px var(--shadowColor);
   border-radius: 50px 20px;
   width: 95%;
   margin-bottom: 60px;
   color: var(--fontSecudaryColor);
   animation: neons 2s ease-in-out infinite;
+  text-shadow: 0px 0px 1px #000000;
   
 }
 
@@ -596,7 +644,6 @@ display: none;
         border-radius: 20px;
         margin-top: 40px;
         margin-bottom: 180px;
-        margin-left: 1em;
     }
     .cracha {
       margin-left: 6.2em;
@@ -1058,7 +1105,7 @@ display: none;
   }
   
   .chat-body {
-    height: 400px;
+    height: 300px;
     padding: 10px;
     overflow-y: scroll;
     background-image: linear-gradient(90deg, #000000,#252525,#000000);
@@ -1149,21 +1196,28 @@ display: none;
     }
   }
   .btn-btn-chatbot {
-    width: 4em;
-    height: 4em;
+    width: 3.9em;
+    height: 3.9em;
     border-radius: 200px;
     border: 3px solid #CFB776;
     background-color: #101010;
     color: #f1f1f1;
     position: fixed;
-    margin-left: 94%;
-    margin-top: 33%;
+    margin-top: 10%;
+    margin-left: .2%;
     z-index: 20;
+    font-size: 12px;
+    transition: transform .6s ease-in-out;
+  }
+  @media screen and (min-width: 1220px) {
+    .btn-btn-chatbot {
+      margin-top: 12%;
+    }
   }
   @media screen and (max-width: 450px) {
     .btn-btn-chatbot {
-      margin-left: 83%;
-      margin-top: 123%;
+      margin-left: .7%;
+      margin-top: 142%;
     }
   }
   .btn-btn-chatbot-exit {
