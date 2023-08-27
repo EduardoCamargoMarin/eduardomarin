@@ -5,5 +5,5 @@ window.addEventListener("blur", () => {
 })
 
 window.addEventListener("focus", () => {
-    document.title = `${titleTab} - Seja bem vindo`
+    document.title = `${titleTab}`
 })

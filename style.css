@@ -54,12 +54,11 @@ header {
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
-
     transition: transform .6s ease-in-out;
     z-index: 12;
     box-shadow: inset 0px 0px 100px #000000; /* novo */
 }
+
 
 .hidden {
   transform: translateY(-150px);
@@ -234,8 +233,7 @@ summary {
     height: 10px;
   }
   
-}
-  
+} 
 nav {
   margin-right: 3em;
 }
@@ -358,15 +356,60 @@ display: none;
     }
   }
   .intro-empresa {
-    display: grid;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
-    background-image: url(./images/conectar.png);
+    background-image: url(./images/backform.png);
     background-attachment: fixed;
     height: 33em;
-    background-position: center ;
+    background-position: center;
     background-blend-mode: darken;
+    background-size: cover;
+    padding: 10px;
+    }
+    .container h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--fontSecudaryColor);
+      width: 100%;
+      border-bottom: .5px groove var(--borderColor);
+    }
+    .container {
+      background-color: #000000;
+      border: .5px solid #f1f1f1;
+      border-radius: 10px;
+    }
+    .container button {
+      margin-top: 10px; 
+      margin-bottom: 10px; 
+      width: 100%; 
+      border-radius: 50px 20px 50px;         
+      background-image: linear-gradient(90deg, #000000, #101010, #000000);
+      border-color: #CFB776;
+      transition: ease-in-out .5s;
+    }
+    .container button:hover {
+      box-shadow: inset 0px 0px 5px var(--borderColor);
+      
+    }
+    .form-control{
+      border: 2px solid #000000 !important;
+      overflow: hidden;
+      border-radius: 5px;
+      border-bottom: 1px dotted var(--borderColor) !important;
+      color: var(--backgroundMainColor) !important;
+      text-shadow: 1px 1px px var(--fontMainColor);
+    }
+    .form-control:hover {
+      border-bottom: 1px solid var(--borderColor) !important;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
     }
     .intro-empresa1 {
       display: grid;
@@ -1253,7 +1296,7 @@ display: none;
     text-align: center;
     border-top: 1px solid var(--borderColor);
 }
-.container {
+.container-footer {
     max-width: auto;
     margin: 0 auto;
 }
