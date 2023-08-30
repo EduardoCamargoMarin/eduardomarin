@@ -433,6 +433,14 @@ display: none;
         .about-content{
           display: grid;
         }
+        .about-content p {
+          padding: 10px;
+        }
+        .photo-image  {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .timeline {
           display: none;
         }
@@ -442,6 +450,9 @@ display: none;
         border-radius: 300px;
         box-shadow: 0px 0px 10px #000931;
         margin: 20px;
+      }
+      .photo-image img {
+        box-shadow: 6px 3px 0px #000000;
       }
     
       .cursos {
@@ -515,6 +526,11 @@ display: none;
             height: auto;
             width: auto;
           }
+      }
+      .about-content li {
+        list-style: none;
+        border-bottom: 1px solid #000000;
+        width: 15em;
       }
     
 
