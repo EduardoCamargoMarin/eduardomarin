@@ -427,7 +427,7 @@ display: none;
       width: 100%;
       box-shadow: 0px 0px 10px #000000;
       margin-top: 20px;
-      background-image: url(./images/slogan.png);
+      background-image: url(./images/backgroundEmpresa01.png);
       background-attachment: fixed;
       height: 37em;
       background-position: center bottom ;
@@ -441,7 +441,7 @@ display: none;
         width: 100%;
         box-shadow: 0px 0px 10px #000000;
         margin-top: 20px;
-        background-image: url(./images/empresaFrente.png);
+        background-image: url(./images/backgroundEmpresa02.png);
         background-attachment: fixed;
         height: 80em;
         background-position: center bottom ;
@@ -460,7 +460,7 @@ display: none;
           .intro-empresa1 {
             background-image: none;
             background-color: #252525 !important;
-            background-image: url(./images/backform.png);
+            background-image: url(./images/backgroundEmpresa02.png);
             background-position: bottom;
           }
           .intro-empresa2 {
@@ -468,19 +468,6 @@ display: none;
             height: fit-content;
           }
         }
-.intro-video {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-    }
-    @media screen and (max-width:450px) {
-      .intro-video {
-        border-radius: 0px;
-        margin-bottom: -20px;
-      }
-    }
 .intro-container {
   display: grid;
   align-items: center;
@@ -691,14 +678,14 @@ display: none;
     margin-left: 3em;
     border: 1px solid var(--borderColor);
     box-shadow: 2px 2px 3px var(--shadowColor);
-    border-radius: 30px;
+    border-radius: 300px;
    
 
 }
 @media screen and (max-width: 450px){
    .cracha-frente {
     margin-top: 1em;
-    border-radius: 10px;
+    border-radius: 300px;
     margin-left: -1.7em;
     width: 15em;
    }

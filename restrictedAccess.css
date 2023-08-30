@@ -239,7 +239,7 @@ footer {
 }
 @media screen and (max-width: 550px) {
   .navigation-btn {
-      height: 13em;
+      height: 11em;
   }
   .navigation-btn button {
       font-size: 10px;
