@@ -19,7 +19,7 @@ body {
     cursor: url(./images/cursor1.cur),default;
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
-    background-image: linear-gradient(90deg, #1E1A18,#161513,#1E1A18);
+    background-image: linear-gradient(90deg, #000000, #CFB776, #000000);
     box-shadow: inset 0px 0px 10px #000000; /* novo */
    
 }
@@ -57,6 +57,7 @@ header {
     transition: transform .6s ease-in-out;
     z-index: 12;
     box-shadow: inset 0px 0px 100px #000000; /* novo */
+    background-color: #000000;
 }
 
 
@@ -453,6 +454,7 @@ display: none;
           .intro-empresa {
             background-position: center;
             margin-top: -30px;
+            margin-bottom: -15px;
           }
           section {
             display: none;
@@ -462,6 +464,7 @@ display: none;
             background-color: #252525 !important;
             background-image: url(./images/backgroundEmpresa02.png);
             background-position: bottom;
+            margin-bottom: -12px;
           }
           .intro-empresa2 {
             background-image: url(./images/backform.png);
@@ -606,11 +609,9 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
   width: 100%;
-  box-shadow:  2px 2px 7px var(--shadowColor);
-  border: 1px solid var(--borderColor);
-  margin-top: 30px;
+  margin-top: 95px;
+  margin-bottom: -23px;
 }
 @media screen and (max-width: 450px) {
   .main-video {
@@ -632,8 +633,7 @@ display: none;
     background-blend-mode: darken;
     box-shadow: 0px 0px 10px #000000;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
 }
 .quemsou-body {
   padding: 40px;
@@ -647,6 +647,11 @@ display: none;
   text-shadow: 0px 0px 1px #000000;
   
 }
+.cracha {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width:450px){
     .quemsou {
@@ -657,7 +662,7 @@ display: none;
         gap: 15px;
         box-shadow: 5px 5px 5px var(--shadowColor);
         margin-top: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
     .cracha {
       margin-left: 6.2em;
@@ -736,9 +741,9 @@ display: none;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2em;
-  margin-top: 30px;
+  margin-top: 10px;
   height: 60em;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   line-height: 3em;
   background-image: url(./images/elegancia.png);
   background-attachment: fixed;
@@ -825,19 +830,18 @@ display: none;
 }
 .project-container {
   margin-top: -5em;
-  margin-bottom: -11em;
+  margin-bottom: -12.3em;
+
 }
 .service-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
     height: 40em;
     box-shadow: 0px 0px 10px #000000;
     background-image: linear-gradient(90deg,#000000,#101010,#000000);
-    padding: 30px;
-    margin-top: 10px;
+    padding: 10px;
 }
 .service-body {
   display: flex;
@@ -925,8 +929,8 @@ display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 20px;
-    margin-top: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .project-video {
     display: grid;
@@ -990,11 +994,13 @@ display: none;
     background-size: cover;
     height: 50em;
     background-position: center;
+    margin-top: -20px;
+    margin-bottom: 4px;
   }   
   
   @media screen and (max-width:450px){
     .aplication {
-      margin-bottom: -240px;
+      margin-bottom: -250px;
     }
     .image-containers {
       display: grid;
@@ -1025,11 +1031,12 @@ display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 @media screen and (max-width: 450px) {
     .partner-video {
-        margin-top: 30px;
+        margin-top: 5px;
+        margin-bottom: -13px;
     }
 }
 .btn-card-partner {
@@ -1235,7 +1242,7 @@ display: none;
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid var(--borderColor);
-    margin-top: 14px;
+    margin-top: 2px;
 }
 .container-footer {
     max-width: auto;

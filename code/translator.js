@@ -148,7 +148,7 @@ function changeLanguage() {
         
         profissional.innerText = 'Profissional'
         profissioanlTexto.innerText = 'Formação em Engenharia de Produção e profissional em Desenvolvimento Web, movido pela adrenalina da criação e desenvolvimento de projetos.\n\nSeus estudos englobam a implementação de sistemas inteligentes para aprimorar a experiência do usuário e no design de websites.\n\nNão é difícil encontrar o Eduardo, pois em sua mesa de trabalho é capaz que você encontre um pato de borracha, o seu companheiro em debbug de aplicações.'
-        hub.innerText = 'Hub de noticias'
+        hub.innerText = 'HUB'
 
         academico.innerText = 'Acadêmico'
         academicoTexto.innerText = 'Autor de dois artigos científicos publicados na revista interdisciplinar RECIMA21 com participação especial no Congresso Nacional de Iniciação Científica (CONIC) sobre a distribuição de energia solar fotovoltaica para veículos elétricos.\n\nOs calculos foram análisados sobre a melhor estratégia da instalação das placas, garantindo que o sistema possa ser implantada em qualquer região do mundo.\n\nO projeto teve o seu embasamento aplicado na Engenharia de Produção e Engenharia Elétrica.'
