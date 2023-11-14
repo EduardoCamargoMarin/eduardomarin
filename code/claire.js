@@ -5,7 +5,7 @@ function selectMessage() {
     let containerReceived = document.getElementById('containerReceived')
 
     const botMessage = [
-        'Quais os setores das parcerias?',
+        'Quais as especializações de serviços?',
         'Como ser um parceiro?',
         'Qual o foco da organização?',
         'Novos projetos?',
@@ -30,7 +30,7 @@ function selectMessage() {
         setTimeout(() => {
             containerReceived.style.backgroundColor = '#0e0e0e'
             containerReceived.style.border = '1px solid #CFB776'
-             answer.innerText = 'Possuimos os setores de:\n\n1. Desenvolvimento Front-End\nRecomendamos os profissionais:\n\nMurilo Barbosa\nLead Code\n\n2. Desenvolvimento Back-End\nRecomendamos os profissionais:\n\nGabriel Costa\nMatheus Passareli\n\n3.Engenharia\nRecomendamos a empresa:\n\nGuimarães Engenharia\n\n4.Design\nRecomendamos a profissional:\n\nMayara Marin\n\n5.Infraestrutura\nRecomendamos o profissional:\n\nRodrigo Pupo\n\n6.Desenvolvimento Mobile\n\nEstamos com propostas em aberto para o setor de desenvolvimento Mobile, caso tenha intereresse, por favor entre em contato pelo e-mail: \n\nsolucaoduck@gmail.com'
+             answer.innerText = 'As especializações de serviços envolvem o desenvolvimento web com foco nas técnologias de React | Java'
              
              answer.style.animation = 'none'
 
@@ -66,7 +66,7 @@ function selectMessage() {
         setTimeout(() => {
             containerReceived.style.backgroundColor = '#0e0e0e'
             containerReceived.style.border = '1px solid #CFB776'
-             answer.innerText = 'Nosso foco é conectar as pessoas afim de expandir o network, garantindo que grandes empresas possam encontrar excelentes profissionais em um único lugar.\n\nAlem disso, queremos garantir o conforto e a inovação através de aplicações e assistentes virtuais e desenvolvimento de websites, com a melhor interface e experiência para o usuário.'
+             answer.innerText = 'Nosso foco é garantir o conforto e a inovação através do desenvolvimento de serviços para web, desde a criação de sites com a melhor interface e experiência para o usuário.'
              answer.style.animation = 'none'
         }, 1000);
     }
@@ -83,7 +83,7 @@ function selectMessage() {
         setTimeout(() => {
             containerReceived.style.backgroundColor = '#0e0e0e'
             containerReceived.style.border = '1px solid #CFB776'
-             answer.innerText = 'Atualmente estamos desenvolvendo novas aplicações destinadas para web e templates para websites.\n\n Alem disso estamos trabalhando em um novo departamento de capacitação e treinamento para todos os profissionais no mercado de T.I'
+             answer.innerText = 'Atualmente estamos desenvolvendo novas aplicações destinadas para web e templates para websites.As quais você pode visualizar na sessão de Templates'
              answer.style.animation = 'none'
         }, 1000);
     }
