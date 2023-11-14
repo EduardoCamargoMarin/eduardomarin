@@ -19,7 +19,7 @@ body {
     cursor: url(./images/cursor1.cur),default;
     color: var(--fontMainColor);
     font-family: Arial, Helvetica, sans-serif !important;
-    background-image: linear-gradient(90deg, #000000, #CFB776, #000000);
+    background-image: linear-gradient(90deg, #101010, #CFB776, #101010);
     box-shadow: inset 0px 0px 10px #000000; /* novo */
    
 }
@@ -372,6 +372,7 @@ display: none;
     background-blend-mode: darken;
     background-size: cover;
     padding: 10px;
+    margin-top: -9px;
     }
 
     .container h1 {
@@ -386,7 +387,7 @@ display: none;
       background-color: #0000009f;
       border: .5px solid #f1f1f1;
       border-radius: 10px;
-        }
+    }
     .container button {
       margin-top: 10px; 
       margin-bottom: 10px; 
@@ -427,7 +428,7 @@ display: none;
       justify-content: center;
       width: 100%;
       box-shadow: 0px 0px 10px #000000;
-      margin-top: 20px;
+      margin-top: 5px;
       background-image: url(./images/backgroundEmpresa01.png);
       background-attachment: fixed;
       height: 37em;
@@ -441,7 +442,7 @@ display: none;
         justify-content: center;
         width: 100%;
         box-shadow: 0px 0px 10px #000000;
-        margin-top: 20px;
+        margin-top: 5px;
         background-image: url(./images/backgroundEmpresa02.png);
         background-attachment: fixed;
         height: 80em;
@@ -454,7 +455,7 @@ display: none;
           .intro-empresa {
             background-position: center;
             margin-top: -30px;
-            margin-bottom: -15px;
+            margin-bottom: 5px;
           }
           section {
             display: none;
@@ -465,10 +466,12 @@ display: none;
             background-image: url(./images/backgroundEmpresa02.png);
             background-position: bottom;
             margin-bottom: -12px;
+            height: 40em;
           }
           .intro-empresa2 {
             background-image: url(./images/backform.png);
             height: fit-content;
+            margin-top: 20px;
           }
         }
 .intro-container {
